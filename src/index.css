@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.active{
+    @apply font-semibold transition-all duration-500 text-blue-800 
+  }
+  
+  .linkStyle:hover{
+    @apply font-semibold transition-all duration-500 text-blue-800 
+  }
+  .row{
+    @apply py-6 px-4  flex flex-wrap items-center
+  }
+
+  @property --border-angle {
+    inherits: false;
+    initial-value: 0deg;
+    syntax: '<angle>';
+}

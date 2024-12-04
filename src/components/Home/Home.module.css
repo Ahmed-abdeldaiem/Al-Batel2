@@ -1,0 +1,15 @@
+
+
+.fit{
+   
+   
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+
+
