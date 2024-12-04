@@ -33,6 +33,11 @@ export default function TeamPage2() {
       job: {ar:' ' , en: ''}
     },
     {
+      image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D9%81%D9%8A%D8%B5%D9%84%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84.jpg?raw=true',
+      name:{ar:' فيصل الباتل' , en: 'Faisal Al-Batel'},
+      job: {ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
+    },
+    {
       image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true',
       name:{ar:' منيرة الحربي' , en: 'Monera Al-Harby'},
       job: {ar:' ' , en: ''}
@@ -64,6 +69,11 @@ export default function TeamPage2() {
     },
     {
       image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true',
+      name:{ar:' صبحي جابر' , en: 'Sobhy Jaber'},
+      job: {ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
+    },
+    {
+      image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true',
       name:{ar:' أحمد أمين ' , en: 'Ahmed Amen'},
       job: {ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
     },
@@ -88,7 +98,7 @@ export default function TeamPage2() {
       job:{ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
     },
     {
-      image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/team/%D9%85%D8%AD%D9%85%D8%AF%20%D8%B5%D8%A7%D9%84%D8%AD%20%D8%A7%D9%84%D8%AA%D9%88%D9%86%D9%8A.jpeg?raw=true',
+      image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true',
       name:{ar:'محمد صالح' , en: 'Mohamed Saleh'},
       job: {ar:'    ' , en: '   '}
     },
@@ -102,21 +112,13 @@ export default function TeamPage2() {
       name:{ar:'علاء فكري ' , en: 'Alaa Fekry'},
       job: {ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
     },
-    {
-      image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true',
-      name:{ar:' صبحي جابر' , en: 'Sobhy Jaber'},
-      job: {ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
-    },
+   
     {
       image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/team/%D8%A7%D8%B3%D8%A7%D9%85%D8%A9%20%D9%87%D8%A7%D8%B4%D9%85.jpeg?raw=true',
       name:{ar:' أسامة هاشم ' , en: 'Osama Hashem'},
       job: {ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
     },
-    {
-      image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D9%81%D9%8A%D8%B5%D9%84%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84.jpg?raw=true',
-      name:{ar:' فيصل الباتل' , en: 'Faisal Al-Batel'},
-      job: {ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
-    },
+    
     {
       image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true',
       name:{ar:' محمد الباتل' , en: 'Mohamed Al-Batel'},
@@ -192,7 +194,7 @@ export default function TeamPage2() {
       job: {ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
     },
     {
-      image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D9%87%D9%8A%D8%AB%D9%85%20%D9%87%D8%A7%D8%B4%D9%85.jpg?raw=true',
+      image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true',
       name:{ar:' هيثم هاشم' , en: 'Haitham Hashem'},
       job: {ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
     },
@@ -257,7 +259,7 @@ export default function TeamPage2() {
    
    
     {
-      image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/team/%D8%AE%D8%A7%D9%84%D8%AF%20%D8%AE%D8%B6%D9%8A%D8%B1.jpeg?raw=true',
+      image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true',
       name:{ar:'خالد خضير' , en: ' khaled khodeir'},
       job: {ar:'    ' , en: '   '}
     },

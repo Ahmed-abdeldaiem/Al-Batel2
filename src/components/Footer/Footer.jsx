@@ -164,7 +164,7 @@ export default function Footer() {
 
               <hr className="my-6 border-green-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
               <span className="block text-sm text-gray-400 sm:text-center z-20 dark:text-gray-400">
-                © 2024 All Rights Reserved @ Albatel
+                © 2024 All Rights Reserved @ Al-Batel
               </span>
 
               <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center dark:text-gray-400">
@@ -332,7 +332,7 @@ export default function Footer() {
 
               <hr className="my-6 border-green-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
               <span className="block text-sm text-gray-400 sm:text-center z-20 dark:text-gray-400">
-                © 2024 All Rights Reserved @ Albatel
+                © 2024 All Rights Reserved @ Al-Batel
               </span>
 
               <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center dark:text-gray-400">

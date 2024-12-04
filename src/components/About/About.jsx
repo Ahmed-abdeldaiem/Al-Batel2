@@ -161,7 +161,7 @@ export default function About() {
                   <i className="fa-solid fa-id-card  text-green-600 text-xl m-2"></i>
                   كما أن الشركة حاصلة على تراخيص لتقديم خدمات مراجعة الحسابات
                   وتدقيقها، والاستشارات المالية، وتقديم خدمات المحاسبة،
-                  والاستشارات الإدارية، والاستشارات الاقتصادية، وإعداد كشوف
+                  والاستشارات الإدارية،وإعداد كشوف
                   الذمة المالية للضرائب، والاستشارات المحاسبية ووضع السياسات
                   والإجراءات، والاستشارات في مجال الزكاة وضريبة الدخل، وخدمات
                   ضريبة القيمة المضافة.
@@ -302,7 +302,7 @@ export default function About() {
                 تميزت شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
                 بالخبرة الواسعة في مجالات مراجعة الحسابات وتدقيقها، والاستشارات
                 المالية، وتقديم خدمات المحاسبة، والاستشارات الإدارية،
-                والاستشارات الاقتصادية، وإعداد كشوف الذمة المالية للضرائب،
+                 وإعداد كشوف الذمة المالية للضرائب،
                 والاستشارات المحاسبية ووضع السياسات والإجراءات، والاستشارات في
                 مجال الزكاة وضريبة الدخل، وخدمات ضريبة القيمة المضافة
               </span>
@@ -473,7 +473,7 @@ export default function About() {
                   <i className="fa-solid fa-id-card  text-green-600 text-xl m-2"></i>
                   The company also holds licenses to provide audit services
                   Audit, financial consulting, provision of accounting services،
-                  Management Consulting, Economic Consulting, preparation of statements
+                  Management Consulting, preparation of statements
                   Financial disclosure of taxes, accounting consulting and policy development
                   Procedures, consultations in the field of Zakat and Income Tax, Services
                   Value Added Tax.
@@ -615,8 +615,7 @@ export default function About() {
               <span>
               Batel Abdullah Al-Batel & partners professional consulting company was distinguished
                 With extensive experience in the fields of audit and auditing, consulting
-                Finance, Accounting Services, Management Consulting،
-                Economic consulting, preparation of financial statements for taxes،
+                Finance, Accounting Services, Management Consulting, preparation of financial statements for taxes،
                 Accounting consulting, policy and procedure development, consulting in
                 The field of Zakat and Income Tax, Value Added Tax Services
               </span>
