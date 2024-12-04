@@ -99,7 +99,7 @@ export default function NavBar() {
                   >
                     <ul className="py-2 text-sm text-gray-700">
                       <li><NavLink to="contact" className="block text-gray-700 linkStyle px-4 py-2">تواصل</NavLink></li>
-                      <li><NavLink to="sendCv" className="block text-gray-700 text-nowrap px-4 py-2 linkStyle">ارسل سيرتك</NavLink></li>
+                      <li><NavLink to="sendCv" className="block text-gray-700 text-nowrap px-4 py-2 linkStyle">أرسل سيرتك</NavLink></li>
                       <li><NavLink to="RFP" className="block text-gray-700 px-4 text-nowrap py-2 linkStyle">طلب عرض سعر</NavLink></li>
                       
                     </ul>

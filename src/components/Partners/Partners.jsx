@@ -60,7 +60,7 @@ const sponcersAr=[
   },
   {
     image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/sponcer6.png?raw=true',
-    title:'اتقان العقارية',
+    title:'إتقان العقارية',
     description:'Etqaan Real Estate'
   },
   {

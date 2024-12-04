@@ -79,7 +79,7 @@ export default function TeamPage2() {
     },
     {
       image:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true',
-      name:{ar:'محمد ابراهيم' , en: 'Mohamed Ebrahim'},
+      name:{ar:'محمد إبراهيم' , en: 'Mohamed Ebrahim'},
       job: {ar:' المحاسبة والمراجعة' , en: 'Accounting and auditing'}
     },
     {
