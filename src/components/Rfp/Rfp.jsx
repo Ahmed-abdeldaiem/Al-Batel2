@@ -154,11 +154,11 @@ export default function Rfp() {
                 ) : null}
 
                 <form
-                  className="w-full md:w-10/12 lg:w-8/12  mx-auto text-right  rounded-3xl p-4"
+                  className="w-full md:w-10/12 lg:w-8/12  mx-auto flex flex-col justify-center items-center text-right  rounded-3xl p-4"
                   onSubmit={formik.handleSubmit}
                 >
                   {/* اسم الشركة */}
-                  <div className="p-2 ">
+                  <div className="p-2 w-11/12 md:w-10/12 ">
                     <div className="relative z-0   mb-5 group">
                       <input
                         onBlur={formik.handleBlur}
@@ -172,7 +172,7 @@ export default function Rfp() {
                       />
                       <label
                         htmlFor="company_name"
-                        className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950 ark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-950 ark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         اسم الشركة
                       </label>
@@ -191,7 +191,7 @@ export default function Rfp() {
 
                   {/* رقم السجل التجاري */}
 
-                  <div className="p-2 ">
+                  <div className="p-2 w-11/12 md:w-10/12">
                     <div className="relative z-0   mb-5 group">
                       <input
                         onBlur={formik.handleBlur}
@@ -205,7 +205,7 @@ export default function Rfp() {
                       />
                       <label
                         htmlFor="commercial_registration"
-                        className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-950 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         رقم السجل التجاري
                       </label>
@@ -223,7 +223,7 @@ export default function Rfp() {
                   </div>
 
                   {/* رقم التسجيل الضريبي */}
-                  <div className="p-2 ">
+                  <div className="p-2 w-11/12 md:w-10/12">
                     <div className="relative z-0   mb-5 group">
                       <input
                         onBlur={formik.handleBlur}
@@ -237,7 +237,7 @@ export default function Rfp() {
                       />
                       <label
                         htmlFor="tax_registration"
-                        className="peer-focus:font-medium absolute text-sm md:text-lg font-semibold text-gray-950 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg font-semibold text-gray-950 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         رقم التسجيل الضريبي
                       </label>
@@ -257,7 +257,7 @@ export default function Rfp() {
                   {/* <hr className='text-green-800 w-full border border-green-900/50 my-7'/> */}
 
                   {/*   وظيفة مسؤول التواصل */}
-                  <div className="p-2 ">
+                  <div className="p-2 w-11/12 md:w-10/12">
                     <div className="relative z-0   mb-5 group">
                       <input
                         onBlur={formik.handleBlur}
@@ -271,7 +271,7 @@ export default function Rfp() {
                       />
                       <label
                         htmlFor="job"
-                        className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-950 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         الوظيفة
                       </label>
@@ -288,7 +288,7 @@ export default function Rfp() {
                   </div>
 
                   {/* رقم الجوال */}
-                  <div className="p-2 ">
+                  <div className="p-2 w-11/12 md:w-10/12">
                     <div className="relative z-0 w-full mb-5 group">
                       <input
                         onBlur={formik.handleBlur}
@@ -302,7 +302,7 @@ export default function Rfp() {
                       />
                       <label
                         htmlFor="phone"
-                        className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         رقم الجوال{" "}
                       </label>
@@ -318,7 +318,7 @@ export default function Rfp() {
                   </div>
 
                   {/* البريد الإلكتروني */}
-                  <div className="p-2 ">
+                  <div className="p-2 w-11/12 md:w-10/12">
                     <div className="relative z-0 w-full mb-5 group">
                       <input
                         onBlur={formik.handleBlur}
@@ -332,7 +332,7 @@ export default function Rfp() {
                       />
                       <label
                         htmlFor="email"
-                        className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         البريد الإلكتروني
                       </label>
@@ -349,7 +349,7 @@ export default function Rfp() {
 
                   {/*الرسالة  */}
 
-                  <div className="p-2 ">
+                  <div className="p-2 w-11/12 md:w-10/12">
                     <div className="relative z-0 w-full mb-5 group">
                       <textarea
                         onBlur={formik.handleBlur}
@@ -363,7 +363,7 @@ export default function Rfp() {
                       ></textarea>
                       <label
                         htmlFor="message"
-                        className="peer-focus:font-medium absolute font-semibold text-sm md:text-lg  text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 font-semibold text-sm md:text-lg  text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         الرسالة
                       </label>
@@ -380,7 +380,7 @@ export default function Rfp() {
 
                   {/* الفترة الزمنية */}
 
-                  <div className="p-2 flex gap-6 ">
+                  <div className="p-2 flex gap-6 w-11/12 md:w-10/12">
                     {/* from */}
                     <DatePicker
                       showIcon
@@ -390,7 +390,7 @@ export default function Rfp() {
                       }
                       onBlur={() => formik.setFieldTouched("period_from", true)}
                       // onChange={(date) => setStartDate(date)}
-                      className="bg-gray-50/50 text-end relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
+                      className="bg-gray-50/50 w-full text-end relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
                       placeholderText="من"
                       dateFormat="dd/MM/yyyy"
                       showYearDropdown
@@ -401,7 +401,7 @@ export default function Rfp() {
                     />
                     <label
                       htmlFor="period_from"
-                      className="peer-focus:font-medium absolute font-semibold text-sm md:text-lg text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute ps-5 font-semibold text-sm md:text-lg text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       الفترة من
                     </label>
@@ -420,7 +420,7 @@ export default function Rfp() {
                       showIcon
                       // selected={endDate}
                       // onChange={(date) => setEndDate(date)
-                      className="bg-gray-50/50 text-end  relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
+                      className="bg-gray-50/50 w-full text-end  relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
                       placeholderText="إلى"
                       dateFormat="dd/MM/yyyy"
                       showYearDropdown
@@ -460,9 +460,9 @@ export default function Rfp() {
                     </div>
                   ) : null}
 
-                  <button
+<button
                     type="submit"
-                    className={`text-white font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center focus:outline-none focus:ring-4 focus:ring-green-500 ${
+                    className={`text-white w-8/12 font-medium rounded-lg text-sm  px-5 py-2.5 text-center focus:outline-none focus:ring-4 focus:ring-green-500 ${
                       formik.isValid && !isAnyInputEmpty
                         ? "bg-green-500 hover:bg-green-600"
                         : "bg-gray-500 cursor-not-allowed"
@@ -475,6 +475,10 @@ export default function Rfp() {
                       "إرسال الطلب"
                     )}
                   </button>
+
+
+
+               
                 </form>
               </div>
             </div>
