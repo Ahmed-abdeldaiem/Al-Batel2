@@ -505,11 +505,11 @@ export default function Rfp() {
               ) : null}
 
               <form
-                className="w-full md:w-10/12 lg:w-8/12  mx-auto text-right  rounded-3xl p-4"
+                className="w-full md:w-10/12 lg:w-8/12 flex flex-col justify-center items-center   mx-auto text-right  rounded-3xl p-4"
                 onSubmit={formik.handleSubmit}
               >
                 {/* اسم الشركة */}
-                <div className="p-2 ">
+                <div className="p-2 w-11/12 md:w-10/12">
                   <div className="relative z-0   mb-5 group">
                     <input
                       onBlur={formik.handleBlur}
@@ -542,7 +542,7 @@ export default function Rfp() {
 
                 {/* رقم السجل التجاري */}
 
-                <div className="p-2 ">
+                <div className="p-2 w-11/12 md:w-10/12">
                   <div className="relative z-0   mb-5 group">
                     <input
                       onBlur={formik.handleBlur}
@@ -574,7 +574,7 @@ export default function Rfp() {
                 </div>
 
                 {/* رقم التسجيل الضريبي */}
-                <div className="p-2 ">
+                <div className="p-2 w-11/12 md:w-10/12">
                   <div className="relative z-0   mb-5 group">
                     <input
                       onBlur={formik.handleBlur}
@@ -608,7 +608,7 @@ export default function Rfp() {
                 {/* <hr className='text-green-800 w-full border border-green-900/50 my-7'/> */}
 
                 {/*   وظيفة مسؤول التواصل */}
-                <div className="p-2 ">
+                <div className="p-2 w-11/12 md:w-10/12">
                   <div className="relative z-0   mb-5 group">
                     <input
                       onBlur={formik.handleBlur}
@@ -639,7 +639,7 @@ export default function Rfp() {
                 </div>
 
                 {/* رقم الجوال */}
-                <div className="p-2 ">
+                <div className="p-2 w-11/12 md:w-10/12">
                   <div className="relative z-0 w-full mb-5 group">
                     <input
                       onBlur={formik.handleBlur}
@@ -669,7 +669,7 @@ export default function Rfp() {
                 </div>
 
                 {/* البريد الإلكتروني */}
-                <div className="p-2 ">
+                <div className="p-2 w-11/12 md:w-10/12">
                   <div className="relative z-0 w-full mb-5 group">
                     <input
                       onBlur={formik.handleBlur}
@@ -700,7 +700,7 @@ export default function Rfp() {
 
                 {/*الرسالة  */}
 
-                <div className="p-2 ">
+                <div className="p-2 w-11/12 md:w-10/12">
                   <div className="relative z-0 w-full mb-5 group">
                     <textarea
                       onBlur={formik.handleBlur}
@@ -731,7 +731,7 @@ export default function Rfp() {
 
                 {/* الفترة الزمنية */}
 
-                <div className="p-2 flex gap-6 ">
+                <div className="p-2 flex gap-6 w-11/12 md:w-10/12">
                   {/* from */}
                   <DatePicker
                     showIcon
@@ -741,7 +741,7 @@ export default function Rfp() {
                     }
                     onBlur={() => formik.setFieldTouched("period_from", true)}
                     // onChange={(date) => setStartDate(date)}
-                    className="bg-gray-50/50 text-end relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
+                    className="bg-gray-50/50 w-full text-end relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
                     placeholderText="من"
                     dateFormat="dd/MM/yyyy"
                     showYearDropdown
@@ -771,7 +771,7 @@ export default function Rfp() {
                     showIcon
                     // selected={endDate}
                     // onChange={(date) => setEndDate(date)
-                    className="bg-gray-50/50 text-end  relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
+                    className="bg-gray-50/50 w-full text-end  relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
                     placeholderText="إلى"
                     dateFormat="dd/MM/yyyy"
                     showYearDropdown
@@ -813,7 +813,7 @@ export default function Rfp() {
 
                 <button
                   type="submit"
-                  className={`text-white font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center focus:outline-none focus:ring-4 focus:ring-green-500 ${
+                  className={`text-white  font-medium rounded-lg w-8/12 text-sm  px-5 py-2.5 text-center focus:outline-none focus:ring-4 focus:ring-green-500 ${
                     formik.isValid && !isAnyInputEmpty
                       ? "bg-green-500 hover:bg-green-600"
                       : "bg-gray-500 cursor-not-allowed"
