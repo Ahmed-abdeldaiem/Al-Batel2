@@ -16,8 +16,15 @@ export default function About() {
     {
       id: 2,
       name: {
-        ar: "جدة",
-        en: "Jeddah",
+        ar: "جدةالأول",
+        en: "Jeddah 1",
+      },
+    },
+    {
+      id: 2_1,
+      name: {
+        ar: "جدة الثاني",
+        en: "Jeddah 2",
       },
     },
     {
@@ -98,16 +105,16 @@ export default function About() {
         <>
           <div
             //  bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about%20us%20background.jpg?raw=true')] bg-no-repeat bg-cover bg-center
-            className={`relative   w-full lg:h-[470px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
+            className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about-bg.jpg?raw=true"
+              src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/enhanced2/about-bg1.jpeg?raw=true"
               className="w-full h-full  z-10"
               alt="about us image "
             />
             {/* Gradient blue overlay */}
             <div className="absolute inset-0 bg-gradient-to-l from-gray-800/60 to-gray-700/50 opacity-80 z-10"></div>
-            <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-30 rounded-full items-center justify-center z-20">
+            <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50 rounded-full items-center justify-center z-20">
               <h3 className="text-green-950 text-sm font-semibold mx-1">
                 ALBatel & Co
               </h3>
@@ -117,25 +124,25 @@ export default function About() {
                 alt="logo image "
               />
             </div>
-            <div className="absolute top-3/4 hidden end-4 md:flex bg-white bg-opacity-30 border border-green-600  rounded-full items-center cursor-pointer  justify-center z-30">
+            <div className="absolute top-3/4 hidden end-4 md:flex bg-white bg-opacity-60 border border-green-950  rounded-full items-center cursor-pointer  justify-center z-30">
               <h3 className="text-gray-900 text-sm font-semibold mx-1">
                 info@albatelcpa.com
               </h3>
             </div>
-            <div className="absolute top-80  hidden end-4 md:flex bg-white bg-opacity-30 rounded-full border border-green-600 items-center justify-center cursor-pointer z-30">
+            <div className="absolute top-96  hidden end-4 md:flex bg-white bg-opacity-60 rounded-full border border-green-950 items-center justify-center cursor-pointer z-30">
               <h3 className="text-gray-900  text-sm font-semibold mx-1">
                 www.albatelcpa.com
               </h3>
             </div>
             <div className="absolute top-0 bottom-0 left-0 right-0 z-20  flex flex-col justify-center ">
-              <h1 className="text-green-50 text-center text-xl lg:text-4xl mb-4 font-semibold">
+              <h1 className="text-green-50 text-center text-xl lg:text-5xl 3xl:text-6xl mb-4 font-semibold">
                 شركة باتل عبدالله الباتل وشركاؤه
               </h1>
               <h2 className="text-green-50 text-center text-lg lg:text-4xl mb-20 font-semibold">
                 للاستشارات المهنية
               </h2>
               <button onClick={handleScroll}>
-                <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-20 py-3 border-green-800 border-2 text-center z-20 text-green-100 text-md font-bold">
+                <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-40 py-3 border-green-950 border-2 text-center z-20 text-green-100 text-md font-bold">
                   تعرف علينا
                   <span className="mx-2">
                     <i className="fa-solid fa-arrow-down"></i>
@@ -161,10 +168,9 @@ export default function About() {
                   <i className="fa-solid fa-id-card  text-green-600 text-xl m-2"></i>
                   كما أن الشركة حاصلة على تراخيص لتقديم خدمات مراجعة الحسابات
                   وتدقيقها، والاستشارات المالية، وتقديم خدمات المحاسبة،
-                  والاستشارات الإدارية، وإعداد كشوف
-                  الذمة المالية للضرائب، والاستشارات المحاسبية ووضع السياسات
-                  والإجراءات، والاستشارات في مجال الزكاة وضريبة الدخل، وخدمات
-                  ضريبة القيمة المضافة.
+                  والاستشارات الإدارية، وإعداد كشوف الذمة المالية للضرائب،
+                  والاستشارات المحاسبية ووضع السياسات والإجراءات، والاستشارات في
+                  مجال الزكاة وضريبة الدخل، وخدمات ضريبة القيمة المضافة.
                 </p>
               </div>
 
@@ -301,10 +307,10 @@ export default function About() {
               <span>
                 تميزت شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
                 بالخبرة الواسعة في مجالات مراجعة الحسابات وتدقيقها، والاستشارات
-                المالية، وتقديم خدمات المحاسبة، والاستشارات الإدارية،
-                 وإعداد كشوف الذمة المالية للضرائب،
-                والاستشارات المحاسبية ووضع السياسات والإجراءات، والاستشارات في
-                مجال الزكاة وضريبة الدخل، وخدمات ضريبة القيمة المضافة
+                المالية، وتقديم خدمات المحاسبة، والاستشارات الإدارية، وإعداد
+                كشوف الذمة المالية للضرائب، والاستشارات المحاسبية ووضع السياسات
+                والإجراءات، والاستشارات في مجال الزكاة وضريبة الدخل، وخدمات
+                ضريبة القيمة المضافة
               </span>
             </p>
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
@@ -314,27 +320,23 @@ export default function About() {
                 الواعد باعتبارهم من أهم وأكبر الفئات الأساسية فيها، لدى الشركة
                 العديد من الشركاء والموظفين السعوديين بنسب تتجاوز تلك المحددة من
                 قبل وزارة الموارد البشرية محققة بذلك نسب سعودة تضع الشركة في
-                النطاق البلاتيني (معدل التوطين 56 % ومستوى النطاقات أخضر
-                مرتفع).
+                النطاق البلاتيني (معدل التوطين 56 % ومستوى النطاقات أخضر مرتفع).
                 كما تحرص الشركة على توطين الوظائف وجذب المزيد من الشركاء
                 والكفاءات من الموظفين السعوديين وتشجيعهم على الاستمرار معها من
                 خلال برامج منح رواتب تضاهي كبرى الشركات ومنح العلاوات والترقيات
                 والتدريب والتطوير والتأهيل المستمر.
-              
-          
               </span>
             </p>
-            
-          
+
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
               <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
               <span>
                 ونولي في شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
-                اهتمام بالغ بالتأهيل العلمي و المهني ويعمل معنا فريق مؤهل
-                منهم العديد حاصلون على زمالة الهيئة السعودية للمراجعين
-                والمحاسبين SOCPA وشهادة معايير المحاسبة الدولية في القطاع العام
-                IPSAS، وشهادة المحاسب القانوني المعتمد CPA، وشهادة المراجع
-                الداخلي المعتمد CIA، ولديهم خبرة مهنية واسعة في مجال الاستشارات
+                اهتمام بالغ بالتأهيل العلمي و المهني ويعمل معنا فريق مؤهل منهم
+                العديد حاصلون على زمالة الهيئة السعودية للمراجعين والمحاسبين
+                SOCPA وشهادة معايير المحاسبة الدولية في القطاع العام IPSAS،
+                وشهادة المحاسب القانوني المعتمد CPA، وشهادة المراجع الداخلي
+                المعتمد CIA، ولديهم خبرة مهنية واسعة في مجال الاستشارات
                 المحاسبية والمالية كما نتميز بوجود إدارة متخصصة في أعمال الجودة
                 والالتزام.
               </span>
@@ -415,18 +417,18 @@ export default function About() {
         </>
       ) : (
         <>
-          <div
+           <div
             //  bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about%20us%20background.jpg?raw=true')] bg-no-repeat bg-cover bg-center
-            className={`relative   w-full lg:h-[450px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
+            className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about-bg.jpg?raw=true"
+              src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/enhanced2/about-bg1.jpeg?raw=true"
               className="w-full h-full  z-10"
               alt="about us image "
             />
             {/* Gradient blue overlay */}
             <div className="absolute inset-0 bg-gradient-to-l from-gray-800/60 to-gray-700/50 opacity-80 z-10"></div>
-            <div className="absolute top-4 end-4 flex bg-white bg-opacity-30 rounded-full items-center justify-center z-20">
+            <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50 rounded-full items-center justify-center z-20">
               <h3 className="text-green-950 text-sm font-semibold mx-1">
                 ALBatel & Co
               </h3>
@@ -436,17 +438,26 @@ export default function About() {
                 alt="logo image "
               />
             </div>
+            <div className="absolute top-3/4 hidden start-4 md:flex bg-white bg-opacity-60 border border-green-950  rounded-full items-center cursor-pointer  justify-center z-30">
+              <h3 className="text-gray-900 text-sm font-semibold mx-1">
+                info@albatelcpa.com
+              </h3>
+            </div>
+            <div className="absolute top-80  hidden start-4 md:flex bg-white bg-opacity-60 rounded-full border border-green-950 items-center justify-center cursor-pointer z-30">
+              <h3 className="text-gray-900  text-sm font-semibold mx-1">
+                www.albatelcpa.com
+              </h3>
+            </div>
             <div className="absolute top-0 bottom-0 left-0 right-0 z-20  flex flex-col justify-center ">
-              <h1 className="text-green-50 text-center text-lg lg:text-3xl mb-4 font-semibold">
-                {/* Batal Abdullah Al-Batal & Partners for Professional Consultations */}
-                Batal Abdullah Al-Batal & Partners Company
+              <h1 className="text-green-50 text-center text-xl lg:text-5xl 3xl:text-6xl mb-4 font-semibold">
+              Batal Abdullah Al-Batal & Partners Company
               </h1>
-              <h2 className="text-green-50 text-center text-xl lg:text-3xl mb-20 font-semibold">
-                For professional consultations
+              <h2 className="text-green-50 text-center text-lg lg:text-4xl mb-20 font-semibold">
+              For professional consultations
               </h2>
               <button onClick={handleScroll}>
-                <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-20 py-3 border-green-800 border-2 text-center z-20 text-green-100 text-md font-bold">
-                  Get to know us
+                <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-40 py-3 border-green-950 border-2 text-center z-20 text-green-100 text-md font-bold">
+                  More About Us
                   <span className="mx-2">
                     <i className="fa-solid fa-arrow-down"></i>
                   </span>
@@ -473,10 +484,10 @@ export default function About() {
                   <i className="fa-solid fa-id-card  text-green-600 text-xl m-2"></i>
                   The company also holds licenses to provide audit services
                   Audit, financial consulting, provision of accounting services،
-                  Management Consulting, preparation of statements
-                  Financial disclosure of taxes, accounting consulting and policy development
-                  Procedures, consultations in the field of Zakat and Income Tax, Services
-                  Value Added Tax.
+                  Management Consulting, preparation of statements Financial
+                  disclosure of taxes, accounting consulting and policy
+                  development Procedures, consultations in the field of Zakat
+                  and Income Tax, Services Value Added Tax.
                 </p>
               </div>
 
@@ -580,11 +591,13 @@ export default function About() {
                   />
                   <div className="w-full flex flex-col justify-start">
                     <p className="text-blue-950 flex  items-center font-semibold text-xl text-center leading-10 p-10 my-4">
-                    More than eighty scientifically qualified staff with extensive experience in all
-                      Financial, administrative and legal aspects, and the company was able to
-                      During them, providing its professional services to thousands of clients within the kingdom
-                      And beyond, achieving achievements that reflect the level of professionalism and quality that
-                      Mark it.
+                      More than eighty scientifically qualified staff with
+                      extensive experience in all Financial, administrative and
+                      legal aspects, and the company was able to During them,
+                      providing its professional services to thousands of
+                      clients within the kingdom And beyond, achieving
+                      achievements that reflect the level of professionalism and
+                      quality that Mark it.
                     </p>
                   </div>
                 </div>
@@ -598,65 +611,72 @@ export default function About() {
                   />
                   <div className="w-full flex flex-col justify-start">
                     <p className="text-blue-950 flex items-center text-center font-semibold text-lg leading-10 p-10 my-4">
-                      
-                    A whole team of female employees to work in women's departments or sites
-                      Which require it, their qualifications in accounting and operations are varied
-                      External and internal audit and have extensive experience in all
-                      Financial and accounting aspects, as well as administrative and governance work.
+                      A whole team of female employees to work in women's
+                      departments or sites Which require it, their
+                      qualifications in accounting and operations are varied
+                      External and internal audit and have extensive experience
+                      in all Financial and accounting aspects, as well as
+                      administrative and governance work.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-             <div className="bg-white">
+          <div className="bg-white">
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
               <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
               <span>
-              Batel Abdullah Al-Batel & partners professional consulting company was distinguished
-                With extensive experience in the fields of audit and auditing, consulting
-                Finance, Accounting Services, Management Consulting, preparation of financial statements for taxes،
-                Accounting consulting, policy and procedure development, consulting in
-                The field of Zakat and Income Tax, Value Added Tax Services
+                Batel Abdullah Al-Batel & partners professional consulting
+                company was distinguished With extensive experience in the
+                fields of audit and auditing, consulting Finance, Accounting
+                Services, Management Consulting, preparation of financial
+                statements for taxes، Accounting consulting, policy and
+                procedure development, consulting in The field of Zakat and
+                Income Tax, Value Added Tax Services
               </span>
             </p>
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
               <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
               <span>
-              Based on the kingdom's Vision 2030 and its continuous bet on Saudi youth
-                As one of the most important and largest core categories, the company has
-                Many Saudi partners and employees in percentages exceeding those specified from
-                Accepted by the Ministry of human resources, thereby achieving Saudization ratios that put the company in
-                The platinum band (the localization rate is 56 % and the band level is green
-                High).
-                The company is also keen to localize jobs and attract more partners
-                And the competencies of the Saudi employees and encourage them to continue with it from
-                During the programs of awarding salaries comparable to major companies and granting bonuses and promotions
-                Continuous training, development and rehabilitation.
-          
+                Based on the kingdom's Vision 2030 and its continuous bet on
+                Saudi youth As one of the most important and largest core
+                categories, the company has Many Saudi partners and employees in
+                percentages exceeding those specified from Accepted by the
+                Ministry of human resources, thereby achieving Saudization
+                ratios that put the company in The platinum band (the
+                localization rate is 56 % and the band level is green High). The
+                company is also keen to localize jobs and attract more partners
+                And the competencies of the Saudi employees and encourage them
+                to continue with it from During the programs of awarding
+                salaries comparable to major companies and granting bonuses and
+                promotions Continuous training, development and rehabilitation.
               </span>
             </p>
-            
-          
+
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
               <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
               <span>
-              And Noli at Batel Abdullah Al Batel & partners for professional consulting
-                Great interest in scientific and professional qualification and a qualified team works with us
-                Many of them are fellows of the Saudi Commission of auditors
-                SOCPA accountants and international accounting standards certificate in the public sector
-                IPSAS, CPA certified public accountant certificate, and reference certificate
-                CIA certified interns, and have extensive professional experience in consulting
-                Accounting and finance we are also distinguished by the presence of a specialized department in the quality business
-                And commitment.
+                And Noli at Batel Abdullah Al Batel & partners for professional
+                consulting Great interest in scientific and professional
+                qualification and a qualified team works with us Many of them
+                are fellows of the Saudi Commission of auditors SOCPA
+                accountants and international accounting standards certificate
+                in the public sector IPSAS, CPA certified public accountant
+                certificate, and reference certificate CIA certified interns,
+                and have extensive professional experience in consulting
+                Accounting and finance we are also distinguished by the presence
+                of a specialized department in the quality business And
+                commitment.
               </span>
             </p>
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
               <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
               <span>
-              The company is also characterized by a human cadre with the necessary expertise to complete
-                Assigned tasks, which is also characterized by good manners and good treatment
-                And obtaining professional certificates in various accounting fields
+                The company is also characterized by a human cadre with the
+                necessary expertise to complete Assigned tasks, which is also
+                characterized by good manners and good treatment And obtaining
+                professional certificates in various accounting fields
                 Consulting, administrative and legal, of which, for example, not
                 Exclusivity:
               </span>
@@ -714,12 +734,12 @@ export default function About() {
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
               <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
               <span>
-              To learn more about our team, you can click here
+                To learn more about our team, you can click here
                 <Link
                   className="text-sm text-green-500 hover:text-blue-500 hover:underline duration-500 transition-all mx-3"
                   to={"/team"}
                 >
-                     Click here
+                  Click here
                 </Link>
               </span>
             </p>

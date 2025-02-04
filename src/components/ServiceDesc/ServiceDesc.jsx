@@ -23,7 +23,7 @@ const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
         <hr className="border-blue-700 border-t-2 w-20 my-2 mx-auto" />
         <div className=" flex flex-col md:flex-row w-full overflow-hidden rounded-md md:rounded-full border-2 border-blue-300 shadow-md shadow-green-200 transition-all duration-700  hover:border-green-400 hover:shadow-blue-300">
           <div
-            className={`relative w-full  bg-[url('https://images.pexels.com/photos/5716037/pexels-photo-5716037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-fixed bg-cover bg-no-repeat`}
+            className={`relative w-full  bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%86%D8%A7.webp')] bg-fixed bg-cover bg-no-repeat`}
           >
             {/* Gradient blue overlay */}
             <div className="absolute inset-0 bg-gradient-to-l from-blue-600  to-blue-600/50 opacity-70 z-10"></div>

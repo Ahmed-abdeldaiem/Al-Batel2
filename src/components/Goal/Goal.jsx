@@ -24,7 +24,7 @@ export default function Goal() {
       <div className="inner flex justify-center  items-center">
   <img
     className="rounded-full border-2 border-green-600 shadow-lg transition-all duration-700 hover:scale-105 hover:border-blue-500 hover:shadow-green-500 shadow-blue-300 w-[350px] h-[350px] object-fit"
-    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/king1.png?raw=true"
+    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/king-1-1.png?raw=true"
     alt="mohamed ben salman image"
   />
 </div>
@@ -72,7 +72,7 @@ export default function Goal() {
       <div className="inner flex justify-center  items-center">
   <img
     className="rounded-full border-2 border-green-600 shadow-lg transition-all duration-700 hover:scale-105 hover:border-blue-500 hover:shadow-green-500 shadow-blue-300 w-[350px] h-[350px] object-fit"
-    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/king1.png?raw=true"
+    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/king-1-1.png?raw=true"
     alt="mohamed ben salman image"
   />
 </div>

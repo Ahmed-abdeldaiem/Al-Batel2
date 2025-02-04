@@ -16,28 +16,29 @@ export default function Branches() {
         ar: "الرياض",
         en: "Riyadh",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.jpg?raw=true'
+      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b1.jpg?raw=true'
     },
     {id: 2,
       name: {
         ar: "جدة",
         en: "Jeddah",
       },
-      img:'https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%AC%D8%AF%D8%A9.webp'
+      img:'https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/branches/b2.webp'
     },
+    
     {id: 3,
       name: {
         ar: "المدينة المنورة",
         en: "Madinah",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D8%A7%D9%84%D9%85%D9%86%D9%88%D8%B1%D8%A9.jpg?raw=true'
+      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b3.jpg?raw=true'
     },
     {id: 4,
       name: {
         ar: "الخبر",
         en: "Khobar",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A7%D9%84%D8%AE%D8%A8%D8%B1.jpg?raw=true'
+      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b4.jpg?raw=truee'
     },
     ,
     {id: 5,
@@ -45,28 +46,28 @@ export default function Branches() {
         ar: "حفر الباطن",
         en: "Hafar Al-Batin",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%AD%D9%81%D8%B1%20%D8%A7%D9%84%D8%A8%D8%A7%D8%B7%D9%86.jpg?raw=true'
+      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b5.jpg?raw=true'
     },
     {id: 6,
       name: {
         ar: "خميس مشيط",
         en: "Khamis Mushait",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%AE%D9%85%D9%8A%D8%B3%20%D9%85%D8%B4%D9%8A%D8%B7.jpg?raw=true'
+      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b6.jpg?raw=true'
     },
     {id: 7,
       name: {
         ar: "جازان",
         en: "jazan",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%AC%D8%A7%D8%B2%D8%A7%D9%86.jpg?raw=true'
+      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b7.jpg?raw=true'
     },
     {id: 8,
       name: {
         ar: "بريدة",
         en: "Buraydah",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A8%D8%B1%D9%8A%D8%AF%D8%A9.jpg?raw=true'
+      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b8.jpg?raw=true'
     },
   ];
 
@@ -87,17 +88,17 @@ export default function Branches() {
         <hr className="border-blue-700 border-t-2 w-40 mx-auto" />
         <hr className="border-blue-700 border-t-2 w-20 my-2 mx-auto" />
 
-        <div className="flex flex-wrap items-stretch w-full my-9">
+        <div className="flex flex-wrap justify-center items-stretch w-full my-9">
 
 
 
 
         {branches.map((branch, index) => {
                   return (
-                    <Link to={`/branch/${branch.id}`} className="w-full md:w-1/2 p-4  lg:w-1/4">
+                    <Link key={index} to={`/branch/${branch.id}`} className="w-full md:w-1/2 p-4  lg:w-1/4">
 
 
-                    <div className="max-w-sm relative overflow-hidden bg-white border border-gray-200 rounded-lg shadow-md transition-all duration-500 group hover:shadow-green-600">
+                    <div  className="max-w-sm relative overflow-hidden bg-white border border-gray-200 rounded-lg shadow-md transition-all duration-500 group hover:shadow-green-600">
                       <div className="overflow-hidden relative">
                         <img
                           className="rounded-t-lg h-[280px] w-full duration-700 transition-all group-hover:scale-125"
@@ -145,10 +146,10 @@ export default function Branches() {
 
         {branches.map((branch, index) => {
                   return (
-                    <Link to={`/branch/${branch.id}`} className="w-full md:w-1/2 p-4  lg:w-1/4">
+                    <Link key={index} to={`/branch/${branch.id}`} className="w-full md:w-1/2 p-4  lg:w-1/4">
 
 
-                    <div className="max-w-sm relative overflow-hidden bg-white border border-gray-200 rounded-lg shadow-md transition-all duration-500 group hover:shadow-green-600">
+                    <div  className="max-w-sm relative overflow-hidden bg-white border border-gray-200 rounded-lg shadow-md transition-all duration-500 group hover:shadow-green-600">
                       <div className="overflow-hidden relative">
                         <img
                           className="rounded-t-lg h-[280px] w-full duration-700 transition-all group-hover:scale-125"

@@ -10,7 +10,7 @@ export default function Footer() {
     <>
       {dir == "rtl" ? (
         <>
-          <footer className="relative bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/footer.jpg?raw=true')] bg-no-repeat bg-center bg-cover shadow  ">
+          <footer className="relative bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/footer1.jpg?raw=true')] bg-no-repeat bg-center bg-cover shadow z-30 ">
             <div className="absolute inset-0 bg-gradient-to-l from-blue-900/50 to-blue-800/40 opacity-80 z-10"></div>
 
             <div className="w-full relative z-20 max-w-screen-xl mx-auto p-4 md:py-8 ">
@@ -21,7 +21,7 @@ export default function Footer() {
                   className="flex bg-green-50 p-2 bg-opacity-30 group hover:bg-opacity-40 duration-700 transition-all rounded-full z-20 items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
                 >
                   <img
-                    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true"
+                    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/logo-1.png?raw=true"
                     className="h-8 cursor-pointer "
                     alt="elbatel Logo"
                   />
@@ -164,7 +164,7 @@ export default function Footer() {
 
               <hr className="my-6 border-green-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
               <span className="block text-sm text-gray-400 sm:text-center z-20 dark:text-gray-400">
-                © 2024 All Rights Reserved @ Al-Batel
+                © 2025 All Rights Reserved @ Al-Batel
               </span>
 
               <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center dark:text-gray-400">
@@ -189,7 +189,7 @@ export default function Footer() {
         </>
       ) : (
         <>
-          <footer className="relative bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/footer.jpg?raw=true')] bg-no-repeat bg-center bg-cover shadow  ">
+          <footer className="relative bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/footer1.jpg?raw=true')] bg-no-repeat bg-center bg-cover shadow  ">
             <div className="absolute inset-0 bg-gradient-to-l from-blue-900/50 to-blue-800/40 opacity-80 z-10"></div>
 
             <div className="w-full relative z-20 max-w-screen-xl mx-auto p-4 md:py-6 ">
@@ -200,7 +200,7 @@ export default function Footer() {
                   className="flex bg-green-50 p-2 bg-opacity-30 group hover:bg-opacity-40 duration-700 transition-all rounded-full z-20 items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
                 >
                   <img
-                    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true"
+                    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/logo-1.png?raw=true"
                     className="h-8 cursor-pointer "
                     alt="elbatel Logo"
                   />
@@ -332,7 +332,7 @@ export default function Footer() {
 
               <hr className="my-6 border-green-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
               <span className="block text-sm text-gray-400 sm:text-center z-20 dark:text-gray-400">
-                © 2024 All Rights Reserved @ Al-Batel
+                © 2025 All Rights Reserved @ Al-Batel
               </span>
 
               <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center dark:text-gray-400">

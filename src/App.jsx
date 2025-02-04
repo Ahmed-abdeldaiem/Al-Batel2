@@ -24,6 +24,7 @@ import BranchDetails from './components/BranchDetails/BranchDetails'
 import CvTemplate from './components/CvTemplate/CvTemplate'
 import CvLayout from './components/CvLayout/CvLayout'
 import TeamPage2 from './components/TeamPage2/TeamPage2'
+import TeamMemberDetails2 from './components/TeamMemberDetails2/TeamMemberDetails2'
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
       {path:'about' ,element:<About/>},
       {path:'services' ,element:<Services/>},
       {path:'team' ,element:<TeamPage2/>},
-      {path:'team/:id' ,element:<TeamMemberDetails/>},
+      {path:'team/:id' ,element:<TeamMemberDetails2/>},
       {path:'branch/:id' ,element:<BranchDetails/>},
       {path:'contact' ,element:<ContactUs/>},
       {path:'partners' ,element:<Partners/>},

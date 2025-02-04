@@ -1,0 +1,1448 @@
+{
+    "team": [
+      {
+        "id": "1",
+        "name": {
+          "ar": "باتل عبد الله الباتل",
+          "en": "Batel  Abdullah Al-Batel"
+        },
+        "job": {
+          "ar": "شريك (CEO)",
+          "en": "Partner (CEO)"
+        },
+        "image": "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A8%D8%A7%D8%AA%D9%84.jpeg?raw=true",
+        "years":  "25",
+        "fields": [
+            {
+                "fieldName":{"ar":"الاستشارات المالية","en":"Financial Consulting"}
+            },
+            {
+                "fieldName":{"ar":"المحاسبة المالية","en":"Financial Accounting"}
+            },
+            {
+                "fieldName":{"ar":"إدارة المشروعات وإعداد الاستراتيجيات المالية","en":"Project Management and Financial Strategies"}
+            },
+            {
+                "fieldName":{"ar":"حوكمة الشركات وإدارة الأداء المالي","en":"Corporate Governance and Financial Performance Management"}
+            }, 
+            {
+                "fieldName":{"ar":"المراجعة الداخلية والخارجية","en":"Internal and external audit"}
+            },
+            {
+                "fieldName":{"ar":"التحليل المالي وإعداد التقارير المالية","en":"Financial analysis and financial reporting"}
+            },
+            {
+                "fieldName":{"ar":"التحكيم في النزاعات المالية والمحاسبية","en":"Arbitration of financial and accounting disputes"}
+            },
+            {
+                "fieldName":{"ar":"التدريب وتقديم الدورات وورش العمل","en":"Training and providing courses and workshops"}
+            }
+        ],
+        "certificatesAndTrainings":[
+            {
+                "certName":{"ar":"درجة الماجستير في المحاسبة من جامعة ميامي- فلوريدا","en":"Master's Degree in Accounting from the University of Miami- Florida"}
+            },
+            {
+                "certName":{"ar":"درجة البكالوريوس في المحاسبة من جامعة الإمام محمد بن سعود الإسلامية","en":"Bachelor's Degree in Accounting from Imam Muhammad ibn Saud Islamic University"}
+            },
+            {
+                "certName":{"ar":"محاسب قانوني معتمد من الهيئة السعودية للمحاسبين القانونيين(SOCPA)","en":"Certified Public Accountant from the Saudi Organization for Certified Public Accountants (SOCPA)"}
+            },
+            {
+                "certName":{"ar":"محكم معتمد من وزارة العدل (تخصص في المعاملات المالية والمحاسبية)","en":"Certified Arbitrator from the Ministry of Justice (specializing in financial and accounting transactions)"}
+            },
+            {
+                "certName":{"ar":"مستشار مالي أمريكي معتمد (CFC)","en":"Certified Financial Advisor (CFC)"}
+            },
+            {
+                "certName":{"ar":"مدير أعمال كندي معتمد (CBA)","en":"Canadian Business Administrator (CBA)"}
+            },
+            {
+                "certName":{"ar":"دورة معايير التدقيق الدولي (ISA)","en":"nternational Auditing Standards (ISA) Course"}
+            },
+            {
+                "certName":{"ar":"دورة عن المعايير المحاسبية الدولية (IFRS) ","en":"International Accounting Standards (IFRS) Course"}
+            },
+            {
+                "certName":{"ar":"دورة التحضير لامتحان الزمالة الأمريكية في المحاسبة الإدارية (CMA)","en":"Certified Management Accounting (CMA) Exam Preparation Course"}
+            }
+           
+        ],
+        "experienceDescription":[
+            {"expertDesc":{"ar":"","en":""}},
+            {"expertDesc":{"ar":"","en":""}},
+            {"expertDesc":{"ar":"","en":""}},
+            {"expertDesc":{"ar":"","en":""}},
+            {"expertDesc":{"ar":"","en":""}},
+            {"expertDesc":{"ar":"","en":""}}
+        ]
+        
+        
+       
+      },
+      {
+        "id": "2",
+        "name": {
+          "ar": "أيمن فؤاد محمود ",
+          "en": "Ayman Fouad Mahmoud"
+        },
+        "job_title": {
+          "ar": "مستشار مالي ومراجع معتمد",
+          "en": "Certified Financial Consultant and Auditor"
+        },
+        "nationality": {
+          "ar": "مصري",
+          "en": "Egyptian"
+        },
+        "field": {
+          "ar": "المحاسبة والمراجعة الداخلية والتدقيق الخارجي",
+          "en": "Accounting, Internal and External Auditing"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "أكثر من 25 سنة",
+          "en": "More than 25 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "زمالة المدقق الداخلي المعتمد من المعهد الدولي للمدققين الداخليين",
+              "en": "Certified Internal Auditor (CIA) from the Institute of Internal Auditors"
+            },
+            "abbreviation": {
+              "ar": "CIA",
+              "en": "CIA"
+            }
+          },
+          {
+            "title": {
+              "ar": "زمالة الهيئة السعودية للمحاسبين القانونيين",
+              "en": "Certified Public Accountant from the Saudi Organization for Certified Public Accountants (SOCPA)"
+            },
+            "abbreviation": {
+              "ar": "SOCPA",
+              "en": "SOCPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "زمالة المراقب والمدقق الشرعي من هيئة المحاسبة والمراجعة للبنوك والمؤسسات المالية الإسلامية",
+              "en": "Certified Sharia Auditor and Advisor (CSAA) from the Accounting and Auditing Organization for Islamic Financial Institutions"
+            },
+            "abbreviation": {
+              "ar": "CSAA",
+              "en": "CSAA"
+            }
+          },
+          {
+            "title": {
+              "ar": "زمالة المحاسب القانوني الإسلامي من هيئة المحاسبة والمراجعة للبنوك والمؤسسات المالية الإسلامية",
+              "en": "Certified Islamic Professional Accountant (CIPA) from the Accounting and Auditing Organization for Islamic Financial Institutions"
+            },
+            "abbreviation": {
+              "ar": "CIPA",
+              "en": "CIPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "زمالة المصرف الإسلامي المعتمد من المجلس العام للبنوك والمؤسسات المالية الإسلامية",
+              "en": "Certified Islamic Banker (CIB) from the General Council for Islamic Banks and Financial Institutions"
+            },
+            "abbreviation": {
+              "ar": "CIB",
+              "en": "CIB"
+            }
+          },
+          {
+            "title": {
+              "ar": "بكالوريوس تجارة تخصص محاسبة جامعة الإسكندرية سنة 1987 م، تقدير عام جيد جدا",
+              "en": "Bachelor of Commerce, Accounting, Alexandria University, 1987, Very Good overall rating"
+            }
+          },
+          {
+            "title": {
+              "ar": "والعديد من الدورات التدريبية داخل وخارج المملكة العربية السعودية.",
+              "en": "Attended numerous training courses inside and outside Saudi Arabia."
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQHhTiXcUzqYeA/company-logo_200_200/company-logo_200_200/0/1711368279830/albatel_cpa_logo?e=2147483647&v=beta&t=CgruAhN_mJz9RYhR9nWO3bZJ0NEwfEQ_vQVbocOjEf4",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لأيمن فؤاد محمود سراج الدين",
+            "en": "Resume image of Ayman Fouad Mahmoud Sirajuddin"
+          }
+        }
+      },
+      {
+        "id": "3",
+        "name": {
+          "ar": "ياسر أحمد السبعي",
+          "en": "Yasser Ahmed Al-Sebaie"
+        },
+        "job_title": {
+          "ar": "استشاري الرقابة والجودة وإدارة المخاطر ",
+          "en": "Consultant in Control, Quality and Risk Management"
+        },
+        "nationality": {
+          "ar": "مصري",
+          "en": "Egyptian"
+        },
+        "field": {
+          "ar": "المحاسبة والمراجعة الداخلية والتدقيق الخارجي",
+          "en": "Accounting, Internal and External Auditing"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "تزيد عن 15 عام",
+          "en": "More than 15 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "زمالة الهيئة السعودية للمحاسبين القانونيين",
+              "en": "Certified Public Accountant from the Saudi Organization for Certified Public Accountants (SOCPA)"
+            },
+            "abbreviation": {
+              "ar": "SOCPA",
+              "en": "SOCPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "شهادة معايير المحاسبة الدولية من الهيئة المتعاقد معها البريطاني",
+              "en": "Certified IFRS from the International Accounting Standards Board (IASB)"
+            },
+            "abbreviation": {
+              "ar": "CERTIFRS",
+              "en": "CERTIFRS"
+            }
+          },
+          {
+            "title": {
+              "ar": "زمالة المراقب والمدقق الشرعي من هيئة المحاسبة والمراجعة للبنوك والمؤسسات المالية الإسلامية",
+              "en": "Certified Sharia Auditor and Advisor (CSAA) from the Accounting and Auditing Organization for Islamic Financial Institutions"
+            },
+            "abbreviation": {
+              "ar": "CSAA",
+              "en": "CSAA"
+            }
+          },
+          {
+            "title": {
+              "ar": "زمالة المحاسب القانوني الإسلامي من هيئة المحاسبة والمراجعة للبنوك والمؤسسات المالية الإسلامية",
+              "en": "Certified Islamic Professional Accountant (CIPA) from the Accounting and Auditing Organization for Islamic Financial Institutions"
+            },
+            "abbreviation": {
+              "ar": "CIPA",
+              "en": "CIPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "ماجستير التمويل الإسلامي المعتمد",
+              "en": "Master of Business Administration (MBA) in Islamic Finance"
+            },
+            "abbreviation": {
+              "ar": "MBA",
+              "en": "MBA"
+            }
+          },
+          {
+            "title": {
+              "ar": "فاحص احتيال أمريكي معتمد",
+              "en": "Certified Fraud Examiner (CFE)"
+            },
+            "abbreviation": {
+              "ar": "CFE",
+              "en": "CFE"
+            }
+          },
+          {
+            "title": {
+              "ar": "مدقق نظم معلومات أمريكي معتمد",
+              "en": "Certified Information Systems Auditor (CISA)"
+            },
+            "abbreviation": {
+              "ar": "CISA",
+              "en": "CISA"
+            }
+          },
+          {
+            "title": {
+              "ar": "مدير مالي معتمد",
+              "en": "Certified Financial Manager (CFM)"
+            },
+            "abbreviation": {
+              "ar": "CFM",
+              "en": "CFM"
+            }
+          },
+          {
+            "title": {
+              "ar": "شهادة أخصائي الرقابة الداخلية الأمريكية المعتمد",
+              "en": "Certified Internal Control Auditor (CICA)"
+            },
+            "abbreviation": {
+              "ar": "CICA",
+              "en": "CICA"
+            }
+          },
+          {
+            "title": {
+              "ar": "العديد من الدورات التدريبية داخل وخارج المملكة العربية السعودية.",
+              "en": "Attended numerous training courses inside and outside Saudi Arabia."
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D03AQFBqv67mwv0dQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715604744613?e=1731542400&v=beta&t=o-IM1e2RCgXEsOrUH6a46JmWW-ohhDLiGSg_vPav3GY",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لياسر أحمد السبعي",
+            "en": "Resume image of Yasser Ahmed Al-Sebaie"
+          }
+        }
+      },
+      {
+        "id": "4",
+        "name": {
+          "ar": "صبحي محمد جابر",
+          "en": "Sobhi Mohammed Jaber"
+        },
+        "job_title": {
+          "ar": "محاسب ومراجع مالي",
+          "en": "Accountant and Financial Auditor"
+        },
+        "nationality": {
+          "ar": "مصري",
+          "en": "Egyptian"
+        },
+        "field": {
+          "ar": "المحاسبة والمراجعة الداخلية والتدقيق الخارجي",
+          "en": "Accounting, Internal and External Auditing"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "تزيد عن 15 عام",
+          "en": "More than 15 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "شهادة المراجع الداخلي المعتمد",
+              "en": "Certified Internal Auditor Certificate(CIA)"
+            },
+            "abbreviation": {
+              "ar": "CIA",
+              "en": "CIA"
+            }
+          },
+          {
+            "title": {
+              "ar": "شهادة معايير المحاسبة الدولية من الهيئة المتعاقد معها البريطاني",
+              "en": "Certified IFRS from the International Accounting Standards Board "
+            },
+            "abbreviation": {
+              "ar": "CERTIFRS",
+              "en": "CERTIFRS"
+            }
+          },
+          {
+            "title": {
+              "ar": "زمالة المحاسب القانوني الإسلامي من هيئة المحاسبة والمراجعة للبنوك والمؤسسات المالية الإسلامية",
+              "en": "Certified Islamic Professional Accountant (CIPA) from the Accounting and Auditing Organization for Islamic Financial Institutions"
+            },
+            "abbreviation": {
+              "ar": "CIPA",
+              "en": "CIPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "بكالوريوس تجارة تخصص محاسبة جامعة الإسكندرية تقدير عام جيد جدا  ",
+              "en": "Bachelor of Commerce, Accounting, Alexandria University, Very Good Overall Rating"
+            }
+          },
+          {
+            "title": {
+              "ar": "العديد من الدورات التدريبية داخل وخارج المملكة العربية السعودية.",
+              "en": "Attended numerous training courses inside and outside Saudi Arabia."
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQHhTiXcUzqYeA/company-logo_200_200/company-logo_200_200/0/1711368279830/albatel_cpa_logo?e=2147483647&v=beta&t=CgruAhN_mJz9RYhR9nWO3bZJ0NEwfEQ_vQVbocOjEf4",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لصبحي محمد جابر",
+            "en": "Resume image of Sobhy Mohamed Gaber"
+          }
+        }
+      },
+      {
+        "id": "5",
+        "name": {
+          "ar": "أسامة هاشم",
+          "en": "Osama Hashem"
+        },
+        "job_title": {
+          "ar": "محاسب ومراجع مالي",
+          "en": "Accountant and Financial Auditor"
+        },
+        "nationality": {
+          "ar": "مصري",
+          "en": "Egyptian"
+        },
+        "field": {
+          "ar": "المحاسبة والتدقيق الخارجي",
+          "en": "Accounting and External Auditing"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "تزيد عن 12 عام",
+          "en": "More than 12 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "زمالة المعهد الأمريكي للمحاسبين القانونيين من ولاية ميتشاجن",
+              "en": "Certified Public Accountant (CPA) from the American Institute of Certified Public Accountants (AICPA) in Michigan"
+            },
+            "abbreviation": {
+              "ar": "CPA",
+              "en": "CPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "عضو جمعية المحاسبين والمراجعين المصرية",
+              "en": "Member of the Egyptian Society of Accountants and Auditors"
+            },
+            "abbreviation": {
+              "ar": "ESAA",
+              "en": "ESAA"
+            }
+          },
+          {
+            "title": {
+              "ar": "دبلوم الدراسات العليا في مراجعة الحسابات – جامعة عين شمس",
+              "en": "Postgraduate Diploma in Auditing – Ain Shams University"
+            }
+          },
+          {
+            "title": {
+              "ar": "بكالوريوس تجارة شعبة محاسبة – جامعة بني سويف",
+              "en": "Bachelor's Degree in Commerce, majoring in Accounting – Beni-Suef University"
+            }
+          },
+          {
+            "title": {
+              "ar": "العديد من الدورات التدريبية داخل وخارج المملكة العربية السعودية.",
+              "en": "Attended numerous training courses inside and outside Saudi Arabia."
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQHhTiXcUzqYeA/company-logo_200_200/company-logo_200_200/0/1711368279830/albatel_cpa_logo?e=2147483647&v=beta&t=CgruAhN_mJz9RYhR9nWO3bZJ0NEwfEQ_vQVbocOjEf4",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لأسامة هاشم",
+            "en": "Resume image of Osama Hashem"
+          }
+        }
+      },
+      {
+        "id": "6",
+        "name": {
+          "ar": "مصطفى عبيد",
+          "en": "Mostafa Obeid"
+        },
+        "job_title": {
+          "ar": "محاسب ومراجع وخبير دراسات اكتوارية",
+          "en": "Accountant, Auditor, and Actuarial Studies Expert"
+        },
+        "nationality": {
+          "ar": "مصري",
+          "en": "Egyptian"
+        },
+        "field": {
+          "ar": "المحاسبة والتدقيق الخارجي والاستشارات الاكتوارية",
+          "en": "Accounting, External Auditing, and Actuarial Consultancy"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "20 عام",
+          "en": "20 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "ماجستير التمويل الإسلامي المعتمد",
+              "en": "Certified Master of Islamic Finance"
+            },
+            "abbreviation": {
+              "ar": "MPA",
+              "en": "MOA"
+            }
+          },
+          {
+            "title": {
+              "ar": "حاصل على شهادة معايير المحاسبة الدولية من الجهة المتعاقد معها البريطاني ",
+              "en": "certificate of international accounting standards from the British contracting party"
+            },
+            "abbreviation": {
+              "ar": "CERTI IFRS",
+              "en": "CERTI IFRS"
+            }
+          },
+          {
+            "title": {
+              "ar": "حاصل على زمالة المراقب والمدقق الشرعي من هيئة المحاسبة والمراجعة للبنوك والمؤسسات المالية الاسلامية",
+              "en": "Fellow of the Sharia Supervisor and Auditor from the Accounting and Auditing Organization for Islamic Banks and Financial Institutions"
+            },
+            "abbreviation": {
+              "ar": "CSAA",
+              "en": "CSAA"
+            }
+          },
+          {
+            "title": {
+              "ar": "بكالوريوس تجارة (تخصص محاسبة)",
+              "en": "Bachelor of Commerce (Accounting)"
+            }
+          },
+          {
+            "title": {
+              "ar": "العديد من الدورات التدريبية داخل وخارج المملكة العربية السعودية.",
+              "en": "Attended numerous training courses inside and outside Saudi Arabia."
+            }
+          }
+        ],
+        "image": {
+          "url": "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/Mostafa%20obaid-Photoroom.png?raw=true",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لمصطفى عبيد",
+            "en": "Resume image of Mostafa  Obeid"
+          }
+        }
+      },
+      {
+        "id": "7",
+        "name": {
+          "ar": "رحاب العتيبي",
+          "en": "Ruhab Al-Otaibi"
+        },
+        "job_title": {
+          "ar": "محاسب قانوني معتمد",
+          "en": "Certified Legal Accountant"
+        },
+        "nationality": {
+          "ar": "سعودية",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "المحاسبة والمراجعة الداخلية والتدقيق الخارجي",
+          "en": "Accounting, Internal Audit, and External Audit"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "أكثر من 5 سنوات",
+          "en": "More than 5 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "حاصل على زمالة الهيئة السعودية للمحاسبين القانونيين",
+              "en": "Holder of Fellowship from the Saudi Organization for Certified Public Accountants (SOCPA)"
+            },
+            "abbreviation": {
+              "ar": "SOCPA",
+              "en": "SOCPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "اختصاصي ضريبة قيمة مضافة",
+              "en": "VAT Specialist"
+            },
+            "abbreviation": {
+              "ar": "VAT",
+              "en": "VAT"
+            }
+          },
+          {
+            "title": {
+              "ar": "العديد من الدورات التدريبية في الضرائب والزكاة وتسعير المعاملات",
+              "en": "Completed numerous training courses in VAT, Zakat, and Transaction Pricing"
+            }
+          },
+          {
+            "title": {
+              "ar": "شهادة البكالوريوس في المحاسبة من جامعة الأميرة نورة بنت عبد الرحمن",
+              "en": "Bachelor's degree in Accounting from Princess Nourah bint Abdulrahman University"
+            }
+          },
+          {
+            "title": {
+              "ar": "العديد من الدورات التدريبية داخل وخارج المملكة العربية السعودية",
+              "en": "Attended numerous training courses inside and outside Saudi Arabia"
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D03AQH3KwDCNfzoKQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1666789852842?e=1732147200&v=beta&t=f4clxXLHs1Kv_KtSAyVJBSd_XXnrPOFzJQEw1WjZY3s",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لرحاب العتيبي",
+            "en": "Resume image of Ruhab Al-Otaibi"
+          }
+        }
+      },
+      {
+        "id": "8",
+        "name": {
+          "ar": "رزان تركي الحربي",
+          "en": "Razan Turki Al-Harbi"
+        },
+        "job_title": {
+          "ar": "محاسب قانوني معتمد",
+          "en": "Certified Legal Accountant"
+        },
+        "nationality": {
+          "ar": "سعودية",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "المحاسبة والمراجعة الداخلية والتدقيق الخارجي",
+          "en": "Accounting, Internal Audit, and External Audit"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "أكثر من 5 سنوات",
+          "en": "More than 5 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "زمالة المحاسبين القانونيين السعودية",
+              "en": "Fellowship of Saudi Certified Accountants"
+            },
+            "abbreviation": {
+              "ar": "SOCPA",
+              "en": "SOCPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "اختصاصي ضريبة قيمة مضافة",
+              "en": "VAT Specialist"
+            },
+            "abbreviation": {
+              "ar": "VAT",
+              "en": "VAT"
+            }
+          },
+          {
+            "title": {
+              "ar": "دبلوم المحاسب المحترف في القطاع غير الربحي - الجمعية السعودية للحكومة - جامعة الملك خالد",
+              "en": "Professional Accountant Diploma in the Non-Profit Sector - Saudi Governance Association - King Khalid University"
+            }
+          },
+          {
+            "title": {
+              "ar": "زمالة المستشار الشرعي في فقه المالية الإسلامية وتسوية المنازعات - الجمعية العلمية القضائية الإسلامية - جامعة الإمام محمد بن سعود الإسلامية",
+              "en": "Fellow of the Sharia Consultant in Islamic Finance Jurisprudence and Dispute Resolution - Islamic Judiciary Scientific Association - Imam Muhammad bin Saud University"
+            }
+          },
+          {
+            "title": {
+              "ar": "شهادة البكالوريوس في المحاسبة من جامعة الإمام محمد بن سعود الإسلامية",
+              "en": "Bachelor's Degree in Accounting from Imam Muhammad bin Saud Islamic University"
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D03AQHhS1bxyOHgpQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718227955699?e=1732147200&v=beta&t=9PX_PmlnHTV1Vz7ei0DkFIG1AZfj7iR8FKgw1CnImLM",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لرزان تركي الحربي",
+            "en": "Resume image of Razan Turki Al-Harbi"
+          }
+        }
+      },
+      {
+        "id": "9",
+        "name": {
+          "ar": "منيرة الحربي",
+          "en": "Muneera Al-Harbi"
+        },
+        "job_title": {
+          "ar": "محاسب قانوني معتمد",
+          "en": "Certified Legal Accountant"
+        },
+        "nationality": {
+          "ar": "سعودية",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "محاسبة ومراجعة داخلية وخارجية",
+          "en": "Internal and External Accounting and Auditing"
+        },
+        "degree": {
+          "ar": "بكالوريوس تجارة",
+          "en": "Bachelor's in Commerce"
+        },
+        "experience_years": {
+          "ar": "1 سنة",
+          "en": "1 year"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "بكالوريوس محاسبة",
+              "en": "Bachelor's in Accounting"
+            }
+          },
+          {
+            "title": {
+              "ar": "زمالة الهيئة السعودية للمراجعين والمحاسبين",
+              "en": "Fellowship of the Saudi Organization for Certified Public Accountants"
+            },
+            "abbreviation": {
+              "ar": "SOCPA",
+              "en": "SOCPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "عضو أساسي ممارس من الهيئة السعودية للمراجعين",
+              "en": "Basic Practicing Member of the Saudi Organization for Auditors"
+            },
+            "abbreviation": {
+              "ar": "SOCPA",
+              "en": "SOCPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "دورة في مستقبل الممارسات البيئية والاجتماعية وحوكمة الشركات",
+              "en": "Course in the Future of Environmental, Social, and Corporate Governance Practices"
+            }
+          },
+          {
+            "title": {
+              "ar": "دورة في الموازنات التقديرية",
+              "en": "Course in Budgeting"
+            }
+          },
+          {
+            "title": {
+              "ar": "دورة المحاسبة القضائية والاحتيال المالي",
+              "en": "Course in Forensic Accounting and Financial Fraud"
+            }
+          },
+          {
+            "title": {
+              "ar": "دورة إدارة المخاطر المالية",
+              "en": "Course in Financial Risk Management"
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQHhTiXcUzqYeA/company-logo_200_200/company-logo_200_200/0/1711368279830/albatel_cpa_logo?e=2147483647&v=beta&t=CgruAhN_mJz9RYhR9nWO3bZJ0NEwfEQ_vQVbocOjEf4",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لمنيرة الحربي",
+            "en": "Resume image of Muneera Al-Harbi"
+          }
+        }
+      },
+      {
+        "id": "10",
+        "name": {
+          "ar": "حور المبارك",
+          "en": "Hoor Al-Mubarak"
+        },
+        "job_title": {
+          "ar": "مراجع",
+          "en": "Auditor"
+        },
+        "nationality": {
+          "ar": "سعودية",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "محاسبة",
+          "en": "Accounting"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "3 سنوات",
+          "en": "3 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "الزمالة السعودية للمحاسبين والمراجعين في الدورة الثالثة",
+              "en": "Saudi Fellowship for Accountants and Auditors (Third Cohort)"
+            },
+            "abbreviation": {
+              "ar": "SOCPA",
+              "en": "SOCPA"
+            }
+          },
+          {
+            "title": {
+              "ar": "بكالوريوس في المحاسبة",
+              "en": "Bachelor's in Accounting"
+            }
+          },
+          {
+            "title": {
+              "ar": "تحليل الأعمال من Udacity",
+              "en": "Business Analysis from Udacity"
+            }
+          },
+          {
+            "title": {
+              "ar": "مدير منتج من Udacity",
+              "en": "Product Manager from Udacity"
+            }
+          },
+          {
+            "title": {
+              "ar": "أساسيات إدارة المشاريع المحترفة من مركز نهج القادة",
+              "en": "Fundamentals of Professional Project Management from Leadership Path Center"
+            }
+          },
+          {
+            "title": {
+              "ar": "قراءة القوائم المالية من معهد تمويل الشركات",
+              "en": "Reading Financial Statements from the Institute of Corporate Finance"
+            }
+          },
+          {
+            "title": {
+              "ar": "مقدمة في تمويل الشركات من معهد تمويل الشركات",
+              "en": "Introduction to Corporate Finance from the Institute of Corporate Finance"
+            }
+          },
+          {
+            "title": {
+              "ar": "قراءة القوائم المالية من مركز أصول المهنة",
+              "en": "Reading Financial Statements from the Professional Assets Center"
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQHhTiXcUzqYeA/company-logo_200_200/company-logo_200_200/0/1711368279830/albatel_cpa_logo?e=2147483647&v=beta&t=CgruAhN_mJz9RYhR9nWO3bZJ0NEwfEQ_vQVbocOjEf4",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لحور المبارك",
+            "en": "Resume image of Hoor Al-Mubarak"
+          }
+        }
+      },
+      {
+        "id": "11",
+        "name": {
+          "ar": "فيَ صالح المطيري",
+          "en": "Fai Saleh Al-Mutairi"
+        },
+        "job_title": {
+          "ar": "محاسب قانوني",
+          "en": "Certified Accountant"
+        },
+        "nationality": {
+          "ar": "سعودية",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "محاسبة ومراجعة داخلية وخارجية",
+          "en": "Accounting and Internal/External Auditing"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "4 سنوات و 5 أشهر",
+          "en": "4 years and 5 months"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "الزمالة السعودية للمحاسبين القانونيين",
+              "en": "Saudi Fellowship for Certified Accountants"
+            },
+            "abbreviation": {
+              "ar": "SOCPA",
+              "en": "SOCPA"
+            }
+          }
+        ],
+        "experience": [
+          {
+            "role": {
+              "ar": "محاسبة مالية",
+              "en": "Financial Accounting"
+            },
+            "period": {
+              "ar": "منذ فبراير 2019م حتى فبراير 2020م",
+              "en": "From February 2019 to February 2020"
+            }
+          },
+          {
+            "role": {
+              "ar": "محاسبة عامة",
+              "en": "General Accounting"
+            },
+            "period": {
+              "ar": "منذ اغسطس 2020م حتى ديسمبر 2021م",
+              "en": "From August 2020 to December 2021"
+            }
+          },
+          {
+            "role": {
+              "ar": "مشرفة حسابات",
+              "en": "Accounts Supervisor"
+            },
+            "period": {
+              "ar": "منذ يناير 2022م حتى يوليو 2023م",
+              "en": "From January 2022 to July 2023"
+            }
+          }
+        ],
+        "organizations": [
+          {
+            "name": {
+              "ar": "مغسلة كلاود ستيم",
+              "en": "Cloud Steam Laundry"
+            }
+          },
+          {
+            "name": {
+              "ar": "مصنع المتطورون لمنتجات الألمنيوم والزجاج",
+              "en": "Advanced Aluminum and Glass Products Factory"
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/C4E03AQEz79hMYmGMwQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1613028902770?e=1732147200&v=beta&t=SiWhD6J0-X9O9Pnb_j913uimgro_8p7DzALCop_KpZ0",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لفي صالح المطيري",
+            "en": "Resume image of Saleh Al-Mutairi"
+          }
+        }
+      },
+      {
+        "id": "12",
+        "name": {
+          "ar": "عبد العزيز صالح",
+          "en": "Abdulaziz Saleh"
+        },
+        "job_title": {
+          "ar": "مراجع حسابات",
+          "en": "Auditor"
+        },
+        "nationality": {
+          "ar": "سعودي",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "محاسبة",
+          "en": "Accounting"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "3 سنوات",
+          "en": "3 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "أخصائي ضريبة القيمة المضافة",
+              "en": "VAT Specialist"
+            },
+            "abbreviation": {
+              "ar": "VAT",
+              "en": "VAT"
+            }
+          },
+          {
+            "title": {
+              "ar": "خبرة في تسيير أعمال في مجال المقاولات لمدة 3 سنوات",
+              "en": "Experience in Business Management in the Construction Sector for 3 years"
+            }
+          },
+          {
+            "title": {
+              "ar": "دورة استخدام الحاسب الآلي",
+              "en": "Computer Usage Course"
+            },
+            "institute": {
+              "ar": "معهد الخليج للتدريب والتعليم",
+              "en": "Gulf Institute for Training and Education"
+            }
+          },
+          {
+            "title": {
+              "ar": "شهادة اجتياز حتى المستوى الثالث في اللغة الإنجليزية",
+              "en": "Passed Level 3 in English Language"
+            },
+            "institute": {
+              "ar": "أكاديمية الفاصل العالمية",
+              "en": "Al-Fasil International Academy"
+            }
+          },
+          {
+            "title": {
+              "ar": "العديد من الدورات المهنية الأخرى داخل المملكة",
+              "en": "Various other professional courses within the Kingdom"
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQHhTiXcUzqYeA/company-logo_200_200/company-logo_200_200/0/1711368279830/albatel_cpa_logo?e=2147483647&v=beta&t=CgruAhN_mJz9RYhR9nWO3bZJ0NEwfEQ_vQVbocOjEf4",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لعبد العزيز صالح ",
+            "en": "Resume image of Abdulaziz Saleh "
+          }
+        }
+      },
+      {
+        "id": "13",
+        "name": {
+          "ar": "ريان العضيب",
+          "en": "Rayan Al-Odhaib"
+        },
+        "job_title": {
+          "ar": "محاسب ومراجع مالي",
+          "en": "Accountant and Financial Auditor"
+        },
+        "nationality": {
+          "ar": "سعودي",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "محاسبة",
+          "en": "Accounting"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "3 سنوات و 5 أشهر",
+          "en": "3 years and 5 months"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "برنامج التدريب على ضريبة القيمة المضافة",
+              "en": "VAT Training Program"
+            }
+          },
+          {
+            "title": {
+              "ar": "برنامج التدريب على نظام الرقابة الداخلية",
+              "en": "Training Program on Internal Control System"
+            }
+          },
+          {
+            "title": {
+              "ar": "برنامج تدريب على أصول المحاسبة الحكومية",
+              "en": "Training Program on Fundamentals of Government Accounting"
+            }
+          },
+          {
+            "title": {
+              "ar": "دورة في البنوك السعودية والمسؤولية الاجتماعية في ظل رؤية 2030",
+              "en": "Course on Saudi Banks and Social Responsibility in Light of Vision 2030"
+            }
+          }
+        ],
+        "experience": [],
+        "organizations": [],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQHhTiXcUzqYeA/company-logo_200_200/company-logo_200_200/0/1711368279830/albatel_cpa_logo?e=2147483647&v=beta&t=CgruAhN_mJz9RYhR9nWO3bZJ0NEwfEQ_vQVbocOjEf4",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لريان العضيب",
+            "en": "Resume image of Rayan Al-Odhaib"
+          }
+        }
+      },
+      {
+        "id": "14",
+        "name": {
+          "ar": "فيصل الباتل",
+          "en": "Faisal Al-Batel"
+        },
+        "job_title": {
+          "ar": "محاسب ومراجع مالي",
+          "en": "Accountant and Financial Auditor"
+        },
+        "nationality": {
+          "ar": "سعودي",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "محاسبة",
+          "en": "Accounting"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "degree_year": {
+          "ar": "2019 م",
+          "en": "2019"
+        },
+        "experience_years": {
+          "ar": "5 سنوات",
+          "en": "5 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "أخصائي ضريبة القيمة المضافة",
+              "en": "VAT Specialist"
+            },
+            "organization": "VAT"
+          },
+          {
+            "title": {
+              "ar": "فني محاسبة",
+              "en": "Accounting Technician"
+            },
+            "organization": "CAT"
+          },
+          {
+            "title": {
+              "ar": "العديد من الدورات المهنية الأخرى داخل المملكة",
+              "en": "Various other professional courses within the Kingdom"
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D03AQFkYn7YxlBiyw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714747665316?e=1732147200&v=beta&t=sOSv8NhNep2lSx3joxGmnzPr4-5TqYU33oumuIXhNPM",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لفيصل الباتل",
+            "en": "Resume image of Faisal Al-Batel"
+          }
+        }
+      },
+      {
+        "id": "15",
+        "name": {
+          "ar": "عبده رمضان",
+          "en": "Abduh Ramadan"
+        },
+        "job_title": {
+          "ar": "محاسب ومراجع مالي",
+          "en": "Accountant and Financial Auditor"
+        },
+        "nationality": {
+          "ar": "مصري",
+          "en": "Egyptian"
+        },
+        "field": {
+          "ar": "محاسبة ومراجعة داخلية وخارجية",
+          "en": "Accounting and Internal/External Auditing"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "13 عام",
+          "en": "13 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "شهادة عضو منتسب للهيئة السعودية للمراجعين والمحاسبين",
+              "en": "Affiliate Member Certificate from Saudi Organization for Certified Public Accountants (SOCPA)"
+            }
+          },
+          {
+            "title": {
+              "ar": "شهادة مكافحة الأموال وتمويل الإرهاب",
+              "en": "Anti-Money Laundering and Counter-Terrorism Financing Certificate"
+            }
+          },
+          {
+            "title": {
+              "ar": "شهادة المعلومات والبينات السنوية التي يتطلبها برنامج مراقبة جودة الأداء المهني",
+              "en": "Annual Information and Data Requirement Certificate for Professional Quality Control Program"
+            }
+          },
+          {
+            "title": {
+              "ar": "برنامج نظام الإفلاس (رؤية محاسبية)",
+              "en": "Bankruptcy System Program (Accounting Perspective)"
+            }
+          },
+          {
+            "title": {
+              "ar": "برنامج ضريبة القيمة المضافة",
+              "en": "VAT Program"
+            }
+          },
+          {
+            "title": {
+              "ar": "خبرة 13 عام في المحاسبة والمراجعة الداخلية والخارجية",
+              "en": "13 years of experience in Accounting and Internal/External Auditing"
+            }
+          },
+          {
+            "title": {
+              "ar": "Accountants' Preparation Course",
+              "en": "Accountants' Preparation Course"
+            }
+          },
+          {
+            "title": {
+              "ar": "برنامج إديو إيجيبت",
+              "en": "Edu Egypt Program"
+            }
+          },
+          {
+            "title": {
+              "ar": "العديد من الدورات التدريبية داخل وخارج المملكة العربية السعودية",
+              "en": "Various training courses inside and outside Saudi Arabia"
+            }
+          }
+        ],
+        "experience": [],
+        "organizations": [],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQHhTiXcUzqYeA/company-logo_200_200/company-logo_200_200/0/1711368279830/albatel_cpa_logo?e=2147483647&v=beta&t=CgruAhN_mJz9RYhR9nWO3bZJ0NEwfEQ_vQVbocOjEf4",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لعبده رمضان أبو عامر",
+            "en": "Resume image of Abduh Ramadan Abu Amer"
+          }
+        }
+      },
+      {
+        "id": "16",
+        "name": {
+          "ar": "محمد الباتل",
+          "en": "Mohammed Al-Batel"
+        },
+        "job_title": {
+          "ar": "محاسب ومراجع مالي",
+          "en": "Accountant and Financial Auditor"
+        },
+        "nationality": {
+          "ar": "سعودي",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "محاسبة",
+          "en": "Accounting"
+        },
+        "degree": {
+          "ar": "بكالوريوس محاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "degree_year": {
+          "ar": "2017 م",
+          "en": "2017"
+        },
+        "experience_years": {
+          "ar": "6 سنوات و6 أشهر",
+          "en": "6 years and 6 months"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "المعيار الدولي للتقرير المالي للمنشآت الصغيرة والمتوسطة - الجزء الأول والثاني والثالث",
+              "en": "IFRS for SMEs - Parts I, II, and III"
+            }
+          },
+          {
+            "title": {
+              "ar": "اخصائي ضريبة القيمة المضافة",
+              "en": "VAT Specialist"
+            }
+          },
+          {
+            "title": {
+              "ar": "مبادئ تقييم العقاري الاساسية",
+              "en": "Principles of Basic Real Estate Valuation"
+            }
+          },
+          {
+            "title": {
+              "ar": "اجراءات تقييم العقاري الاساسية",
+              "en": "Procedures of Basic Real Estate Valuation"
+            }
+          },
+          {
+            "title": {
+              "ar": "مقدمة الى المعايير التقييم الدولية ونظام ولائحة المقيمين المعتمدين وميثاق آداب وسلوك مهنة التقييم",
+              "en": "Introduction to International Valuation Standards, Certified Evaluators’ Regulations, and Code of Conduct for the Valuation Profession"
+            }
+          },
+          {
+            "title": {
+              "ar": "التقييم العقاري باستخدام اسلوب التكلفة وايضاً في التسوق والدخل",
+              "en": "Real Estate Valuation Using Cost Approach, as well as Market and Income Approaches"
+            }
+          },
+          {
+            "title": {
+              "ar": "اوراق عمل مراجعة",
+              "en": "Review Working Papers"
+            }
+          },
+          {
+            "title": {
+              "ar": "نظام الإفلاس رؤية محاسبية",
+              "en": "Bankruptcy Law from an Accounting Perspective"
+            }
+          },
+          {
+            "title": {
+              "ar": "والعديد من الدورات الأخرى داخل المملكة",
+              "en": "Various other courses within Saudi Arabia"
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQHhTiXcUzqYeA/company-logo_200_200/company-logo_200_200/0/1711368279830/albatel_cpa_logo?e=2147483647&v=beta&t=CgruAhN_mJz9RYhR9nWO3bZJ0NEwfEQ_vQVbocOjEf4",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لمحمد الباتل",
+            "en": "Resume image of Mohammed Al-Batel"
+          }
+        }
+      },
+      {
+        "id": "17",
+        "name": {
+          "ar": "محمد الدبلان",
+          "en": "Mohammed Al-Dablan"
+        },
+        "job_title": {
+          "ar": "محاسب ومراجع مالي",
+          "en": "Accountant and Financial Auditor"
+        },
+        "nationality": {
+          "ar": "سعودي",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "محاسبة",
+          "en": "Accounting"
+        },
+        "degree": {
+          "ar": "بكالوريوس في المحاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "3 سنوات",
+          "en": "3 years"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "شهادة الزكاة والضريبة",
+              "en": "VAT and Zakat Certification"
+            },
+            "abbreviation": {
+              "ar": "VAT-Zakat-Tax",
+              "en": "VAT-Zakat-Tax"
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/C4D03AQHQU5CX5v3k8Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1662416238867?e=1732147200&v=beta&t=JuvGSyYPALbpJzIBQPkb8zzSt_i7XLye6Pi9qfGHSoE",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لمحمد الدبلان",
+            "en": "Resume image of Mohammed Al-Dablan"
+          }
+        }
+      },
+      {
+        "id": "18",
+        "name": {
+          "ar": "عبدالإله الطريقي",
+          "en": "Abdullah Al-Turaiki"
+        },
+        "job_title": {
+          "ar": "محاسب ومراجع مالي",
+          "en": "Accountant and Financial Auditor"
+        },
+        "nationality": {
+          "ar": "سعودي",
+          "en": "Saudi"
+        },
+        "field": {
+          "ar": "محاسبة",
+          "en": "Accounting"
+        },
+        "degree": {
+          "ar": "بكالوريوس في المحاسبة",
+          "en": "Bachelor's in Accounting"
+        },
+        "experience_years": {
+          "ar": "4 سنوات و 10 أشهر",
+          "en": "4 years and 10 months"
+        },
+        "year_obtained": {
+          "ar": "2022",
+          "en": "2022"
+        },
+        "qualifications": [
+          {
+            "title": {
+              "ar": "بكالوريوس في إدارة الأعمال تخصص محاسبة",
+              "en": "Bachelor's in Business Administration with a specialization in Accounting"
+            }
+          },
+          {
+            "title": {
+              "ar": "شهادة من معرض الأولمبياد الوطني للإبداع العلمي",
+              "en": "Certificate from the National Olympiad for Scientific Creativity"
+            }
+          },
+          {
+            "title": {
+              "ar": "شهادة برنامج تدريبي بعنوان 'الفساد الالكتروني'",
+              "en": "Certification from a training program titled 'Electronic Fraud'"
+            }
+          }
+        ],
+        "image": {
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQFWwmOrJlMGig/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715339847874?e=1732147200&v=beta&t=LnhINNIEaEu1fLi1rGAHKdEnWbeOLGbxVB_RAhq9VKU",
+          "description": {
+            "ar": "صورة للسيرة الذاتية لعبدالإله الطريقي",
+            "en": "Resume image of Abdullah Al-Turaiki"
+          }
+        }
+      }
+    ]
+  }

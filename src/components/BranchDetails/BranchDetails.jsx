@@ -25,18 +25,18 @@ export default function BranchDetails() {
     {
       id: 2,
       name: {
-        ar: "فرع جدة",
-        en: "Jeddah Branch",
+        ar: "فرع جدة الأول",
+        en: "Jeddah First Branch",
       },
       location_map: {
-        ar: "شارع فلسطين، الحمراء، Al-Hamra Plaza، جدة 23212",
-        en: "Palestine Street, Al-Hamra Plaza, Jeddah 23212 ",
+        ar: " طريق الملك فهد فرعي، جدة 21345",
+        en: "King Fahad Branch Road, Jeddah 21345",
       },
       google_map:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4413.934733448382!2d39.16322389368351!3d21.520959416806384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0348b7c1c55%3A0xf27ff67b4681530!2z2KfZhNio2KfYqtmEINmF2K3Yp9iz2KjZiNmGINmI2YXYsdin2KzYudmI2YYg2YLYp9mG2YjZhtmK2YjZhg!5e0!3m2!1sar!2ssa!4v1732700674610!5m2!1sar!2ssa",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1855.4430530463044!2d39.19172940160523!3d21.5513083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d139187858af%3A0x8f03ce4ecd8954ca!2z2YXZg9iq2Kgg2KfZhNio2KfYqtmEINmF2K3Yp9iz2Kgg2YLYp9mG2YjZhtmKICgg2LTYsdmD2Kkg2KfZhNio2KfYqtmEINmI2LTYsdmD2KfZhyDZhNmE2KfYs9iq2LTYp9ix2KfYqiDYp9mE2YXZh9mG2YrYqSAtIEFsIEJhdGVsIENQQSBBY2NvdW50YW50cyAmIEF1ZGl0b3JzICk!5e0!3m2!1sar!2ssa!4v1732706790474!5m2!1sar!2ssa",
       email: "jeddah@albatelcpa.com ",
-      phone: "0126296088",
-      postal: "23337 ",
+      phone: "0545432724",
+      postal: "21345 ",
       membership_num: "359412 ",
     },
     {
@@ -141,6 +141,23 @@ export default function BranchDetails() {
       postal: "52385",
       membership_num: "104748",
     },
+    {
+      id: 2_1,
+      name: {
+        ar: "فرع جدة الثاني",
+        en: "Jeddah Second Branch",
+      },
+      location_map: {
+        ar: "شارع فلسطين، الحمراء، Al-Hamra Plaza، جدة 23212",
+        en: "Palestine Street, Al-Hamra Plaza, Jeddah 23212 ",
+      },
+      google_map:
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4413.934733448382!2d39.16322389368351!3d21.520959416806384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0348b7c1c55%3A0xf27ff67b4681530!2z2KfZhNio2KfYqtmEINmF2K3Yp9iz2KjZiNmGINmI2YXYsdin2KzYudmI2YYg2YLYp9mG2YjZhtmK2YjZhg!5e0!3m2!1sar!2ssa!4v1732700674610!5m2!1sar!2ssa",
+      email: "jeddah@albatelcpa.com ",
+      phone: "0126296088",
+      postal: "23337 ",
+      membership_num: "359412 ",
+    }
   ];
 
   const Jaddah2 = {
@@ -150,29 +167,31 @@ export default function BranchDetails() {
       en: "Jeddah Branch",
     },
     location_map: {
-      ar: " طريق الملك فهد فرعي، جدة 21345",
-      en: "King Fahad Branch Road, Jeddah 21345",
+      ar: "شارع فلسطين، الحمراء، Al-Hamra Plaza، جدة 23212",
+      en: "Palestine Street, Al-Hamra Plaza, Jeddah 23212 ",
     },
     google_map:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1855.4430530463044!2d39.19172940160523!3d21.5513083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d139187858af%3A0x8f03ce4ecd8954ca!2z2YXZg9iq2Kgg2KfZhNio2KfYqtmEINmF2K3Yp9iz2Kgg2YLYp9mG2YjZhtmKICgg2LTYsdmD2Kkg2KfZhNio2KfYqtmEINmI2LTYsdmD2KfZhyDZhNmE2KfYs9iq2LTYp9ix2KfYqiDYp9mE2YXZh9mG2YrYqSAtIEFsIEJhdGVsIENQQSBBY2NvdW50YW50cyAmIEF1ZGl0b3JzICk!5e0!3m2!1sar!2ssa!4v1732706790474!5m2!1sar!2ssa",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4413.934733448382!2d39.16322389368351!3d21.520959416806384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0348b7c1c55%3A0xf27ff67b4681530!2z2KfZhNio2KfYqtmEINmF2K3Yp9iz2KjZiNmGINmI2YXYsdin2KzYudmI2YYg2YLYp9mG2YjZhtmK2YjZhg!5e0!3m2!1sar!2ssa!4v1732700674610!5m2!1sar!2ssa",
     email: "jeddah@albatelcpa.com ",
-    phone: "0545432724",
-    postal: "21345 ",
+    phone: "0126296088",
+    postal: "23337 ",
     membership_num: "359412 ",
   };
+ 
 
 
   const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
 
   let { id } = useParams();
 
-  console.log("branch number :", id);
+  // console.log("branch number :", id);
 
-  const branchId = Number(id); // Convert id to a number, as useParams returns a string
+  // Convert id to a number, as useParams returns a string
+  const branchId = Number(id);
 
   // Find the branch
   const branch = branches.find((branch) => branch.id === branchId);
-  console.log("branch map :", branch);
+  // console.log("branch map :", branch);
   return (
 
    
@@ -226,7 +245,13 @@ export default function BranchDetails() {
 
       {branch.id == 2 ? (
         <>
+           <h3 className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
+          فرع جدة الثاني
+        </h3>
+        <hr className="border-green-700 border-t-2 w-40 mx-auto" />
+        <hr className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
           <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 ">
+       
             <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
               <p className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
                 <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
@@ -309,6 +334,12 @@ export default function BranchDetails() {
 
       {branch.id == 2 ? (
         <>
+        
+        <h3 className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
+         Jeddah Second Branch
+        </h3>
+        <hr className="border-green-700 border-t-2 w-40 mx-auto" />
+        <hr className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
           <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 ">
             <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
               <p className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">

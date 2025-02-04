@@ -136,19 +136,19 @@ export default function Services() {
         <>
           <div className="bg-blue-100/50">
             <div
-              className={`relative   w-full lg:h-[530px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
+              className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
             >
               <img
                 // https://afexpert.es/wp-content/uploads/2023/11/ciberseguridad_empresas_buensa_practicas.jpg
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/service-bg.jpg?raw=true"
+                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/enhanced2/service-bg2.jpg?raw=true"
                 className="w-full h-full object-fill z-10"
                 alt="Service image "
               />
               {/* Gradient blue overlay */}
               {/* <div className="absolute inset-0 bg-gradient-to-l from-blue-800/60 to-gray-700/50 opacity-80 z-10"></div> */}
-              <div className="absolute inset-0 bg-gradient-to-l from-gray-300/40  to-blue-800/30 opacity-70 z-10"></div>
-              <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-30  border border-blue-600  rounded-full items-center justify-center z-20">
-                <h3 className="text-green-950 text-sm font-semibold mx-1">
+              <div className="absolute inset-0 bg-gradient-to-l from-blue-50/70  to-blue-800/50 opacity-70 z-10"></div>
+              <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50  border border-blue-900  rounded-full items-center justify-center z-20">
+                <h3 className="text-green-950 text-sm  font-semibold mx-1">
                   ALBatel & Co
                 </h3>
                 <img
@@ -157,25 +157,25 @@ export default function Services() {
                   alt="logo image "
                 />
               </div>
-              <div className="absolute top-3/4 hidden end-4 md:flex bg-white bg-opacity-30 border border-blue-600  rounded-full items-center cursor-pointer  justify-center z-30">
-                <h3 className="text-blue-700 text-sm font-semibold mx-1">
+              <div className="absolute top-3/4 hidden end-4 md:flex bg-white bg-opacity-60 border border-blue-900  rounded-full items-center cursor-pointer  justify-center z-30">
+                <h3 className="text-blue-900 text-sm font-semibold mx-1">
                   info@albatelcpa.com
                 </h3>
               </div>
-              <div className="absolute top-80  hidden end-4 md:flex  bg-white bg-opacity-30 rounded-full border border-blue-600 items-center justify-center cursor-pointer z-30">
-                <h3 className="text-blue-700 text-sm font-semibold mx-1">
+              <div className="absolute top-96  hidden end-4 md:flex  bg-white bg-opacity-60 rounded-full border border-blue-900 items-center justify-center cursor-pointer z-30">
+                <h3 className="text-blue-900 text-sm font-semibold mx-1">
                   www.albatelcpa.com
                 </h3>
               </div>
               <div className="absolute top-0 bottom-0 left-0 right-0 z-20  flex flex-col justify-center ">
-                <h1 className="text-blue-950 text-center text-2xl lg:text-4xl mb-4 font-bold">
+                <h1 className="text-blue-950 text-center text-2xl lg:text-5xl mb-4 font-bold">
                   تقدم شركة باتل عبدالله الباتل وشركاؤه
                 </h1>
-                <h2 className="text-blue-950 text-center text-xl lg:text-3xl mb-20 font-semibold">
+                <h2 className="text-blue-950 text-center text-xl lg:text-4xl mb-20 font-bold">
                   العديد من الخدمات
                 </h2>
                 <button onClick={handleScroll}>
-                  <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-20 py-3 border-blue-800 border-2 text-center z-20 text-blue-900 text-md font-bold">
+                  <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-40 py-3 border-blue-950 border-2 text-center z-20 text-blue-900 text-md font-bold">
                     تعرف على خدماتنا
                     <span className="mx-2">
                       <i className="fa-solid fa-arrow-down"></i>
@@ -189,7 +189,10 @@ export default function Services() {
               <div className="w-full flex flex-wrap justify-center">
                 {serviceAr.map((service, index) => {
                   return (
-                    <div key={index} className="lg:w-1/3 md:w-1/2 3xl:w-1/4  px-3  overflow-hidden">
+                    <div
+                      key={index}
+                      className="lg:w-1/3 md:w-1/2 3xl:w-1/4  px-3  overflow-hidden"
+                    >
                       <div className="flex  flex-col-reverse border rounded-tr-3xl rounded-tl-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
                         <div className=" flex h-[250px] p-4 flex-col overflow-hidden items-center justify-center text-center">
                           <h5 className="mb-1 text-2xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  dark:text-white">
@@ -238,19 +241,19 @@ export default function Services() {
         <>
           <div className="bg-blue-100/50">
             <div
-              className={`relative   w-full lg:h-[530px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
+              className={`relative   w-full lg:h-[600px] 3xl:h-[750px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
             >
               <img
                 // https://afexpert.es/wp-content/uploads/2023/11/ciberseguridad_empresas_buensa_practicas.jpg
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/service-bg.jpg?raw=true"
+                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/enhanced2/service-bg2.jpg?raw=true"
                 className="w-full h-full object-fill z-10"
                 alt="Service image "
               />
               {/* Gradient blue overlay */}
               {/* <div className="absolute inset-0 bg-gradient-to-l from-blue-800/60 to-gray-700/50 opacity-80 z-10"></div> */}
-              <div className="absolute inset-0 bg-gradient-to-l from-gray-300/40  to-blue-800/30 opacity-70 z-10"></div>
-              <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-30  border border-blue-600  rounded-full items-center justify-center z-20">
-                <h3 className="text-green-950 text-sm font-semibold mx-1">
+              <div className="absolute inset-0 bg-gradient-to-l from-blue-50/70  to-blue-800/50 opacity-70 z-10"></div>
+              <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50  border border-blue-900  rounded-full items-center justify-center z-20">
+                <h3 className="text-green-950 text-sm  font-semibold mx-1">
                   ALBatel & Co
                 </h3>
                 <img
@@ -259,26 +262,26 @@ export default function Services() {
                   alt="logo image "
                 />
               </div>
-              <div className="absolute top-3/4 hidden end-4 md:flex bg-white bg-opacity-30 border border-blue-600  rounded-full items-center cursor-pointer  justify-center z-30">
-                <h3 className="text-blue-700 text-sm font-semibold mx-1">
+              <div className="absolute top-3/4 hidden start-4 md:flex bg-white bg-opacity-60 border border-blue-900  rounded-full items-center cursor-pointer  justify-center z-30">
+                <h3 className="text-blue-900 text-sm font-semibold mx-1">
                   info@albatelcpa.com
                 </h3>
               </div>
-              <div className="absolute top-80  hidden end-4 md:flex  bg-white bg-opacity-30 rounded-full border border-blue-600 items-center justify-center cursor-pointer z-30">
-                <h3 className="text-blue-700 text-sm font-semibold mx-1">
+              <div className="absolute top-96  hidden start-4 md:flex  bg-white bg-opacity-60 rounded-full border border-blue-900 items-center justify-center cursor-pointer z-30">
+                <h3 className="text-blue-900 text-sm font-semibold mx-1">
                   www.albatelcpa.com
                 </h3>
               </div>
               <div className="absolute top-0 bottom-0 left-0 right-0 z-20  flex flex-col justify-center ">
-                <h1 className="text-blue-950 text-center text-2xl lg:text-4xl mb-4 font-bold">
+                <h1 className="text-blue-950 text-center text-2xl lg:text-5xl mb-4 font-bold">
                   Batel Abdullah Al Batel & Partners provides
                 </h1>
-                <h2 className="text-blue-950 text-center text-xl lg:text-3xl mb-20 font-semibold">
+                <h2 className="text-blue-950 text-center text-xl lg:text-4xl mb-20 font-bold">
                   many services
                 </h2>
                 <button onClick={handleScroll}>
-                  <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-20 py-3 border-blue-800 border-2 text-center z-20 text-blue-900 text-md font-bold">
-                    more about our services
+                  <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-40 py-3 border-blue-950 border-2 text-center z-20 text-blue-900 text-md font-bold">
+                    More About Our Service
                     <span className="mx-2">
                       <i className="fa-solid fa-arrow-down"></i>
                     </span>
@@ -291,7 +294,10 @@ export default function Services() {
               <div className="w-full flex flex-wrap justify-center">
                 {serviceEn.map((service, index) => {
                   return (
-                    <div key={index} className="lg:w-1/3 md:w-1/2 3xl:w-1/4 px-3  overflow-hidden">
+                    <div
+                      key={index}
+                      className="lg:w-1/3 md:w-1/2 3xl:w-1/4  px-3  overflow-hidden"
+                    >
                       <div className="flex  flex-col-reverse border rounded-tr-3xl rounded-tl-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
                         <div className=" flex h-[250px] p-4 flex-col overflow-hidden items-center justify-center text-center">
                           <h5 className="mb-1 text-2xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  dark:text-white">

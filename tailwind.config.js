@@ -49,12 +49,16 @@ export default {
         },
         borderMove: {
           to: { '--border-angle': '360deg' }
-      }
+      },
+      rotateBorder: {
+        to: { '--border-angle': '360deg' }
+      },
     },
       animation: {
         borderMove: 'border 4s linear infinite',
         moveIn: 'moveIn 0.8s ease-out forwards',
         moveIn2: 'moveIn2 0.9s ease-out forwards',
+        rotateBorder: 'rotateBorder 3s linear infinite',
       },
       letterSpacing: {
         tighter: '-0.02em',
