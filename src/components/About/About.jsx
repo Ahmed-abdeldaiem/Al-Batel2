@@ -108,12 +108,12 @@ export default function About() {
             className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/enhanced2/about-bg1.jpeg?raw=true"
+              src="https://trueconsult.info/wp-content/uploads/2023/06/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-new-1024x614.jpg"
               className="w-full h-full  z-10"
               alt="about us image "
             />
             {/* Gradient blue overlay */}
-            <div className="absolute inset-0 bg-gradient-to-l from-gray-800/60 to-gray-700/50 opacity-80 z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-l from-blue-800/80 to-blue-700/80 opacity-80 z-10"></div>
             <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50 rounded-full items-center justify-center z-20">
               <h3 className="text-green-950 text-sm font-semibold mx-1">
                 ALBatel & Co
@@ -422,12 +422,12 @@ export default function About() {
             className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/enhanced2/about-bg1.jpeg?raw=true"
+              src="https://trueconsult.info/wp-content/uploads/2023/06/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-new-1024x614.jpg"
               className="w-full h-full  z-10"
               alt="about us image "
             />
             {/* Gradient blue overlay */}
-            <div className="absolute inset-0 bg-gradient-to-l from-gray-800/60 to-gray-700/50 opacity-80 z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-l from-blue-800/80 to-blue-700/80 opacity-80 z-10"></div>
             <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50 rounded-full items-center justify-center z-20">
               <h3 className="text-green-950 text-sm font-semibold mx-1">
                 ALBatel & Co

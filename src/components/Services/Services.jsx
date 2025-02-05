@@ -140,7 +140,7 @@ export default function Services() {
             >
               <img
                 // https://afexpert.es/wp-content/uploads/2023/11/ciberseguridad_empresas_buensa_practicas.jpg
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/enhanced2/service-bg2.jpg?raw=true"
+                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/service-bg.jpg?raw=true"
                 className="w-full h-full object-fill z-10"
                 alt="Service image "
               />
@@ -245,7 +245,7 @@ export default function Services() {
             >
               <img
                 // https://afexpert.es/wp-content/uploads/2023/11/ciberseguridad_empresas_buensa_practicas.jpg
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/enhanced2/service-bg2.jpg?raw=true"
+                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/service-bg.jpg?raw=true"
                 className="w-full h-full object-fill z-10"
                 alt="Service image "
               />

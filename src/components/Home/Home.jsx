@@ -62,7 +62,7 @@ export default function Home() {
               <div
                 className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
                   currentIndex === 0 ? "opacity-100" : "opacity-0"
-                } bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/home-slide-1-1.jpg?raw=true')] bg-cover bg-center`}
+                } bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/1-1.jpeg?raw=true')] bg-cover bg-center`}
                 data-carousel-item
               >
                 {/* Gradient blue overlay */}
@@ -177,7 +177,7 @@ export default function Home() {
               <div
                 className={`absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out ${
                   currentIndex === 2 ? "opacity-100" : "opacity-0"
-                } bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/home-slider-3-3.jpg?raw=true')] ${style.fit}`}
+                } bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/home3%20(2)-3.jpg?raw=true')] ${style.fit}`}
                 data-carousel-item
               >
                 {/* Gradient blue overlay */}
@@ -328,7 +328,7 @@ export default function Home() {
               <div
                 className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
                   currentIndex === 0 ? "opacity-100" : "opacity-0"
-                } bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/home-slide-1-1.jpg?raw=true')] bg-cover bg-center`}
+                } bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/1-1.jpeg?raw=true')] bg-cover bg-center`}
                 data-carousel-item
               >
                 {/* Gradient blue overlay */}
@@ -436,7 +436,7 @@ export default function Home() {
               <div
                 className={`absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out ${
                   currentIndex === 2 ? "opacity-100" : "opacity-0"
-                } bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/home-slider-3-3.jpg?raw=true')] ${style.fit}`}
+                } bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/home3%20(2)-3.jpg?raw=true')] ${style.fit}`}
                 data-carousel-item
               >
                 {/* Gradient blue overlay */}
