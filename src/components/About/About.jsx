@@ -108,14 +108,14 @@ export default function About() {
             className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://trueconsult.info/wp-content/uploads/2023/06/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-new-1024x614.jpg"
+              src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%85%D9%86%20%D9%86%D8%AD%D9%864.jpeg?raw=true"
               className="w-full h-full  z-10"
               alt="about us image "
             />
             {/* Gradient blue overlay */}
-            <div className="absolute inset-0 bg-gradient-to-l from-blue-800/80 to-blue-700/80 opacity-80 z-10"></div>
-            <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50 rounded-full items-center justify-center z-20">
-              <h3 className="text-green-950 text-sm font-semibold mx-1">
+            <div className="absolute inset-0 bg-gradient-to-l from-blue-700/80 to-slate-400/90 opacity-80 z-10"></div>
+            <div className="absolute top-4 end-4  border border-green-950  hidden md:flex bg-white bg-opacity-20 rounded-full items-center justify-center z-20">
+              <h3 className="text-green-950  text-sm font-semibold mx-1">
                 ALBatel & Co
               </h3>
               <img
@@ -124,6 +124,14 @@ export default function About() {
                 alt="logo image "
               />
             </div>
+         
+              
+              <img
+                src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+                className="w-[150px] mt-1 absolute bottom-4 start-4  hidden md:flex bg-white bg-opacity-20 rounded-3xl p-2 items-center justify-center z-20"
+                alt="logo image "
+              />
+         
             <div className="absolute top-3/4 hidden end-4 md:flex bg-white bg-opacity-60 border border-green-950  rounded-full items-center cursor-pointer  justify-center z-30">
               <h3 className="text-gray-900 text-sm font-semibold mx-1">
                 info@albatelcpa.com
@@ -135,14 +143,14 @@ export default function About() {
               </h3>
             </div>
             <div className="absolute top-0 bottom-0 left-0 right-0 z-20  flex flex-col justify-center ">
-              <h1 className="text-green-50 text-center text-xl lg:text-5xl 3xl:text-6xl mb-4 font-semibold">
+              <h1 className="text-white text-center text-xl lg:text-5xl 3xl:text-6xl mb-4 font-semibold">
                 شركة باتل عبدالله الباتل وشركاؤه
               </h1>
-              <h2 className="text-green-50 text-center text-lg lg:text-4xl mb-20 font-semibold">
+              <h2 className="text-white text-center text-lg lg:text-4xl mb-20 font-semibold">
                 للاستشارات المهنية
               </h2>
               <button onClick={handleScroll}>
-                <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-40 py-3 border-green-950 border-2 text-center z-20 text-green-100 text-md font-bold">
+                <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-40 py-3 border-green-950 border-2 text-center z-20 text-green-950 text-md font-bold">
                   تعرف علينا
                   <span className="mx-2">
                     <i className="fa-solid fa-arrow-down"></i>
@@ -268,7 +276,7 @@ export default function About() {
                 <div className="flex md:h-[650px] h-[750px]  items-center justify-center  bg-white rounded-3xl flex-col  shadow-md  ">
                   <img
                     src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/team-about.avif"
-                    className="w-[250px] h-[250px] my-4 rounded-full shadow-md"
+                    className="w-[250px] h-[250px] 3xl:w-[300px] 3xl:h-[300px] my-4 rounded-full shadow-md"
                     alt="team image"
                   />
                   <div className="w-full flex flex-col justify-start">
@@ -286,7 +294,7 @@ export default function About() {
                 <div className="flex md:h-[650px] h-[750px]  items-center justify-center bg-white rounded-3xl flex-col shadow-md  ">
                   <img
                     src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/team2-about.jpg?raw=true"
-                    className="w-[250px] h-[250px] my-4 rounded-full shadow-md"
+                    className="w-[250px] h-[250px] 3xl:w-[300px] 3xl:h-[300px] my-4 rounded-full shadow-md"
                     alt="team image"
                   />
                   <div className="w-full flex flex-col justify-start">
@@ -417,19 +425,20 @@ export default function About() {
         </>
       ) : (
         <>
-           <div
+      
+      <div
             //  bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about%20us%20background.jpg?raw=true')] bg-no-repeat bg-cover bg-center
             className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://trueconsult.info/wp-content/uploads/2023/06/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-new-1024x614.jpg"
+              src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%85%D9%86%20%D9%86%D8%AD%D9%864.jpeg?raw=true"
               className="w-full h-full  z-10"
               alt="about us image "
             />
             {/* Gradient blue overlay */}
-            <div className="absolute inset-0 bg-gradient-to-l from-blue-800/80 to-blue-700/80 opacity-80 z-10"></div>
-            <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50 rounded-full items-center justify-center z-20">
-              <h3 className="text-green-950 text-sm font-semibold mx-1">
+            <div className="absolute inset-0 bg-gradient-to-l from-blue-700/80 to-slate-400/90 opacity-80 z-10"></div>
+            <div className="absolute top-4 end-4  border border-green-950  hidden md:flex bg-white bg-opacity-20 rounded-full items-center justify-center z-20">
+              <h3 className="text-green-950  text-sm font-semibold mx-1">
                 ALBatel & Co
               </h3>
               <img
@@ -438,26 +447,35 @@ export default function About() {
                 alt="logo image "
               />
             </div>
+         
+              
+              <img
+                src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+                className="w-[150px] mt-1 absolute bottom-4 end-4  hidden md:flex bg-white bg-opacity-20 rounded-3xl p-2 items-center justify-center z-20"
+                alt="logo image "
+              />
+         
             <div className="absolute top-3/4 hidden start-4 md:flex bg-white bg-opacity-60 border border-green-950  rounded-full items-center cursor-pointer  justify-center z-30">
               <h3 className="text-gray-900 text-sm font-semibold mx-1">
                 info@albatelcpa.com
               </h3>
             </div>
-            <div className="absolute top-80  hidden start-4 md:flex bg-white bg-opacity-60 rounded-full border border-green-950 items-center justify-center cursor-pointer z-30">
+            <div className="absolute top-96  hidden start-4 md:flex bg-white bg-opacity-60 rounded-full border border-green-950 items-center justify-center cursor-pointer z-30">
               <h3 className="text-gray-900  text-sm font-semibold mx-1">
                 www.albatelcpa.com
               </h3>
             </div>
             <div className="absolute top-0 bottom-0 left-0 right-0 z-20  flex flex-col justify-center ">
-              <h1 className="text-green-50 text-center text-xl lg:text-5xl 3xl:text-6xl mb-4 font-semibold">
+              <h1 className="text-white text-center text-xl lg:text-5xl 3xl:text-6xl mb-4 font-semibold">
+               
               Batal Abdullah Al-Batal & Partners Company
               </h1>
-              <h2 className="text-green-50 text-center text-lg lg:text-4xl mb-20 font-semibold">
+              <h2 className="text-white text-center text-lg lg:text-4xl mb-20 font-semibold">
               For professional consultations
               </h2>
               <button onClick={handleScroll}>
-                <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-40 py-3 border-green-950 border-2 text-center z-20 text-green-100 text-md font-bold">
-                  More About Us
+                <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-40 py-3 border-green-950 border-2 text-center z-20 text-green-950 text-md font-bold">
+                More About Us
                   <span className="mx-2">
                     <i className="fa-solid fa-arrow-down"></i>
                   </span>
@@ -465,6 +483,7 @@ export default function About() {
               </button>
             </div>
           </div>
+
 
           <div id="desc1" className="container my-16">
             <div className=" w-full  flex  flex-col justify-start items-center overflow-hidden lg:flex-row bg-white shadow-md rounded-3xl rounded-tl-none">

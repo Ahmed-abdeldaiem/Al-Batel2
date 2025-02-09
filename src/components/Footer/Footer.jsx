@@ -189,7 +189,7 @@ export default function Footer() {
         </>
       ) : (
         <>
-          <footer className="relative bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/footer1.jpg?raw=true')] bg-no-repeat bg-center bg-cover shadow  ">
+          <footer className="relative bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/footer1.jpg?raw=true')] bg-no-repeat bg-center bg-cover shadow z-30 ">
             <div className="absolute inset-0 bg-gradient-to-l from-blue-900/50 to-blue-800/40 opacity-80 z-10"></div>
 
             <div className="w-full relative z-20 max-w-screen-xl mx-auto p-4 md:py-6 ">

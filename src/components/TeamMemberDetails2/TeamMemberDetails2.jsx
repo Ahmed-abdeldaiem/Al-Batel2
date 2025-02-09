@@ -19,19 +19,22 @@ export default function TeamMemberDetails2() {
           <div className="w-full h-[220px] flex items-center bg-[#065995] rounded-e-full px-4">
             {/* employee image */}
             <div className="w-5/12 ">
+                  {/* employee.img */}
               <img
                 className="w-[180px] rounded-3xl"
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A8%D8%A7%D8%AA%D9%84.jpeg?raw=true"
+                src=""
                 alt="employee image"
               />
             </div>
             {/* employee name and job */}
             <div className="w-7/12">
               <h2 className="text-white text-3xl my-2 pb-2 font-semibold">
-                باتل عبدالله الباتل
+                {/* employee.name.ar / .en */}
+                name
               </h2>
               <h3 className="text-white text-xl my-4 font-semibold">
-                شريك(CEO)
+                {/* employee.job.ar / .en */}
+                job
               </h3>
             </div>
           </div>
@@ -39,22 +42,13 @@ export default function TeamMemberDetails2() {
             <div className=" bg-white rounded-2xl">
               <div className="p-2">
                 <h2 className="text-2xl font-semibold ">
-                  أكثر من * عاما من الخبرة في :
+                  الشهادات
                 </h2>
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
+                <p>
+                  {/* employee.certificates.ar / .en */}
+                </p>
               </div>
-              <div className="p-2">
-                <h2 className="text-2xl font-semibold">الشهادات والتدريب </h2>
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
-                <p>*</p>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -63,14 +57,11 @@ export default function TeamMemberDetails2() {
         <div className="w-7/12  py-2 px-8">
           <div className="p-8 w-full bg-white rounded-2xl">
             <h2 className="text-2xl font-semibold">الخبرة المهنية:</h2>
-            <p>*</p>
-            <p>*</p>
-            <p>*</p>
-            <p>*</p>
-            <p>*</p>
-            <p>*</p>
-            <p>*</p>
-            <p>*</p>
+            <p>
+              {/* employee.experienceDesc.ar / .en */}
+            </p>
+            <h2 className="text-xl font-semibold">شغل خلال مسيرته المهنية مناصب رئيسية،منها:</h2>
+              {/* employee.experienceJobs.ar / .en */}
           </div>
           
             {/* <button className="bg-[#065995] relative overflow-hidden z-10 text-white w-full font-semibold text-xl p-3 rounded-xl my-5 duration-500 transition-all  group  hover:shadow-md hover:shadow-blue-600/50">
@@ -84,3 +75,6 @@ export default function TeamMemberDetails2() {
     </>
   );
 }
+
+
+// english section
