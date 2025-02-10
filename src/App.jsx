@@ -9,7 +9,7 @@ import Home from './components/Home/Home'
 
 import About from './components/About/About'
 import Services from './components/Services/Services'
-import Team from './components/Team/Team'
+
 import ContactUs from './components/ContactUs/ContactUs'
 import Partners from './components/Partners/Partners'
 
@@ -17,7 +17,7 @@ import Partners from './components/Partners/Partners'
 
 import LanguageContextProvider from './Context/LanguageContext'
 import TeamContextProvider from './Context/TeamContext'
-import TeamMemberDetails from './components/TeamMemberDetails/TeamMemberDetails'
+
 import SendCv from './components/SendCv/SendCv'
 import Rfp from './components/Rfp/Rfp'
 import BranchDetails from './components/BranchDetails/BranchDetails'

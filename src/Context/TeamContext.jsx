@@ -8,58 +8,29 @@ export let TeamContext=  createContext()
 
 export default function TeamContextProvider(props) {
 
-let baseUrl='https://my-json-server.typicode.com/Ahmed-abdeldaiem/Albatel-API'
+let baseUrl='https://al-batel-team-data-default-rtdb.firebaseio.com/team/'
 
-let key='$2a$10$lsiPImdgxhQ/5hNc18QrKep9fw0O6QDW/S5IahlZHZI0pdRIh.xkG'
-let binId='66e89f5aad19ca34f8a73276'
-// let masterKey='$2a$10$lsiPImdgxhQ/5hNc18QrKep9fw0O6QDW/S5IahlZHZI0pdRIh.xkG'
 
-    function getAllFirstTeam(){
-     
 
-        return  axios.get(`https://api.jsonbin.io/v3/b/${binId}/latest`, {
-            headers: {
-              'X-Master-Key': `${key}`,
-              'Content-Type': 'application/json',
-            },
-          })
-        .then((data)=>{
-            console.log("context",data.data);
-            return data.data
-        })
-        .catch((error)=>{
-            console.log(error);
-          
-        })
-    }
-    
+
  
     
     function getPersonById(id) {
-      return axios.get(`https://api.jsonbin.io/v3/b/${binId}/latest`, {
-          headers: {
-              'X-Master-Key': `${key}`,
-              'Content-Type': 'application/json',
-          },
+      return axios.get(`${baseUrl}${Number(id)-1}.json`, {
+        
       })
       .then((data) => {
-          let personFound = null;
-          // console.log(data.data.record);
+        
+          // console.log(data);
           
-          Object.values(data.data.record).forEach((peopleArray) => {
-            peopleArray.forEach((person) => {
+         
 
-              if (person.id === id) {
-                personFound = person;
-              }
-            });
-          });
           
-          return personFound ? personFound : 'Person not found';
+          return data.data ? data.data : 'Person not found';
       })
       .catch((error) => {
           console.log(error);
-          return 'Error fetching person';
+          return 'Error fetching Employee Data';
       });
   }
   
@@ -69,7 +40,7 @@ let binId='66e89f5aad19ca34f8a73276'
    
 
   return (
-    <TeamContext.Provider value={{getAllFirstTeam,getPersonById}} >
+    <TeamContext.Provider value={{getPersonById}} >
     {props.children}
     </TeamContext.Provider>
   )

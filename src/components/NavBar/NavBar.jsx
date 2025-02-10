@@ -96,7 +96,7 @@ export default function NavBar() {
             <div className="mx-auto flex justify-center md:justify-evenly h-16 w-full items-center gap-4 lg:gap-8 px-4 sm:px-6 lg:px-8">
               <div className="flex w-full items-center justify-start gap-2 lg:gap-16 mx-8 lg:text-xl">
                 <Link
-                  className="flex items-center text-gray-950 text-xl xl:text-2xl font-bold me-5 border-e-4 rounded-e-full  border-blue-800"
+                  className="flex items-center text-gray-950 text-xl xl:text-2xl font-bold me-5 md:border-e-4 md:rounded-e-full  md:border-blue-800"
                   to=""
                 >
                   <img
@@ -432,7 +432,7 @@ export default function NavBar() {
         <div className="mx-auto flex justify-center md:justify-evenly h-16 w-full items-center gap-4 lg:gap-8 px-4 sm:px-6 lg:px-8">
           <div className="flex w-full items-center justify-start gap-2 lg:gap-16 mx-8 lg:text-xl">
           <Link
-                  className="flex items-center text-gray-950 text-xl xl:text-2xl font-bold me-5 border-e-4 rounded-e-full  border-blue-600"
+                  className="flex items-center text-gray-950 text-xl xl:text-2xl font-bold me-5 md:border-e-4 md:rounded-e-full  md:border-blue-600"
                   to=""
                 >
               <img
