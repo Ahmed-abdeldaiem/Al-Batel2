@@ -41,40 +41,48 @@ export default function TeamMemberDetails2() {
     <>
       {Loading ? <Loader/> : null}
         {dir == "rtl" ?<>
-        <div className="w-full flex flex-col lg:flex-row pt-20 bg-blue-100/50">
+      <div className="bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
+      <div className="w-full flex flex-col lg:flex-row pt-20 bg-blue-100/80">
         {/* first section image , name , job , experience years , cirtifications */}
         <div className="lg:w-5/12">
-          <div className="w-full h-[220px] flex items-center bg-white md:rounded-e-full px-4">
+          <div className="w-full h-[220px] flex items-center bg-white/95 md:rounded-e-full px-4">
             {/* employee image */}
           
           
             <div className="w-5/12 ">
                 
               <img
-                className="w-[180px] h-[180px] rounded-3xl border-2 border-blue-800"
+                className="w-[180px] h-[180px] rounded-3xl border-2 ms-2 border-blue-800"
                 src=  {employee?.image}
                 alt="employee image"
               />
             </div>
             {/* employee name and job */}
             <div className="w-7/12">
-              <h2 className="text-blue-950 text-4xl my-2 pb-2 font-bold">
+              <h2 className="text-blue-950 text-xl md:text-3xl lg:text-4xl 3xl:text-5xl my-2 pb-2 text-center font-bold">
                 {/* employee.name.ar / .en */}
                 {employee?.name?.ar}
               </h2>
-              <h3 className="text-blue-950 text-2xl my-4 font-bold">
+              <h3 className="text-blue-950 text-xl md:text-2xl lg:text-3xl 3xl:text-4xl my-4 text-center font-bold">
                 {/* employee.job.ar / .en */}
-               الوظيفة: {employee?.job?.ar}
+                {employee?.job?.ar}
               </h3>
             </div>
           </div>
-          <div className="w-full flex flex-col p-4">
-            <div className=" bg-white rounded-2xl">
+         
+        </div>
+
+        {/* second section description / brieaf about employee */}
+        
+      </div>
+      <div className="w-full flex flex-col  bg-blue-100/80">
+      <div className="w-full flex flex-col p-4">
+            <div className=" bg-white/95 rounded-2xl">
               <div className="p-2">
                 <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold ">
                   الشهادات
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2">
+                <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2 p-2">
                   {/* employee.certificates.ar / .en */}
                   
                   {employee?.certificates?.ar}
@@ -83,11 +91,8 @@ export default function TeamMemberDetails2() {
               
             </div>
           </div>
-        </div>
-
-        {/* second section description / brieaf about employee */}
-        <div className="lg:w-7/12  py-2 px-8">
-          <div className="p-8 w-full bg-white rounded-2xl">
+        <div className="w-full  p-4 ">
+          <div className="p-8 w-full bg-white/95 rounded-2xl">
             <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold">الخبرة المهنية:</h2>
             <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2">
             
@@ -108,41 +113,50 @@ export default function TeamMemberDetails2() {
          
         </div>
       </div>
+      </div>
         </> : <>
-        <div className="w-full flex flex-col lg:flex-row pt-20 bg-blue-100/50">
+        <div className="bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
+      <div className="w-full flex flex-col lg:flex-row pt-20 bg-blue-100/80">
         {/* first section image , name , job , experience years , cirtifications */}
         <div className="lg:w-5/12">
-          <div className="w-full h-[220px] flex items-center bg-white md:rounded-e-full px-4">
+          <div className="w-full h-[220px] flex items-center bg-white/95 md:rounded-e-full px-4">
             {/* employee image */}
           
           
             <div className="w-5/12 ">
                 
               <img
-                className="w-[180px] h-[180px] rounded-3xl border-2 border-blue-800"
+                className="w-[180px] h-[180px] rounded-3xl ms-2 border-2 border-blue-800"
                 src=  {employee?.image}
                 alt="employee image"
               />
             </div>
             {/* employee name and job */}
             <div className="w-7/12">
-              <h2 className="text-blue-950 text-4xl my-2 pb-2 font-bold">
+              <h2 className="text-blue-950 text-xl md:text-3xl lg:text-4xl 3xl:text-5xl my-2 pb-2 text-center font-bold">
                 {/* employee.name.ar / .en */}
                 {employee?.name?.en}
               </h2>
-              <h3 className="text-blue-950 text-2xl my-4 font-bold">
+              <h3 className="text-blue-950 text-xl md:text-2xl lg:text-3xl 3xl:text-4xl my-4 text-center font-bold">
                 {/* employee.job.ar / .en */}
-           Job: {employee?.job?.en}
+                {employee?.job?.en}
               </h3>
             </div>
           </div>
-          <div className="w-full flex flex-col p-4">
-            <div className=" bg-white rounded-2xl">
+         
+        </div>
+
+        {/* second section description / brieaf about employee */}
+        
+      </div>
+      <div className="w-full flex flex-col  bg-blue-100/80">
+      <div className="w-full flex flex-col p-4">
+            <div className=" bg-white/95 rounded-2xl">
               <div className="p-2">
                 <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold ">
-                  Certificates
+               Certificates
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2">
+                <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2 p-2">
                   {/* employee.certificates.ar / .en */}
                   
                   {employee?.certificates?.en}
@@ -151,17 +165,14 @@ export default function TeamMemberDetails2() {
               
             </div>
           </div>
-        </div>
-
-        {/* second section description / brieaf about employee */}
-        <div className="lg:w-7/12  py-2 px-8">
-          <div className="p-8 w-full bg-white rounded-2xl">
+        <div className="w-full  p-4 ">
+          <div className="p-8 w-full bg-white/95 rounded-2xl">
             <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold">Professional experience:</h2>
             <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2">
             
             {employee?.experienceDesc?.en}
             </p>
-            <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold"> Main positions during career:</h2>
+            <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold">Main positions during career:</h2>
               {/* employee.experienceJobs.ar / .en */}
               {employee?.experienceJobs?.map((exp)=>{
                 return <h3 className="text-lg md:text-xl lg:text-2xl text-gray-900 my-4"><i className="fas fa-circle text-sm text-green-700"></i> {exp.en}</h3>
@@ -175,6 +186,7 @@ export default function TeamMemberDetails2() {
             
          
         </div>
+      </div>
       </div>
         </>}
 

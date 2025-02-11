@@ -135,8 +135,8 @@ export default function Rfp() {
     <>
       {dir == "rtl" ? (
         <>
-          <div className="bg-[url('https://arnoldhill.co.uk/hubfs/Five-reasons-why-conducting-regular-business-audit-is-essential-for-business-growth.png')] flex w-full justify-center items-center lg:justify-end bg-no-repeat bg-cover  relative">
-            <div className="absolute inset-0 bg-gradient-to-l from-green-300/40  to-blue-800/30 opacity-70 z-10"></div>
+          <div className="bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/rfp2.jpg?raw=true')] flex w-full justify-center items-center lg:justify-end bg-no-repeat bg-cover  relative">
+            <div className="absolute inset-0 bg-gradient-to-l from-blue-300/30  to-blue-500/50 opacity-70 z-10"></div>
 
             <div className="lg:w-7/12 md:w-10/12 z-20">
               <div className=" py-20">
@@ -146,7 +146,7 @@ export default function Rfp() {
 
                 {contactError ? (
                   <div
-                    className="p-4 text-center w-3/4 mx-auto mt-3 mb-3 text-sm text-red-800 rounded-lg bg-red-200/50 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 text-center w-3/4 mx-auto mt-3 mb-3 text-sm text-red-800 rounded-lg bg-red-200/50 "
                     role="alert"
                   >
                     {contactError}
@@ -154,7 +154,7 @@ export default function Rfp() {
                 ) : null}
 
                 <form
-                  className="w-full md:w-10/12 lg:w-8/12  mx-auto flex flex-col justify-center items-center text-right  rounded-3xl p-4"
+                  className="w-full md:w-10/12 lg:w-8/12 bg-white/70  mx-auto flex flex-col justify-center items-center text-right  rounded-3xl p-4"
                   onSubmit={formik.handleSubmit}
                 >
                   {/* اسم الشركة */}
@@ -167,12 +167,12 @@ export default function Rfp() {
                         type="text"
                         name="company_name"
                         id="company_name"
-                        className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                        className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                         placeholder=" "
                       />
                       <label
                         htmlFor="company_name"
-                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-950 ark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-950 ark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         اسم الشركة
                       </label>
@@ -180,7 +180,7 @@ export default function Rfp() {
                       {formik.errors.company_name &&
                       formik.touched.company_name ? (
                         <div
-                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                           role="alert"
                         >
                           {formik.errors.company_name}
@@ -200,12 +200,12 @@ export default function Rfp() {
                         type="number"
                         name="commercial_registration"
                         id="commercial_registration"
-                        className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                        className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                         placeholder=" "
                       />
                       <label
                         htmlFor="commercial_registration"
-                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-950 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         رقم السجل التجاري
                       </label>
@@ -213,7 +213,7 @@ export default function Rfp() {
                       {formik.errors.commercial_registration &&
                       formik.touched.commercial_registration ? (
                         <div
-                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                           role="alert"
                         >
                           {formik.errors.commercial_registration}
@@ -232,12 +232,12 @@ export default function Rfp() {
                         type="number"
                         name="tax_registration"
                         id="tax_registration"
-                        className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                        className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                         placeholder=" "
                       />
                       <label
                         htmlFor="tax_registration"
-                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg font-semibold text-gray-950 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg font-semibold text-gray-950  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         رقم التسجيل الضريبي
                       </label>
@@ -245,7 +245,7 @@ export default function Rfp() {
                       {formik.errors.tax_registration &&
                       formik.touched.tax_registration ? (
                         <div
-                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                           role="alert"
                         >
                           {formik.errors.tax_registration}
@@ -266,19 +266,19 @@ export default function Rfp() {
                         type="text"
                         name="job"
                         id="job"
-                        className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                        className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                         placeholder=" "
                       />
                       <label
                         htmlFor="job"
-                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-950 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         الوظيفة
                       </label>
 
                       {formik.errors.job && formik.touched.job ? (
                         <div
-                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                           role="alert"
                         >
                           {formik.errors.job}
@@ -297,18 +297,18 @@ export default function Rfp() {
                         type="tel"
                         name="phone"
                         id="phone"
-                        className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                        className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                         placeholder=" "
                       />
                       <label
                         htmlFor="phone"
-                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-900  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         رقم الجوال{" "}
                       </label>
                       {formik.errors.phone && formik.touched.phone ? (
                         <div
-                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                           role="alert"
                         >
                           {formik.errors.phone}
@@ -327,18 +327,18 @@ export default function Rfp() {
                         type="email"
                         name="email"
                         id="email"
-                        className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                        className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                         placeholder=" "
                       />
                       <label
                         htmlFor="email"
-                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 text-sm md:text-lg  font-semibold text-gray-900  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         البريد الإلكتروني
                       </label>
                       {formik.errors.email && formik.touched.email ? (
                         <div
-                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                           role="alert"
                         >
                           {formik.errors.email}
@@ -358,18 +358,18 @@ export default function Rfp() {
                         name="message"
                         id="message"
                         rows="4"
-                        className="block pt-7 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer resize-none overflow-y-auto"
+                        className="block pt-7 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer resize-none overflow-y-auto"
                         placeholder="اكتب تفاصيل ميزان المراجعة   "
                       ></textarea>
                       <label
                         htmlFor="message"
-                        className="peer-focus:font-medium absolute ps-5 font-semibold text-sm md:text-lg  text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="peer-focus:font-medium absolute ps-5 font-semibold text-sm md:text-lg  text-gray-900  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         الرسالة
                       </label>
                       {formik.errors.message && formik.touched.message ? (
                         <div
-                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                          className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                           role="alert"
                         >
                           {formik.errors.message}
@@ -390,7 +390,7 @@ export default function Rfp() {
                       }
                       onBlur={() => formik.setFieldTouched("period_from", true)}
                       // onChange={(date) => setStartDate(date)}
-                      className="bg-gray-50/50 w-full text-end relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
+                      className="bg-gray-50/50 z-50 w-full text-end relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
                       placeholderText="من"
                       dateFormat="dd/MM/yyyy"
                       showYearDropdown
@@ -401,13 +401,13 @@ export default function Rfp() {
                     />
                     <label
                       htmlFor="period_from"
-                      className="peer-focus:font-medium absolute ps-5 font-semibold text-sm md:text-lg text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute ps-5 font-semibold text-sm md:text-lg text-gray-900  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       الفترة من
                     </label>
                     {formik.errors.period_from && formik.touched.period_from ? (
                       <div
-                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                         role="alert"
                       >
                         {formik.errors.period_from}
@@ -420,7 +420,7 @@ export default function Rfp() {
                       showIcon
                       // selected={endDate}
                       // onChange={(date) => setEndDate(date)
-                      className="bg-gray-50/50 w-full text-end  relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
+                      className="bg-gray-50/50 z-50 w-full text-end  relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
                       placeholderText="إلى"
                       dateFormat="dd/MM/yyyy"
                       showYearDropdown
@@ -437,14 +437,14 @@ export default function Rfp() {
 
                     <label
                       htmlFor="period_to"
-                      className="peer-focus:font-medium absolute end-1 font-semibold text-sm md:text-lg text-gray-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute end-1 font-semibold text-sm md:text-lg text-gray-900  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       الفترة الى
                     </label>
                   </div>
                   {formik.errors.period_to && formik.touched.period_to ? (
                     <div
-                      className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                      className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                       role="alert"
                     >
                       {formik.errors.period_to}
@@ -453,7 +453,7 @@ export default function Rfp() {
 
                   {formik.errors.period_from && formik.touched.period_from ? (
                     <div
-                      className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                      className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                       role="alert"
                     >
                       {formik.errors.period_from}
@@ -486,8 +486,8 @@ export default function Rfp() {
         </>
       ) : (
         <>
-        <div className="bg-[url('https://arnoldhill.co.uk/hubfs/Five-reasons-why-conducting-regular-business-audit-is-essential-for-business-growth.png')] flex w-full justify-center items-center lg:justify-start bg-no-repeat bg-cover  relative">
-          <div className="absolute inset-0 bg-gradient-to-l from-green-300/40  to-blue-800/30 opacity-70 z-10"></div>
+        <div className="bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/rfp2.jpg?raw=true')] flex w-full justify-center items-center lg:justify-start bg-no-repeat bg-cover  relative">
+        <div className="absolute inset-0 bg-gradient-to-l from-blue-300/30  to-blue-500/50 opacity-70 z-10"></div>
 
           <div className="lg:w-7/12 md:w-10/12 z-20">
             <div className=" py-20">
@@ -497,7 +497,7 @@ export default function Rfp() {
 
               {contactError ? (
                 <div
-                  className="p-4 text-center w-3/4 mx-auto mt-3 mb-3 text-sm text-red-800 rounded-lg bg-red-200/50 dark:bg-gray-800 dark:text-red-400"
+                  className="p-4 text-center w-3/4 mx-auto mt-3 mb-3 text-sm text-red-800 rounded-lg bg-red-200/50 "
                   role="alert"
                 >
                   {contactError}
@@ -505,7 +505,7 @@ export default function Rfp() {
               ) : null}
 
               <form
-                className="w-full md:w-10/12 lg:w-8/12 flex flex-col justify-center items-center   mx-auto text-right  rounded-3xl p-4"
+                className="w-full md:w-10/12 lg:w-8/12 bg-white/70 flex flex-col justify-center items-center   mx-auto text-right  rounded-3xl p-4"
                 onSubmit={formik.handleSubmit}
               >
                 {/* اسم الشركة */}
@@ -518,12 +518,12 @@ export default function Rfp() {
                       type="text"
                       name="company_name"
                       id="company_name"
-                      className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                      className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                       placeholder=" "
                     />
                     <label
                       htmlFor="company_name"
-                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                        Company Name  
                     </label>
@@ -531,7 +531,7 @@ export default function Rfp() {
                     {formik.errors.company_name &&
                     formik.touched.company_name ? (
                       <div
-                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                         role="alert"
                       >
                         {formik.errors.company_name}
@@ -551,12 +551,12 @@ export default function Rfp() {
                       type="number"
                       name="commercial_registration"
                       id="commercial_registration"
-                      className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                      className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                       placeholder=" "
                     />
                     <label
                       htmlFor="commercial_registration"
-                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                        Commercial Registration
                     </label>
@@ -564,7 +564,7 @@ export default function Rfp() {
                     {formik.errors.commercial_registration &&
                     formik.touched.commercial_registration ? (
                       <div
-                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                         role="alert"
                       >
                         {formik.errors.commercial_registration}
@@ -583,12 +583,12 @@ export default function Rfp() {
                       type="number"
                       name="tax_registration"
                       id="tax_registration"
-                      className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                      className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                       placeholder=" "
                     />
                     <label
                       htmlFor="tax_registration"
-                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                          Tax Registration 
                     </label>
@@ -596,7 +596,7 @@ export default function Rfp() {
                     {formik.errors.tax_registration &&
                     formik.touched.tax_registration ? (
                       <div
-                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                         role="alert"
                       >
                         {formik.errors.tax_registration}
@@ -617,19 +617,19 @@ export default function Rfp() {
                       type="text"
                       name="job"
                       id="job"
-                      className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                      className="block py-2.5 px-0 w-full text-lg text-gray-950 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                       placeholder=" "
                     />
                     <label
                       htmlFor="job"
-                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       Job
                     </label>
 
                     {formik.errors.job && formik.touched.job ? (
                       <div
-                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                         role="alert"
                       >
                         {formik.errors.job}
@@ -648,18 +648,18 @@ export default function Rfp() {
                       type="tel"
                       name="phone"
                       id="phone"
-                      className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                      className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-600 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                       placeholder=" "
                     />
                     <label
                       htmlFor="phone"
-                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                           Mobile number
                     </label>
                     {formik.errors.phone && formik.touched.phone ? (
                       <div
-                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                         role="alert"
                       >
                         {formik.errors.phone}
@@ -678,18 +678,18 @@ export default function Rfp() {
                       type="email"
                       name="email"
                       id="email"
-                      className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                      className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                       placeholder=" "
                     />
                     <label
                       htmlFor="email"
-                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       Email  
                     </label>
                     {formik.errors.email && formik.touched.email ? (
                       <div
-                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                         role="alert"
                       >
                         {formik.errors.email}
@@ -709,18 +709,18 @@ export default function Rfp() {
                       name="message"
                       id="message"
                       rows="4"
-                      className="block pt-7 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer resize-none overflow-y-auto"
+                      className="block pt-7 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-700 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer resize-none overflow-y-auto"
                       placeholder="اكتب تفاصيل ميزان المراجعة   "
                     ></textarea>
                     <label
                       htmlFor="message"
-                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                      className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       Message
                     </label>
                     {formik.errors.message && formik.touched.message ? (
                       <div
-                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                        className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                         role="alert"
                       >
                         {formik.errors.message}
@@ -741,7 +741,7 @@ export default function Rfp() {
                     }
                     onBlur={() => formik.setFieldTouched("period_from", true)}
                     // onChange={(date) => setStartDate(date)}
-                    className="bg-gray-50/50 w-full text-end relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
+                    className="bg-gray-50/50 z-50 w-full text-end relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
                     placeholderText="من"
                     dateFormat="dd/MM/yyyy"
                     showYearDropdown
@@ -752,13 +752,13 @@ export default function Rfp() {
                   />
                   <label
                     htmlFor="period_from"
-                    className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                       period from
                   </label>
                   {formik.errors.period_from && formik.touched.period_from ? (
                     <div
-                      className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                      className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                       role="alert"
                     >
                       {formik.errors.period_from}
@@ -771,7 +771,7 @@ export default function Rfp() {
                     showIcon
                     // selected={endDate}
                     // onChange={(date) => setEndDate(date)
-                    className="bg-gray-50/50 w-full text-end  relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
+                    className="bg-gray-50/50 z-50 w-full text-end  relative rounded-xl focus:border-green-700 focus-visible:border-green-400 focus:text-green-900"
                     placeholderText="إلى"
                     dateFormat="dd/MM/yyyy"
                     showYearDropdown
@@ -788,14 +788,14 @@ export default function Rfp() {
 
                   <label
                     htmlFor="period_to"
-                    className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    className="peer-focus:font-medium absolute text-sm md:text-lg  font-semibold text-gray-950  duration-300 transform -translate-y-6  scale-75 top-1 left-1 -z-10 origin-[0]  peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                     >
                        period to
                   </label>
                 </div>
                 {formik.errors.period_to && formik.touched.period_to ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.period_to}
@@ -804,7 +804,7 @@ export default function Rfp() {
 
                 {formik.errors.period_from && formik.touched.period_from ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.period_from}

@@ -268,9 +268,9 @@ export default function Home() {
               data-carousel-prev
               onClick={goToNextSlide}
             >
-              <span className="inline-flex border-2 border-transparent items-center justify-center w-10 h-10 transition-all duration-500 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 group-hover:border-white dark:group-hover:bg-gray-800/60">
+              <span className="inline-flex border-2 border-transparent items-center justify-center w-10 h-10 transition-all duration-500 rounded-full bg-white/30  group-hover:bg-white/50 group-hover:border-white ">
                 <svg
-                  className="w-4 h-4 text-white group-hover:text-gray-600 transition-all duration-500 dark:text-gray-800 rtl:rotate-0"
+                  className="w-4 h-4 text-white group-hover:text-gray-600 transition-all duration-500  rtl:rotate-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -293,9 +293,9 @@ export default function Home() {
               data-carousel-next
               onClick={goToPrevSlide}
             >
-              <span className="inline-flex border-2 border-transparent items-center justify-center w-10 h-10 transition-all duration-500 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 group-hover:border-white dark:group-hover:bg-gray-800/60">
+              <span className="inline-flex border-2 border-transparent items-center justify-center w-10 h-10 transition-all duration-500 rounded-full bg-white/30  group-hover:bg-white/50 group-hover:border-white ">
                 <svg
-                  className="w-4 h-4 text-white group-hover:text-gray-600 transition-all duration-500 dark:text-gray-800 rtl:rotate-180"
+                  className="w-4 h-4 text-white group-hover:text-gray-600 transition-all duration-500  rtl:rotate-180"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -527,9 +527,9 @@ export default function Home() {
               data-carousel-prev
               onClick={goToNextSlide}
             >
-              <span className="inline-flex border-2 border-transparent items-center justify-center w-10 h-10 transition-all duration-500 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 group-hover:border-white dark:group-hover:bg-gray-800/60">
+              <span className="inline-flex border-2 border-transparent items-center justify-center w-10 h-10 transition-all duration-500 rounded-full bg-white/30  group-hover:bg-white/50 group-hover:border-white ">
                 <svg
-                  className="w-4 h-4 text-white group-hover:text-gray-600 transition-all duration-500 dark:text-gray-800 rtl:rotate-0"
+                  className="w-4 h-4 text-white group-hover:text-gray-600 transition-all duration-500  rtl:rotate-0"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -552,9 +552,9 @@ export default function Home() {
               data-carousel-next
               onClick={goToPrevSlide}
             >
-              <span className="inline-flex border-2 border-transparent items-center justify-center w-10 h-10 transition-all duration-500 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 group-hover:border-white dark:group-hover:bg-gray-800/60">
+              <span className="inline-flex border-2 border-transparent items-center justify-center w-10 h-10 transition-all duration-500 rounded-full bg-white/30  group-hover:bg-white/50 group-hover:border-white ">
                 <svg
-                  className="w-4 h-4 text-white group-hover:text-gray-600 transition-all duration-500 dark:text-gray-800 rtl:rotate-180"
+                  className="w-4 h-4 text-white group-hover:text-gray-600 transition-all duration-500  rtl:rotate-180"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

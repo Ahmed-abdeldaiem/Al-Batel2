@@ -195,10 +195,10 @@ export default function Services() {
                     >
                       <div className="flex  flex-col-reverse border rounded-tr-3xl rounded-tl-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
                         <div className=" flex h-[250px] p-4 flex-col overflow-hidden items-center justify-center text-center">
-                          <h5 className="mb-1 text-2xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  dark:text-white">
+                          <h5 className="mb-1 text-2xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight ">
                             {service.title}
                           </h5>
-                          <p className="mb-3 font-normal text-center text-lg my-3 pt-4 text-gray-900 dark:text-gray-400">
+                          <p className="mb-3 font-normal text-center text-lg my-3 pt-4 text-gray-900 ">
                             {service.description}
                           </p>
                         </div>
@@ -300,10 +300,10 @@ export default function Services() {
                     >
                       <div className="flex  flex-col-reverse border rounded-tr-3xl rounded-tl-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
                         <div className=" flex h-[250px] p-4 flex-col overflow-hidden items-center justify-center text-center">
-                          <h5 className="mb-1 text-2xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  dark:text-white">
+                          <h5 className="mb-1 text-2xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  ">
                             {service.title}
                           </h5>
-                          <p className="mb-3 font-normal text-center text-lg my-3 pt-4 text-gray-900 dark:text-gray-400">
+                          <p className="mb-3 font-normal text-center text-lg my-3 pt-4 text-gray-900 ">
                             {service.description}
                           </p>
                         </div>

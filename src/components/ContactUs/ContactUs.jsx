@@ -118,25 +118,25 @@ export default function ContactUs() {
 
 {dir == "rtl" ? (
         <>
-          <div className="bg-[url('https://www.racktechlogistics.com/static/images/contactus-1.jpg')] flex w-full justify-center lg:justify-end bg-cover bg-center relative">
+          <div className="bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/contact%20us2.jpg?raw=true')] flex w-full justify-center lg:justify-end bg-cover bg-center relative">
 <div className="absolute inset-0 bg-gradient-to-l from-green-300/40  to-blue-800/30 opacity-70 z-10"></div>
 
 <div className="w-8/12 z-20">
 <div className=" py-20">
-            <h2 className="text-green-600 font-bold text-4xl text-center my-6">
+            <h2 className="text-green-900 font-bold text-4xl text-center my-6">
            تواصل معنا
             </h2>
 
             {contactError ? (
               <div
-                className="p-4 text-center w-3/4 mx-auto mt-3 mb-3 text-sm text-red-800 rounded-lg bg-red-200/50 dark:bg-gray-800 dark:text-red-400"
+                className="p-4 text-center w-3/4 mx-auto mt-3 mb-3 text-sm text-red-800 rounded-lg bg-red-200/50 "
                 role="alert"
               >
                 {contactError}
               </div>
             ) : null}
 
-            <form className="max-w-lg mx-auto text-right" onSubmit={formik.handleSubmit}>
+            <form className="w-full md:w-9/12 lg:w-7/12 bg-white/60 flex flex-col justify-center items-center   mx-auto text-right  rounded-3xl p-4" onSubmit={formik.handleSubmit}>
               <div className="relative z-0 w-full mb-5 group">
                 <input
                   onBlur={formik.handleBlur}
@@ -145,19 +145,19 @@ export default function ContactUs() {
                   type="text"
                   name="name"
                   id="name"
-                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                   placeholder=" "
                 />
                 <label
                   htmlFor="name"
-                  className="peer-focus:font-medium absolute text-lg text-blue-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    الاسم
                 </label>
 
                 {formik.errors.name && formik.touched.name ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.name}
@@ -173,17 +173,17 @@ export default function ContactUs() {
                   type="tel"
                   name="phone"
                   id="phone"
-                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                   placeholder=" "
                 />
                 <label
                   htmlFor="phone"
-                  className="peer-focus:font-medium absolute text-lg text-blue-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    رقم الجوال                </label>
                 {formik.errors.phone && formik.touched.phone ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.phone}
@@ -199,18 +199,18 @@ export default function ContactUs() {
                   type="email"
                   name="email"
                   id="email"
-                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                   placeholder=" "
                 />
                 <label
                   htmlFor="email"
-                  className="peer-focus:font-medium absolute text-lg text-blue-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 > 
                  البريد الإلكتروني
                  </label>
                 {formik.errors.email && formik.touched.email ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.email}
@@ -227,18 +227,18 @@ export default function ContactUs() {
                   name="message"
                   id="message"
                   rows="4"
-                  className="block pt-7 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer resize-none overflow-y-auto"
+                  className="block pt-7 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer resize-none overflow-y-auto"
                   placeholder="اكتب رسالتك هنا "
                 ></textarea>
                 <label
                   htmlFor="message"
-                  className="peer-focus:font-medium absolute text-lg text-blue-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    الرسالة
                 </label>
                 {formik.errors.message && formik.touched.message ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.message}
@@ -271,25 +271,25 @@ export default function ContactUs() {
         </>
       ) : (
         <>
-         <div className="bg-[url('https://www.racktechlogistics.com/static/images/contactus-1.jpg')] flex w-full justify-center lg:justify-start bg-cover bg-center relative">
+         <div className="bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/contact%20us2.jpg?raw=true')] flex w-full justify-center lg:justify-start bg-cover bg-center relative">
 <div className="absolute inset-0 bg-gradient-to-l from-green-300/40  to-blue-800/30 opacity-70 z-10"></div>
 
 <div className="w-8/12 z-20">
 <div className=" py-20">
-            <h2 className="text-green-600 font-bold text-4xl text-center my-6">
+            <h2 className="text-green-900 font-bold text-4xl text-center my-6">
             Contact Us
             </h2>
 
             {contactError ? (
               <div
-                className="p-4 text-center w-3/4 mx-auto mt-3 mb-3 text-sm text-red-800 rounded-lg bg-red-200/50 dark:bg-gray-800 dark:text-red-400"
+                className="p-4 text-center w-3/4 mx-auto mt-3 mb-3 text-sm text-red-800 rounded-lg bg-red-200/50 "
                 role="alert"
               >
                 {contactError}
               </div>
             ) : null}
 
-            <form className="max-w-lg mx-auto text-right" onSubmit={formik.handleSubmit}>
+            <form className="w-full md:w-10/12 lg:w-8/12 bg-white/70 flex flex-col justify-center items-center   mx-auto text-right  rounded-3xl p-4" onSubmit={formik.handleSubmit}>
               <div className="relative z-0 w-full mb-5 group">
                 <input
                   onBlur={formik.handleBlur}
@@ -298,19 +298,19 @@ export default function ContactUs() {
                   type="text"
                   name="name"
                   id="name"
-                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                   placeholder=" "
                 />
                 <label
                   htmlFor="name"
-                  className="peer-focus:font-medium absolute text-lg text-blue-900 dark:text-gray-400 duration-300 transform translate-y-6 scale-75  top-1 start-1 -z-10  peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-lg text-blue-950 font-semibold duration-300 transform translate-y-6 scale-75  top-1 start-1 -z-10  peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    Name
                 </label>
 
                 {formik.errors.name && formik.touched.name ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.name}
@@ -326,17 +326,17 @@ export default function ContactUs() {
                   type="tel"
                   name="phone"
                   id="phone"
-                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                   placeholder=" "
                 />
                 <label
                   htmlFor="phone"
-                  className="peer-focus:font-medium absolute text-lg text-blue-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    Mobile Number                </label>
                 {formik.errors.phone && formik.touched.phone ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.phone}
@@ -352,18 +352,18 @@ export default function ContactUs() {
                   type="email"
                   name="email"
                   id="email"
-                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer"
+                  className="block py-2.5 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer"
                   placeholder=" "
                 />
                 <label
                   htmlFor="email"
-                  className="peer-focus:font-medium absolute text-lg text-blue-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 > 
                  Email
                  </label>
                 {formik.errors.email && formik.touched.email ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.email}
@@ -380,18 +380,18 @@ export default function ContactUs() {
                   name="message"
                   id="message"
                   rows="4"
-                  className="block pt-7 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer resize-none overflow-y-auto"
+                  className="block pt-7 px-0 w-full text-lg text-gray-900 bg-transparent border-0 border-b-2 border-gray-500 appearance-none  focus:outline-none focus:ring-0 focus:border-green-600 peer resize-none overflow-y-auto"
                   placeholder="write your message here "
                 ></textarea>
                 <label
                   htmlFor="message"
-                  className="peer-focus:font-medium absolute text-lg text-blue-900 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600 peer-focus:dark:text-green-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    Message
                 </label>
                 {formik.errors.message && formik.touched.message ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 dark:bg-gray-800 dark:text-red-400"
+                    className="p-4 mt-3 mb-4 text-sm text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.message}

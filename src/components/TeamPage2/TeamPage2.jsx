@@ -393,20 +393,20 @@ export default function TeamPage2() {
                         className="flex relative flex-col border rounded-3xl shadow-lg overflow-hidden  hover:shadow-xl hover:shadow-blue-200 hover:bg-green-300/10 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full"
                       >
                         <img
-                          className="absolute w-[40px] h-[40px]"
+                          className="absolute w-[30px] h-[30px] md:w-[40px] md:h-[40px]"
                           src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/Logos%20and%20Certified3/certified.png?raw=true"
                           alt="certfied image"
                         />
-                        <div className=" flex h-[230px] items-center overflow-hidden mb-1 justify-center text-center ">
+                        <div className=" flex h-[230px] items-center overflow-hidden mb-1 border-b  justify-center text-center ">
                           <img
                             src={`${teamMember.image}`}
-                            className="w-full h-2/3 md:w-full md:h-full   transition-all duration-1000 "
+                            className="w-full md:w-full h-full   transition-all duration-1000 "
                             alt="service image"
                           />
                           {/* <div className="absolute inset-0 bg-gradient-to-l from-green-300/20  to-blue-800/30 opacity-70 z-10"></div> */}
                         </div>
                         <div className=" flex  p-1 flex-col overflow-hidden items-center justify-center text-center">
-                          <h5 className="mb-4 text-2xl text-nowrap border-b-4 border-b-transparent  group-hover:border-blue-600 duration-700 transition-all pb-3 text-blue-900 font-bold text-center tracking-tight  dark:text-white">
+                          <h5 className="mb-4 text-2xl text-nowrap border-b-4 border-b-transparent  group-hover:border-blue-600 duration-700 transition-all pb-3 text-blue-900 font-bold text-center tracking-tight">
                             {teamMember.name.ar}
                           </h5>
                         </div>
@@ -498,40 +498,41 @@ export default function TeamPage2() {
           <div id="team" className="py-2  container w-full ">
             {/* Team members */}
             <div className="w-full flex flex-wrap justify-center">
-              {Team.map((teamMember, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="relative group w-11/12 lg:w-1/4  md:w-1/3 3xl:w-1/5     md:p-3 p-3 overflow-hidden"
-                  >
-                   
-                    <Link
-                      to={`/team/${teamMember.id}`}
-                      className="flex relative flex-col border rounded-3xl shadow-lg overflow-hidden  hover:shadow-xl hover:shadow-blue-200 hover:bg-green-300/10 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full"
+                {Team.map((teamMember, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="relative group w-11/12 lg:w-1/4  md:w-1/3 3xl:w-1/5     md:p-3 p-3 overflow-hidden"
                     >
-                      <img
-                        className="absolute w-[40px] h-[40px]"
-                        src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/Logos%20and%20Certified3/certified.png?raw=true"
-                        alt="certfied image"
-                      />
-                      <div className=" flex h-[230px] items-center overflow-hidden mb-1 justify-center text-center ">
+                     
+                      <Link
+                        to={`/team/${teamMember.id}`}
+                        className="flex relative flex-col border rounded-3xl shadow-lg overflow-hidden  hover:shadow-xl hover:shadow-blue-200 hover:bg-green-300/10 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full"
+                      >
                         <img
-                          src={`${teamMember.image}`}
-                          className="w-full h-2/3 md:w-full md:h-full   transition-all duration-1000 "
-                          alt="service image"
+                          className="absolute w-[30px] h-[30px] md:w-[40px] md:h-[40px]"
+                          src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/Logos%20and%20Certified3/certified.png?raw=true"
+                          alt="certfied image"
                         />
-                        {/* <div className="absolute inset-0 bg-gradient-to-l from-green-300/20  to-blue-800/30 opacity-70 z-10"></div> */}
-                      </div>
-                      <div className=" flex  p-1 flex-col overflow-hidden items-center justify-center text-center">
-                        <h5 className="mb-4 text-xl text-nowrap border-b-4 border-b-transparent  group-hover:border-blue-600 duration-700 transition-all pb-3 text-blue-900 font-bold text-center tracking-tight  dark:text-white">
-                          {teamMember.name.en}
-                        </h5>
-                      </div>
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
+                        <div className=" flex h-[230px] items-center overflow-hidden mb-1 border-b  justify-center text-center ">
+                          <img
+                            src={`${teamMember.image}`}
+                            className="w-full md:w-full h-full   transition-all duration-1000 "
+                            alt="service image"
+                          />
+                          {/* <div className="absolute inset-0 bg-gradient-to-l from-green-300/20  to-blue-800/30 opacity-70 z-10"></div> */}
+                        </div>
+                        <div className=" flex  p-1 flex-col overflow-hidden items-center justify-center text-center">
+                          <h5 className="mb-4 text-xl text-nowrap border-b-4 border-b-transparent  group-hover:border-blue-600 duration-700 transition-all pb-3 text-blue-900 font-bold text-center tracking-tight">
+                            {teamMember.name.en}
+                          </h5>
+                        </div>
+                      </Link>
+                    </div>
+                  );
+                })}
+              </div>
+          
           </div>
         </div>
       </>

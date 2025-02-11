@@ -29,7 +29,7 @@ export default function Footer() {
                     الباتل
                   </span>
                 </Link>
-                {/* <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400 z-20">
+                {/* <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0  z-20">
                   <li>
                     <Link
                       to="contact"
@@ -162,12 +162,12 @@ export default function Footer() {
                 </div>
               </div>
 
-              <hr className="my-6 border-green-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
-              <span className="block text-sm text-gray-400 sm:text-center z-20 dark:text-gray-400">
+              <hr className="my-6 border-green-500 sm:mx-auto  lg:my-8" />
+              <span className="block text-sm text-gray-400 sm:text-center z-20 ">
                 © 2025 All Rights Reserved @ Al-Batel
               </span>
 
-              <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center dark:text-gray-400">
+              <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center ">
                 <a
                   href="https://www.linkedin.com/in/ahmed-abdeldaiem-a26079227/"
                   className=" px-1"
@@ -330,12 +330,12 @@ export default function Footer() {
                 </div>
               </div>
 
-              <hr className="my-6 border-green-500 sm:mx-auto dark:border-gray-700 lg:my-8" />
-              <span className="block text-sm text-gray-400 sm:text-center z-20 dark:text-gray-400">
+              <hr className="my-6 border-green-500 sm:mx-auto  lg:my-8" />
+              <span className="block text-sm text-gray-400 sm:text-center z-20 ">
                 © 2025 All Rights Reserved @ Al-Batel
               </span>
 
-              <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center dark:text-gray-400">
+              <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center ">
                 <a
                   href="https://www.linkedin.com/in/ahmed-abdeldaiem-a26079227/"
                   className=" px-1"

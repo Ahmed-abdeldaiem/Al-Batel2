@@ -226,7 +226,7 @@ const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
                       {/* rounded-tr-3xl rounded-tl-3xl */}
                       <div className="flex  flex-col-reverse border rounded-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
                         {/* <div className=" flex  p-2 flex-col overflow-hidden items-center justify-center text-center">
-                          <h5 className="mb-1 text-xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  dark:text-white">
+                          <h5 className="mb-1 text-xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  ">
                             {sponcer.title}
                           </h5>
                          
