@@ -44,7 +44,7 @@ export default function TeamMemberDetails2() {
       <div className="bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
       <div className="w-full flex flex-col lg:flex-row pt-20 bg-blue-100/80">
         {/* first section image , name , job , experience years , cirtifications */}
-        <div className="lg:w-5/12">
+        <div className="lg:w-6/12 3xl:w-5/12">
           <div className="w-full h-[220px] flex items-center bg-white/95 md:rounded-e-full px-4">
             {/* employee image */}
           
@@ -118,7 +118,7 @@ export default function TeamMemberDetails2() {
         <div className="bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
       <div className="w-full flex flex-col lg:flex-row pt-20 bg-blue-100/80">
         {/* first section image , name , job , experience years , cirtifications */}
-        <div className="lg:w-5/12">
+        <div className="lg:w-6/12 3xl:w-5/12">
           <div className="w-full h-[220px] flex items-center bg-white/95 md:rounded-e-full px-4">
             {/* employee image */}
           
