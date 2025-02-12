@@ -81,7 +81,7 @@ export default function TeamPage2() {
     {
       id: 11,
       image:
-        "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true",
+        "https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/sobhy%20Gaber.jpeg?raw=true",
       name: { ar: "صبحي جابر", en: "Sobhy Jaber" },
     },
     {
