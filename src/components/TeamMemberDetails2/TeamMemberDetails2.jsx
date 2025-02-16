@@ -17,9 +17,9 @@ export default function TeamMemberDetails2() {
     setLoading(true);
     let data = await getPersonById(id);
 
-    console.log('function',id);
+    // console.log('function',id);
 
-    console.log(data);
+    // console.log(data);
 
     setEmployee(data);
 

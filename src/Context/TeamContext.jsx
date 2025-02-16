@@ -10,6 +10,8 @@ export default function TeamContextProvider(props) {
 
 let baseUrl='https://al-batel-team-data-default-rtdb.firebaseio.com/team/'
 
+let baseUrl2='https://al-batel-team-data-default-rtdb.firebaseio.com/'
+
 
 
 
@@ -34,13 +36,31 @@ let baseUrl='https://al-batel-team-data-default-rtdb.firebaseio.com/team/'
       });
   }
   
-  
+  function getTeamMembers() {
+    return axios.get(`${baseUrl2}TeamMember.json`, {
+      
+    })
+    .then((data) => {
+      
+        // console.log(data);
+        
+       
+
+        
+        return data.data ? data.data : 'TeamMembers not found';
+    })
+    .catch((error) => {
+        console.log(error);
+        return 'Error fetching Employee Data';
+    });
+}
+
     
  
    
 
   return (
-    <TeamContext.Provider value={{getPersonById}} >
+    <TeamContext.Provider value={{getPersonById,getTeamMembers}} >
     {props.children}
     </TeamContext.Provider>
   )

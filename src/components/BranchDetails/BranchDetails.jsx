@@ -127,8 +127,8 @@ export default function BranchDetails() {
     {
       id: 8,
       name: {
-        ar: "فرع بريدة",
-        en: "Buraydah Branch",
+        ar: "فرع القصيم",
+        en: "Al-Qassim Branch",
       },
       location_map: {
         ar: " طريق علي بن أبي طالب، حي الأمن، بريدة 52385",

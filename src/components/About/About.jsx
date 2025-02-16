@@ -66,8 +66,8 @@ export default function About() {
     {
       id: 8,
       name: {
-        ar: "بريدة",
-        en: "Buraydah",
+        ar: "القصيم",
+        en: "Al-Qassim",
       },
     },
   ];

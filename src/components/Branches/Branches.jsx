@@ -64,8 +64,8 @@ export default function Branches() {
     },
     {id: 8,
       name: {
-        ar: "بريدة",
-        en: "Buraydah",
+        ar: "القصيم",
+        en: "Al-Qassim",
       },
       img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b8.jpg?raw=true'
     },

@@ -26,6 +26,8 @@ import CvLayout from './components/CvLayout/CvLayout'
 import TeamPage2 from './components/TeamPage2/TeamPage2'
 import TeamMemberDetails2 from './components/TeamMemberDetails2/TeamMemberDetails2'
 
+import PartnersContextProvider from './Context/PartnersContext'
+
 
 function App() {
 
@@ -59,11 +61,11 @@ function App() {
     <LanguageContextProvider>
 
   <TeamContextProvider>
-  {/* <ScrollToTop /> */}
+<PartnersContextProvider>
     <RouterProvider router={route}>
 
 </RouterProvider>
-
+</PartnersContextProvider>
 </TeamContextProvider>
     </LanguageContextProvider>
   
