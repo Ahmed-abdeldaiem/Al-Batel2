@@ -27,6 +27,7 @@ import TeamPage2 from './components/TeamPage2/TeamPage2'
 import TeamMemberDetails2 from './components/TeamMemberDetails2/TeamMemberDetails2'
 
 import PartnersContextProvider from './Context/PartnersContext'
+import BranchesContextProvider from './Context/branchesContext'
 
 
 function App() {
@@ -62,9 +63,11 @@ function App() {
 
   <TeamContextProvider>
 <PartnersContextProvider>
+  <BranchesContextProvider>
     <RouterProvider router={route}>
 
 </RouterProvider>
+</BranchesContextProvider>
 </PartnersContextProvider>
 </TeamContextProvider>
     </LanguageContextProvider>

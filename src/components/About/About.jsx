@@ -21,7 +21,7 @@ export default function About() {
       },
     },
     {
-      id: 2_1,
+      id: 9,
       name: {
         ar: "جدة الثاني",
         en: "Jeddah 2",
