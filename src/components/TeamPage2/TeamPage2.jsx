@@ -159,7 +159,7 @@ export default function TeamPage2() {
                           <img
                             src={`${teamMember?.image}`}
                             className="w-full md:w-full h-full   transition-all duration-1000 "
-                            alt="service image"
+                            alt="Team Member image"
                           />
                           {/* <div className="absolute inset-0 bg-gradient-to-l from-green-300/20  to-blue-800/30 opacity-70 z-10"></div> */}
                         </div>
@@ -276,7 +276,7 @@ export default function TeamPage2() {
                           <img
                             src={`${teamMember?.image}`}
                             className="w-full md:w-full h-full   transition-all duration-1000 "
-                            alt="service image"
+                            alt="Team Member image"
                           />
                           {/* <div className="absolute inset-0 bg-gradient-to-l from-green-300/20  to-blue-800/30 opacity-70 z-10"></div> */}
                         </div>

@@ -41,6 +41,9 @@ export default function TeamMemberDetails2() {
     <>
       {Loading ? <Loader/> : null}
         {dir == "rtl" ?<>
+     
+
+      
       <div className="bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
       <div className="w-full flex flex-col lg:flex-row pt-20 bg-blue-100/80">
         {/* first section image , name , job , experience years , cirtifications */}
@@ -114,6 +117,7 @@ export default function TeamMemberDetails2() {
         </div>
       </div>
       </div>
+    
         </> : <>
         <div className="bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
       <div className="w-full flex flex-col lg:flex-row pt-20 bg-blue-100/80">

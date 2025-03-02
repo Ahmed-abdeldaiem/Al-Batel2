@@ -91,7 +91,7 @@ export default function Home() {
                         شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
                       </h1>
                       <h1 className="text-white text-xl lg:text-2xl font-semibold">
-                        Batal Abdullah Al-Batal & Partners for Professional
+                        Batel Abdullah Al-Batel & Partners for Professional
                         Consultations
                       </h1>
                     </div>
@@ -351,7 +351,7 @@ export default function Home() {
                         شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
                       </h1>
                       <h1 className="text-white text-xl lg:text-2xl font-semibold">
-                        Batal Abdullah Al-Batal & Partners for Professional
+                        Batel Abdullah Al-Batel & Partners for Professional
                         Consultations
                       </h1>
                     </div>

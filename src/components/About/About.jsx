@@ -128,7 +128,7 @@ export default function About() {
               
               <img
                 src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
-                className="w-[150px] mt-1 absolute bottom-4 start-4  hidden md:flex bg-white bg-opacity-20 rounded-3xl p-2 items-center justify-center z-20"
+                className="w-[150px] mt-1 absolute bottom-4 start-4  hidden md:flex bg-black bg-opacity-30 rounded-3xl p-2 items-center justify-center z-20"
                 alt="logo image "
               />
          
@@ -137,7 +137,7 @@ export default function About() {
                 info@albatelcpa.com
               </h3>
             </div>
-            <div className="absolute top-96  hidden end-4 md:flex bg-white bg-opacity-60 rounded-full border border-green-950 items-center justify-center cursor-pointer z-30">
+            <div className="absolute top-96  hidden end-4 lg:flex bg-white bg-opacity-60 rounded-full border border-green-950 items-center justify-center cursor-pointer z-30">
               <h3 className="text-gray-900  text-sm font-semibold mx-1">
                 www.albatelcpa.com
               </h3>
@@ -451,7 +451,7 @@ export default function About() {
               
               <img
                 src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
-                className="w-[150px] mt-1 absolute bottom-4 end-4  hidden md:flex bg-white bg-opacity-20 rounded-3xl p-2 items-center justify-center z-20"
+                className="w-[150px] mt-1 absolute bottom-4 end-4  hidden md:flex bg-black bg-opacity-30 rounded-3xl p-2 items-center justify-center z-20"
                 alt="logo image "
               />
          
@@ -460,7 +460,7 @@ export default function About() {
                 info@albatelcpa.com
               </h3>
             </div>
-            <div className="absolute top-96  hidden start-4 md:flex bg-white bg-opacity-60 rounded-full border border-green-950 items-center justify-center cursor-pointer z-30">
+            <div className="absolute top-96  hidden start-4 lg:flex bg-white bg-opacity-60 rounded-full border border-green-950 items-center justify-center cursor-pointer z-30">
               <h3 className="text-gray-900  text-sm font-semibold mx-1">
                 www.albatelcpa.com
               </h3>
@@ -468,7 +468,7 @@ export default function About() {
             <div className="absolute top-0 bottom-0 left-0 right-0 z-20  flex flex-col justify-center ">
               <h1 className="text-white text-center text-xl lg:text-5xl 3xl:text-6xl mb-4 font-semibold">
                
-              Batal Abdullah Al-Batal & Partners Company
+              Batel Abdullah Al-Batel & Partners Company
               </h1>
               <h2 className="text-white text-center text-lg lg:text-4xl mb-20 font-semibold">
               For professional consultations

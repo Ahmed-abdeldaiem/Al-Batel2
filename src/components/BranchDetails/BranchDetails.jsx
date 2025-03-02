@@ -80,17 +80,19 @@ export default function BranchDetails() {
     <>
       
   {Loading ? <Loader/> : null}
- {dir=='rtl'?<>
- 
- 
- <div className="pt-20   ">
+ {dir=='rtl'?
+ <>
+   
+ <div className=" bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
+ <div className="bg-white/85 py-20">
+
         <h3 className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
           {branchDetails?.name?.ar}
         </h3>
         <hr className="border-green-700 border-t-2 w-40 mx-auto" />
-        <hr className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
-      </div>
-      <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 ">
+        <hr className="border-green-700 border-t-2 w-20 mt-2 mb-10 mx-auto" />
+     
+      <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/85  ">
         <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
           <p className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
             <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
@@ -167,19 +169,24 @@ export default function BranchDetails() {
           </div>
         </>
       ) : null}
- </>:<>
+
+</div>
+</div>
+ </>:
+ <>
  
+ <div className=" bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
+ <div className="bg-white/85 py-20">
+
  
- 
- <div className="pt-20   ">
         <h3 className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
           {branchDetails?.name?.en}
 
         </h3>
         <hr className="border-green-700 border-t-2 w-40 mx-auto" />
         <hr className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
-      </div>
-      <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 ">
+   
+      <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/85 ">
         <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
           <p className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
             <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
@@ -257,8 +264,11 @@ export default function BranchDetails() {
         </>
       ) : null}
  
- </>}
+ </div>
+ </div>
 
+ </>}
+ 
     </>
   );
 }

@@ -1,10 +1,16 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "../../Context/LanguageContext";
+import { ServiceContext } from "../../Context/ServiceContext";
+import Loader from "../Loader/Loader";
 
 export default function Services() {
   const [counter, setCounter] = useState(0);
   const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
+
+  const { getServices } = useContext(ServiceContext);
+  const [services, setServices] = useState([]);
+  const [Loading, setLoading] = useState(false);
 
   const handleScroll = () => {
     const section = document.getElementById("desc1");
@@ -13,125 +19,29 @@ export default function Services() {
     }
   };
 
-  const serviceAr = [
-    {
-      image:
-        "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9%20%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%A6%D9%85%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9.jpg?raw=true",
-      title: "مراجعة القوائم المالية",
-      description:
-        " مراجعة القوائم المالية من قائمة المركز المالي وقائمة الدخل و التدفقات النقدية وحقوق الملكية ويتم ذلك وفقا للمعايير الدولية",
-    },
-    {
-      image:
-        "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A7%D8%B9%D9%85%D8%A7%D9%84%20%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%8A%D8%A9.jpg?raw=true",
-      title: "القيام بالأعمال المحاسبية",
-      description:
-        " متابعة الدفاتر إعداد القوائم المالية الدورية وكذلك تقارير الأداء المالية",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%AA%D8%AE%D8%B7%D9%8A%D8%B7%20%D9%85%D8%A7%D9%84%D9%8A.webp",
-      title: "التخطيط المالي و التحليل",
-      description:
-        "   وضع خطط مالية إستراتيجية للمستقبل وتحليل البيانات المالية المتاحة لتقييم الأداء المالي وتحديد نقاط القوة والضعف و فرص التحسين",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81.webp",
-      title: "إدارة التكاليف",
-      description:
-        "خدمات إدارة التكاليف من أجل تحسين كفاءة استخدام الموارد وتقليل التكلفة بما في ذلك تحليل وتقييم التكاليف المختلفة وتوفير استراتيجيات لتحسين الأداء المالي",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%A7%D9%84%D8%B6%D8%B1%D8%A7%D8%A6%D8%A8.jfif",
-      title: "تخطيط الضرائب والامتثال الضريبي",
-      description:
-        "خدمات استشارية في مجال الضرائب وتحديد الإستراتيجيات الضريبة الملائمة للشركات والأفراد وتقديم المشورة حول الامتثال الضريبي",
-    },
-    {
-      image:
-        "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%AA%D8%AF%D9%82%D9%8A%D9%82%20%D8%AF%D8%A7%D8%AE%D9%84%D9%8A.jpg?raw=true",
-      title: "التدقيق الداخلي",
-      description:
-        "خدمات التدقيق الداخلي للتحقق من تطبيق السياسات والإجراءات المالية في الشركات الامتثال للمعايير المحاسبية والقوانين المالية المعمول بها",
-    },
-    {
-      image:
-        "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9.jpg?raw=true",
-      title: "تطوير السياسات المالية ",
-      description:
-        "وضع السياسات المالية المناسبة وتطوير الإجراءات المحاسبية والمالية الفعالة بهدف تحسين الرقابة المالية وإدارة المخاطر وتحقيق الكفاءة في العمليات المالية",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1.jfif",
-      title: "التدريب والتطوير",
-      description:
-        "برامج تدريبية وتطويرية للشركات والموظفين لتعزيز المهارات المحاسبية والمالية وتطوير القدرات لتحسين جودة الأعمال",
-    },
-  ];
-  const serviceEn = [
-    {
-      image:
-        "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9%20%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%A6%D9%85%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9.jpg?raw=true",
-      title: "Audit of financial statements",
-      description:
-        "The audit of the financial statements from the statement of financial position and the statement of income, cash flows and equity is carried out in accordance with international standards",
-    },
-    {
-      image:
-        "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A7%D8%B9%D9%85%D8%A7%D9%84%20%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%8A%D8%A9.jpg?raw=true",
-      title: "Doing accounting work",
-      description:
-        "Follow-up of books and preparation of periodic financial statements as well as financial performance reports",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%AA%D8%AE%D8%B7%D9%8A%D8%B7%20%D9%85%D8%A7%D9%84%D9%8A.webp",
-      title: "Financial planning and analysis",
-      description:
-        "Develop strategic financial plans for the future and analyze the available financial data to assess financial performance and identify strengths, weaknesses and opportunities for improvement",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81.webp",
-      title: "Cost management",
-      description:
-        "Cost management services in order to improve the efficiency of resource use and reduce the cost, including the analysis and evaluation of various costs and the provision of strategies to improve financial performance",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%A7%D9%84%D8%B6%D8%B1%D8%A7%D8%A6%D8%A8.jfif",
-      title: "Tax planning and tax compliance",
-      description:
-        "Tax advisory services, identification of appropriate tax strategies for companies and individuals and advice on tax compliance",
-    },
-    {
-      image:
-        "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%AA%D8%AF%D9%82%D9%8A%D9%82%20%D8%AF%D8%A7%D8%AE%D9%84%D9%8A.jpg?raw=true",
-      title: "Internal audit",
-      description:
-        "Internal audit services to verify the application of financial policies and procedures in companies and compliance with accounting standards and applicable financial laws",
-    },
-    {
-      image:
-        "https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9.jpg?raw=true",
-      title: "Development of financial policies",
-      description:
-        "Develop appropriate financial policies and develop effective accounting and financial procedures in order to improve financial control, risk management and efficiency in financial operations",
-    },
-    {
-      image:
-        "https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%20%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1.jfif",
-      title: "Training and development",
-      description:
-        "Training and development programs for companies and employees to enhance accounting and financial skills and develop capabilities to improve business quality",
-    },
-  ];
+
+
+
+  async function getServicessData() {
+    setLoading(true);
+    let data = await getServices();
+
+    setServices(data);
+
+    setLoading(false);
+  }
+
+  useEffect(() => {
+  
+    getServicessData();
+  }, []);
+
+
+
 
   return (
     <>
+     {Loading ? <Loader/> : null}
       {dir == "rtl" ? (
         <>
           <div className="bg-blue-100/50">
@@ -157,12 +67,19 @@ export default function Services() {
                   alt="logo image "
                 />
               </div>
+
+              <img
+                src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+                className="w-[150px] mt-1 absolute bottom-4 start-4  hidden md:flex bg-black bg-opacity-50 rounded-3xl p-2 items-center justify-center z-20"
+                alt="logo image "
+              />
+
               <div className="absolute top-3/4 hidden end-4 md:flex bg-white bg-opacity-60 border border-blue-900  rounded-full items-center cursor-pointer  justify-center z-30">
                 <h3 className="text-blue-900 text-sm font-semibold mx-1">
                   info@albatelcpa.com
                 </h3>
               </div>
-              <div className="absolute top-96  hidden end-4 md:flex  bg-white bg-opacity-60 rounded-full border border-blue-900 items-center justify-center cursor-pointer z-30">
+              <div className="absolute top-96  hidden end-4 lg:flex  bg-white bg-opacity-60 rounded-full border border-blue-900 items-center justify-center cursor-pointer z-30">
                 <h3 className="text-blue-900 text-sm font-semibold mx-1">
                   www.albatelcpa.com
                 </h3>
@@ -187,7 +104,7 @@ export default function Services() {
 
             <div id="desc1" className="py-10 container ">
               <div className="w-full flex flex-wrap justify-center">
-                {serviceAr.map((service, index) => {
+                {services?.map((service, index) => {
                   return (
                     <div
                       key={index}
@@ -196,15 +113,15 @@ export default function Services() {
                       <div className="flex  flex-col-reverse border rounded-tr-3xl rounded-tl-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
                         <div className=" flex h-[250px] p-4 flex-col overflow-hidden items-center justify-center text-center">
                           <h5 className="mb-1 text-2xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight ">
-                            {service.title}
+                            {service?.title?.ar}
                           </h5>
                           <p className="mb-3 font-normal text-center text-lg my-3 pt-4 text-gray-900 ">
-                            {service.description}
+                            {service?.description?.ar}
                           </p>
                         </div>
                         <div className=" flex h-[270px] items-center relative overflow-hidden justify-center text-center">
                           <img
-                            src={`${service.image} `}
+                            src={`${service?.image} `}
                             className="w-full h-[100%] group-hover:scale-110  transition-all duration-700 "
                             alt="service image"
                           />
@@ -262,12 +179,19 @@ export default function Services() {
                   alt="logo image "
                 />
               </div>
+ 
+              <img
+                src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+                className="w-[150px] mt-1 absolute bottom-4 end-4  hidden md:flex bg-black bg-opacity-50 rounded-3xl p-2 items-center justify-center z-20"
+                alt="logo image "
+              />
+
               <div className="absolute top-3/4 hidden start-4 md:flex bg-white bg-opacity-60 border border-blue-900  rounded-full items-center cursor-pointer  justify-center z-30">
                 <h3 className="text-blue-900 text-sm font-semibold mx-1">
                   info@albatelcpa.com
                 </h3>
               </div>
-              <div className="absolute top-96  hidden start-4 md:flex  bg-white bg-opacity-60 rounded-full border border-blue-900 items-center justify-center cursor-pointer z-30">
+              <div className="absolute top-96  hidden start-4 lg:flex  bg-white bg-opacity-60 rounded-full border border-blue-900 items-center justify-center cursor-pointer z-30">
                 <h3 className="text-blue-900 text-sm font-semibold mx-1">
                   www.albatelcpa.com
                 </h3>
@@ -292,7 +216,7 @@ export default function Services() {
 
             <div id="desc1" className="py-10 container ">
               <div className="w-full flex flex-wrap justify-center">
-                {serviceEn.map((service, index) => {
+                {services?.map((service, index) => {
                   return (
                     <div
                       key={index}
@@ -301,15 +225,15 @@ export default function Services() {
                       <div className="flex  flex-col-reverse border rounded-tr-3xl rounded-tl-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
                         <div className=" flex h-[250px] p-4 flex-col overflow-hidden items-center justify-center text-center">
                           <h5 className="mb-1 text-2xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  ">
-                            {service.title}
+                            {service?.title?.en}
                           </h5>
                           <p className="mb-3 font-normal text-center text-lg my-3 pt-4 text-gray-900 ">
-                            {service.description}
+                            {service?.description?.en}
                           </p>
                         </div>
                         <div className=" flex h-[270px] items-center relative overflow-hidden justify-center text-center">
                           <img
-                            src={`${service.image} `}
+                            src={`${service?.image} `}
                             className="w-full h-[100%] group-hover:scale-110  transition-all duration-700 "
                             alt="service image"
                           />
