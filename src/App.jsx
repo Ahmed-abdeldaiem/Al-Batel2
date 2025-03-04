@@ -13,12 +13,12 @@ import Services from './components/Services/Services'
 import ContactUs from './components/ContactUs/ContactUs'
 import Partners from './components/Partners/Partners'
 
-
+import { Toaster } from "react-hot-toast";
 
 import LanguageContextProvider from './Context/LanguageContext'
 import TeamContextProvider from './Context/TeamContext'
 
-import SendCv from './components/SendCv/SendCv'
+
 import Rfp from './components/Rfp/Rfp'
 import BranchDetails from './components/BranchDetails/BranchDetails'
 import CvTemplate from './components/CvTemplate/CvTemplate'
@@ -29,6 +29,8 @@ import TeamMemberDetails2 from './components/TeamMemberDetails2/TeamMemberDetail
 import PartnersContextProvider from './Context/PartnersContext'
 import BranchesContextProvider from './Context/branchesContext'
 import ServiceContextProvider from './Context/ServiceContext'
+import AvailableJobs from './components/AvailableJobs/AvailableJobs'
+import JobContextProvider from './Context/JobContex'
 
 
 function App() {
@@ -46,7 +48,7 @@ function App() {
       {path:'branch/:id' ,element:<BranchDetails/>},
       {path:'contact' ,element:<ContactUs/>},
       {path:'partners' ,element:<Partners/>},
-      {path:'sendCv' ,element:<SendCv/>},
+      {path:'jobs' ,element:<AvailableJobs/>},
     
       {path:'RFP' ,element:<Rfp/>},
     ]},{
@@ -60,15 +62,18 @@ function App() {
 
   return (
     <>
+      <Toaster />
     <LanguageContextProvider>
 
   <TeamContextProvider>
 <PartnersContextProvider>
   <BranchesContextProvider>
   <ServiceContextProvider>
+    <JobContextProvider>
     <RouterProvider router={route}>
 
 </RouterProvider>
+</JobContextProvider>
 </ServiceContextProvider>
 </BranchesContextProvider>
 </PartnersContextProvider>

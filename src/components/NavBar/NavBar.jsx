@@ -191,20 +191,21 @@ export default function NavBar() {
                                 تواصل
                               </NavLink>
                             </li>
-                            <li>
-                              <NavLink
-                                to="sendCv"
-                                className="block text-gray-700 text-nowrap px-4 py-2 linkStyle"
-                              >
-                                أرسل سيرتك
-                              </NavLink>
-                            </li>
+                          
                             <li>
                               <NavLink
                                 to="RFP"
                                 className="block text-gray-700 px-4 text-nowrap py-2 linkStyle"
                               >
                                 طلب عرض سعر
+                              </NavLink>
+                            </li>
+                            <li>
+                              <NavLink
+                                to="jobs"
+                                className="block text-gray-700 text-nowrap px-4 py-2 linkStyle"
+                              >
+                                وظائف متاحة
                               </NavLink>
                             </li>
                           </ul>
@@ -397,18 +398,7 @@ export default function NavBar() {
                         تواصل
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink
-                        to="sendCv"
-                        onClick={() => {
-                          setOpenDropdown2(false);
-                          setIsOpen(false);
-                        }}
-                        className="block px-4 py-2 linkStyle"
-                      >
-                        أرسل سيرتك الذاتية
-                      </NavLink>
-                    </li>
+                  
                     <li>
                       <NavLink
                         to="RFP"
@@ -419,6 +409,18 @@ export default function NavBar() {
                         className="block px-4 py-2 linkStyle"
                       >
                         طلب عرض سعر
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="jobs"
+                        onClick={() => {
+                          setOpenDropdown2(false);
+                          setIsOpen(false);
+                        }}
+                        className="block px-4 py-2 linkStyle"
+                      >
+                        وظائف متاحة
                       </NavLink>
                     </li>
                   </ul>
@@ -527,20 +529,21 @@ export default function NavBar() {
                             Contact
                           </NavLink>
                         </li>
-                        <li>
-                          <NavLink
-                            to="sendCv"
-                            className="block text-gray-700 text-nowrap px-4 py-2 linkStyle"
-                          >
-                            Send CV
-                          </NavLink>
-                        </li>
+                       
                         <li>
                           <NavLink
                             to="RFP"
                             className="block text-gray-700 px-4 text-nowrap py-2 linkStyle"
                           >
                             RFP
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="jobs"
+                            className="block text-gray-700 text-nowrap px-4 py-2 linkStyle"
+                          >
+                            Available Jobs
                           </NavLink>
                         </li>
                       </ul>
@@ -733,18 +736,7 @@ export default function NavBar() {
                     Contact
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink
-                    to="sendCv"
-                    onClick={() => {
-                      setOpenDropdown2(false);
-                      setIsOpen(false);
-                    }}
-                    className="block px-4 py-2 linkStyle"
-                  >
-                   Send CV
-                  </NavLink>
-                </li>
+               
                 <li>
                   <NavLink
                     to="RFP"
@@ -755,6 +747,18 @@ export default function NavBar() {
                     className="block px-4 py-2 linkStyle"
                   >
                    RFP
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="jobs"
+                    onClick={() => {
+                      setOpenDropdown2(false);
+                      setIsOpen(false);
+                    }}
+                    className="block px-4 py-2 linkStyle"
+                  >
+                   Available Jobs
                   </NavLink>
                 </li>
               </ul>

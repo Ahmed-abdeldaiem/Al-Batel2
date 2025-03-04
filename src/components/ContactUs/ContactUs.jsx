@@ -36,20 +36,21 @@ export default function ContactUs() {
         // alert("");
         toast.success('Message sent successfully!',{
           duration: 2500,
-          position: 'top-right',
+          position: 'top-center',
         
           // Styling
           style:{
-            background:'#4f9f4f',
+            background:'#20c997',
              color:'#fff',
-            fontWeight:'bold'
+            fontWeight:'bold',
+
             
     
           },
          
         
           // Custom Icon
-          icon: '👏',
+          icon: '👍',
         })
         setIsLoading(false);
         formik.resetForm(); // Reset the form after successful submission
@@ -59,7 +60,7 @@ export default function ContactUs() {
         setContactError("Failed to send message. Please try again later.");
         toast.error('Failed to send message. Please try again later.',{
           duration: 2500,
-          position: 'top-right',
+          position: 'top-center',
         
           // Styling
           style:{
@@ -72,7 +73,7 @@ export default function ContactUs() {
          
         
           // Custom Icon
-          icon: ':(',
+          icon: '❌',
         })
         setIsLoading(false);
       });

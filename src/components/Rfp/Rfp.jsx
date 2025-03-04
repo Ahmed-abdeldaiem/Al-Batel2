@@ -44,7 +44,7 @@ export default function Rfp() {
           },
 
           // Custom Icon
-          icon: "👏",
+          icon: "👍",
         });
         setIsLoading(false);
         formik.resetForm(); // Reset the form after successful submission
@@ -64,7 +64,7 @@ export default function Rfp() {
           },
 
           // Custom Icon
-          icon: ":(",
+          icon: "❌",
         });
         setIsLoading(false);
       });
