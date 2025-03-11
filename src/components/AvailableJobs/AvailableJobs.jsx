@@ -3,7 +3,7 @@ import React from "react";
 import { LanguageContext } from "../../Context/LanguageContext";
 import Loader from "../Loader/Loader";
 import style from "./AvailableJobs.module.css";
-
+import { useFormik } from 'formik'
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
@@ -25,6 +25,56 @@ export default function AvailableJobs() {
   const [Loading, setLoading] = useState(false);
 
 
+  let formik = useFormik({
+    initialValues:{
+    
+      search:"",
+    
+     
+    },
+    
+    onSubmit:handleSearch,
+  
+  });
+
+  function handleSearch(formValues){
+
+     console.log(formValues);
+     
+      return formValues.search
+      }
+
+
+
+      async function getRelatedsearch(search){
+
+
+    
+          setLoading(true)
+
+          let searchData= await getJobs();
+         console.log(searchData);
+          // console.log(searchData?.filter((job)=>job.name.ar.toLowerCase().includes(search.toLowerCase())));
+          setJobs(searchData?.filter((job)=>job.name.ar.toLowerCase().includes(search.toLowerCase())))
+          setLoading(false)
+      
+      }
+
+      async function getRelatedsearchEn(search){
+
+
+    
+        setLoading(true)
+
+        let searchDataEn= await getJobs();
+       console.log(searchDataEn);
+        // console.log(searchData?.filter((job)=>job.name.ar.toLowerCase().includes(search.toLowerCase())));
+        setJobs(searchDataEn?.filter((job)=>job.name.en.toLowerCase().includes(search.toLowerCase())))
+        setLoading(false)
+    
+    }
+
+
 
   async function getJobsData() {
     setLoading(true);
@@ -41,7 +91,16 @@ export default function AvailableJobs() {
     getJobsData();
   }, []);
 
-
+  // useEffect(() => {
+  //   jobs.forEach(job => {
+  //     getJobsData(customer.id);
+  //   });
+  // }, [jobs]);
+  useEffect(() => {
+ 
+    dir == "rtl" ? getRelatedsearch(formik.values.search) : getRelatedsearchEn(formik.values.search) 
+    
+    }, [formik.values.search]);
 
 
 
@@ -55,9 +114,9 @@ export default function AvailableJobs() {
             <h1 className="text-blue-950 text-lg lg:text-4xl  3xl:text-5xl font-bold text-center py-10">
               الوظائف المتاحة
             </h1>
-            <form className="w-8/12 mx-auto mt-4 mb-10">
+            <form className="w-8/12 mx-auto mt-4 mb-10" onSubmit={formik.handleSubmit} onChange={formik.handleSubmit}>
               <label
-                htmlFor="jobSearch"
+                htmlFor="search"
                 className="mb-2 text-sm font-medium text-blue-900 sr-only"
               >
                 بحث
@@ -81,8 +140,9 @@ export default function AvailableJobs() {
                   </svg>
                 </div>
                 <input
+                onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.search} name="search"
                   type="search"
-                  id="jobSearch"
+                  id="search"
                   className="block w-full p-4 ps-10 text-sm text-blue-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
                   placeholder="محاسب, مراجع, ..."
                   required
@@ -184,9 +244,9 @@ return(
             <h1 className="text-blue-950 text-lg lg:text-4xl  3xl:text-5xl font-bold text-center py-10">
               Available Jobs
             </h1>
-            <form className="w-8/12 mx-auto mt-4 mb-10">
+            <form className="w-8/12 mx-auto mt-4 mb-10" onSubmit={formik.handleSubmit} onChange={formik.handleSubmit}>
               <label
-                htmlFor="jobSearch"
+                htmlFor="search"
                 className="mb-2 text-sm font-medium text-blue-900 sr-only"
               >
                 بحث
@@ -210,8 +270,9 @@ return(
                   </svg>
                 </div>
                 <input
+                 onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.search} name="search"
                   type="search"
-                  id="jobSearch"
+                  id="search"
                   className="block w-full p-4 ps-10 text-sm text-blue-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
                   placeholder="Auditor, Accountant, ..."
                   required
