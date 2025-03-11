@@ -91,11 +91,7 @@ export default function AvailableJobs() {
     getJobsData();
   }, []);
 
-  // useEffect(() => {
-  //   jobs.forEach(job => {
-  //     getJobsData(customer.id);
-  //   });
-  // }, [jobs]);
+
   useEffect(() => {
  
     dir == "rtl" ? getRelatedsearch(formik.values.search) : getRelatedsearchEn(formik.values.search) 
@@ -225,8 +221,6 @@ return(
 </div>
 </div>
 )
-
-
 
         })}
 
