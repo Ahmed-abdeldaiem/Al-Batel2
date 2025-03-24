@@ -54,7 +54,7 @@ export default function AvailableJobs() {
 
           let searchData= await getJobs();
          console.log(searchData);
-          // console.log(searchData?.filter((job)=>job.name.ar.toLowerCase().includes(search.toLowerCase())));
+        
           setJobs(searchData?.filter((job)=>job.name.ar.toLowerCase().includes(search.toLowerCase())))
           setLoading(false)
       
@@ -68,7 +68,7 @@ export default function AvailableJobs() {
 
         let searchDataEn= await getJobs();
        console.log(searchDataEn);
-        // console.log(searchData?.filter((job)=>job.name.ar.toLowerCase().includes(search.toLowerCase())));
+      
         setJobs(searchDataEn?.filter((job)=>job.name.en.toLowerCase().includes(search.toLowerCase())))
         setLoading(false)
     

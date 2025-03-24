@@ -64,10 +64,10 @@ export default function TeamPage2() {
         <>
           {/* header section */}
           <div
-          // https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/enhanced2/team-bg2.jpeg?raw=true
+       
             className="relative flex flex-col lg:h-[620px] 3xl:h-[790px] h-[300px] md:h-[370px] justify-center items-center mt-16 py-10  bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D9%81%D8%B1%D9%8A%D9%82%D9%86%D8%A7.jpeg?raw=true')]"
           >
-            {/* <div className="absolute inset-0 bg-gradient-to-l from-gray-400/50  to-blue-800/40 opacity-70 z-10"></div> */}
+    
             <div className="absolute inset-0 bg-gradient-to-l from-blue-700/70 to-blue-200/50 opacity-80 z-10"></div>
             {/* certified */}
             <div className="absolute bottom-2 end-2 w-2/12 ">
@@ -161,7 +161,6 @@ export default function TeamPage2() {
                             className="w-full md:w-full h-full   transition-all duration-1000 "
                             alt="Team Member image"
                           />
-                          {/* <div className="absolute inset-0 bg-gradient-to-l from-green-300/20  to-blue-800/30 opacity-70 z-10"></div> */}
                         </div>
                         <div className=" flex  p-1 flex-col overflow-hidden items-center justify-center text-center">
                           <h5 className="mb-4 text-2xl text-nowrap border-b-4 border-b-transparent  group-hover:border-blue-600 duration-700 transition-all pb-3 text-blue-900 font-bold text-center tracking-tight">
@@ -180,11 +179,9 @@ export default function TeamPage2() {
         <>
         {/* header section */}
         <div
-        // https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/enhanced2/team-bg2.jpeg?raw=true
+ 
           className="relative flex flex-col lg:h-[620px] 3xl:h-[790px] h-[300px] md:h-[370px] justify-center items-center mt-16 py-10  bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D9%81%D8%B1%D9%8A%D9%82%D9%86%D8%A7.jpeg?raw=true')]"
         >
-          {/* <div className="absolute inset-0 bg-gradient-to-l from-gray-400/50  to-blue-800/40 opacity-70 z-10"></div> */}
-          {/* <div className="absolute inset-0 bg-gradient-to-l from-blue-700/70 to-blue-200/50 opacity-80 z-10"></div> */}
           <div className="absolute inset-0 bg-gradient-to-l from-blue-200/50 to-blue-700/70 opacity-80 z-10"></div>
           {/* certified */}
           <div className="absolute bottom-2 end-2 w-2/12 ">

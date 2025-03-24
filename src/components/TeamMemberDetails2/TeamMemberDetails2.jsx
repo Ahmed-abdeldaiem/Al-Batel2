@@ -16,13 +16,8 @@ export default function TeamMemberDetails2() {
   async function getEmployeeData(id) {
     setLoading(true);
     let data = await getPersonById(id);
-
-    // console.log('function',id);
-
     // console.log(data);
-
     setEmployee(data);
-
     setLoading(false);
   }
 
@@ -31,12 +26,7 @@ export default function TeamMemberDetails2() {
     getEmployeeData(id);
   }, [id]);
 
-
-
-
   return (
-
-  
 
     <>
       {Loading ? <Loader/> : null}
@@ -85,9 +75,7 @@ export default function TeamMemberDetails2() {
                 <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold ">
                   الشهادات
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2 p-2">
-                  {/* employee.certificates.ar / .en */}
-                  
+                <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2 p-2 text-justify">                  
                   {employee?.certificates?.ar}
                 </p>
               </div>
@@ -97,23 +85,17 @@ export default function TeamMemberDetails2() {
         <div className="w-full  p-4 ">
           <div className="p-8 w-full bg-white/95 rounded-2xl">
             <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold">الخبرة المهنية:</h2>
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2">
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2 text-justify">
             
             {employee?.experienceDesc?.ar}
             </p>
-            <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold"> المناصب الرئيسية خلال المسيرة المهنية:</h2>
+            <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold text-justify"> المناصب الرئيسية خلال المسيرة المهنية:</h2>
               {/* employee.experienceJobs.ar / .en */}
               {employee?.experienceJobs?.map((exp)=>{
                 return <h3 className="text-lg md:text-xl lg:text-2xl text-gray-900 my-4"><i className="fas fa-circle text-sm text-green-700"></i> {exp.ar}</h3>
               })}
           </div>
-          
-            {/* <button className="bg-[#065995] relative overflow-hidden z-10 text-white w-full font-semibold text-xl p-3 rounded-xl my-5 duration-500 transition-all  group  hover:shadow-md hover:shadow-blue-600/50">
-              عرض السيرة الذاتية بالتفصيل
-              <div className=" bg-gray-200/30 w-0 start-0 top-0 bottom-0 absolute group-hover:w-full duration-700 transition-all ease-in-out"></div>
-            </button> */}
-            
-         
+     
         </div>
       </div>
       </div>
@@ -160,7 +142,7 @@ export default function TeamMemberDetails2() {
                 <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold ">
                Certificates
                 </h2>
-                <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2 p-2">
+                <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2 p-2 text-justify">
                   {/* employee.certificates.ar / .en */}
                   
                   {employee?.certificates?.en}
@@ -172,11 +154,11 @@ export default function TeamMemberDetails2() {
         <div className="w-full  p-4 ">
           <div className="p-8 w-full bg-white/95 rounded-2xl">
             <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold">Professional experience:</h2>
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2">
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-900 my-2 text-justify">
             
             {employee?.experienceDesc?.en}
             </p>
-            <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold">Main positions during career:</h2>
+            <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold text-justify">Main positions during career:</h2>
               {/* employee.experienceJobs.ar / .en */}
               {employee?.experienceJobs?.map((exp)=>{
                 return <h3 className="text-lg md:text-xl lg:text-2xl text-gray-900 my-4"><i className="fas fa-circle text-sm text-green-700"></i> {exp.en}</h3>

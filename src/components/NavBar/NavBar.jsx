@@ -13,14 +13,6 @@ export default function NavBar() {
 
   const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
 
-  // Function to toggle dropdowns and close others
-  // const toggleDropdown = (dropdownName) => {
-  //   if (openDropdown === dropdownName) {
-  //     setOpenDropdown(null);
-  //   } else {
-  //     setOpenDropdown(dropdownName);
-  //   }
-  // };
 
   const toggleDropdown = (dropdownName) => {
     if (openDropdownLanguage === dropdownName) {

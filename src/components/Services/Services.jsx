@@ -49,13 +49,12 @@ export default function Services() {
               className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
             >
               <img
-                // https://afexpert.es/wp-content/uploads/2023/11/ciberseguridad_empresas_buensa_practicas.jpg
+              
                 src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/service-bg.jpg?raw=true"
                 className="w-full h-full object-fill z-10"
                 alt="Service image "
               />
-              {/* Gradient blue overlay */}
-              {/* <div className="absolute inset-0 bg-gradient-to-l from-blue-800/60 to-gray-700/50 opacity-80 z-10"></div> */}
+            
               <div className="absolute inset-0 bg-gradient-to-l from-blue-50/70  to-blue-800/50 opacity-70 z-10"></div>
               <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50  border border-blue-900  rounded-full items-center justify-center z-20">
                 <h3 className="text-green-950 text-sm  font-semibold mx-1">
@@ -161,13 +160,12 @@ export default function Services() {
               className={`relative   w-full lg:h-[600px] 3xl:h-[750px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
             >
               <img
-                // https://afexpert.es/wp-content/uploads/2023/11/ciberseguridad_empresas_buensa_practicas.jpg
+                
                 src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/service-bg.jpg?raw=true"
                 className="w-full h-full object-fill z-10"
                 alt="Service image "
               />
-              {/* Gradient blue overlay */}
-              {/* <div className="absolute inset-0 bg-gradient-to-l from-blue-800/60 to-gray-700/50 opacity-80 z-10"></div> */}
+             
               <div className="absolute inset-0 bg-gradient-to-l from-blue-50/70  to-blue-800/50 opacity-70 z-10"></div>
               <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50  border border-blue-900  rounded-full items-center justify-center z-20">
                 <h3 className="text-green-950 text-sm  font-semibold mx-1">

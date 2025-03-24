@@ -41,7 +41,7 @@ export default function Partners() {
 
 {dir == "rtl" ? <>
 <div
-            //  bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about%20us%20background.jpg?raw=true')] bg-no-repeat bg-cover bg-center
+      
             className={`relative   w-full lg:h-[430px] 3xl:h-[500px] h-[270px] md:h-[330px]  mt-16 flex justify-center items-center`}
           >
             <img
@@ -92,7 +92,6 @@ export default function Partners() {
 </> 
 :<>
 <div
-            //  bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about%20us%20background.jpg?raw=true')] bg-no-repeat bg-cover bg-center
             className={`relative   w-full lg:h-[430px] 3xl:h-[500px] h-[270px] md:h-[330px]  mt-16 flex justify-center items-center`}
           >
             <img
