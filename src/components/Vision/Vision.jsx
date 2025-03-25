@@ -18,30 +18,34 @@ export default function Vision() {
 
             <div className="bg-white rounded-lg w-full lg:flex lg:flex-row flex-col justify-center items-center my-8">
               <div className=" w-full lg:w-1/2 py-8">
-                <div className="inner ps-16 flex flex-col justify-center items-center lg:justify-start lg:items-start">
-                  <h2 className="text-green-600 text-2xl my-4 font-semibold text-center mx-3">
+                <div className="inner flex px-1 lg:px-4 flex-col justify-center items-center lg:justify-start lg:items-start">
+                  <h2 className="text-green-600 text-2xl my-4 font-semibold text-center mx-3 text-justify">
                     رؤيتنا
                   </h2>
 
-                  <h3 className="text-gray-800 text-lg flex  my-4">
+                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
                     <span>
-                      {" "}
+                    
                       الاستمرار في كوننا شركة رائدة في تقديم خدمات المحاسبة
                       والمراجعة والاستشارات المالية والإدارية ونموذجا متميزا
                       للمهنية
                     </span>
                   </h3>
-                  <h3 className="text-gray-800 text-lg   my-4">
+                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify ">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
+                    <span>
+                    
                     أن نسعى جاهدين بخبراتنا ومعرفتنا العميقة في مجالنا لخدمة
-                    العميل
+                    العميل                    </span>
                   </h3>
-                  <h3 className="text-gray-800 text-lg flex  my-4">
+                 
+                 
+                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
@@ -76,12 +80,12 @@ export default function Vision() {
 
             <div className="bg-white rounded-lg w-full lg:flex lg:flex-row flex-col justify-center items-center my-8">
               <div className=" w-full lg:w-1/2 py-8">
-                <div className="inner ps-16 flex flex-col justify-center items-center lg:justify-start lg:items-start">
+                <div className="inner px-1 lg:px-4 flex flex-col justify-center items-center lg:justify-start lg:items-start">
                   <h2 className="text-green-600 text-2xl my-4 font-semibold text-center mx-3">
                     Our Vision
                   </h2>
 
-                  <h3 className="text-gray-800 text-lg flex  my-4">
+                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
@@ -89,14 +93,14 @@ export default function Vision() {
                     To continue to be a leading company in providing accounting, auditing, financial and administrative consulting services and a distinguished model of professionalism.
                     </span>
                   </h3>
-                  <h3 className="text-gray-800 text-lg flex  my-4">
+                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
                     <span>                    To strive with our deep experience and knowledge in our field to serve the client
 </span>
                   </h3>
-                  <h3 className="text-gray-800 text-lg flex  my-4">
+                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>

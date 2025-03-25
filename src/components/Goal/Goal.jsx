@@ -34,20 +34,20 @@ export default function Goal() {
         <div className="inner flex flex-col justify-center items-center lg:justify-start lg:items-start">
 <h2 className='text-green-600 text-2xl my-4 font-semibold text-start'>هدفنا</h2>
 <p className='text-gray-800 text-lg my-2 font-semibold text-center lg:text-start'>نتيجة لما يشهده قطاع الأعمال من ازدهار ملحوظ بفضل رؤية 2030</p>
-<p className='text-gray-800 text-lg font-semibold text-start'> نسعى ونطمح أن نكون الخيار الأول للعميل عن طريق:</p>
+<p className='text-gray-800 text-lg font-semibold text-center lg:text-start'> نسعى ونطمح أن نكون الخيار الأول للعميل عن طريق:</p>
 <h3 className="text-gray-800 text-lg  my-4">
-                <span className="text-green-600 mx-3">
+                <span className="text-green-600 mx-3 text-center lg:text-start">
                   <i className="fa-solid fa-circle-dot"></i>
                 </span>
                 إمداد العميل باحتياجاته كافة
                </h3>
-<h3 className="text-gray-800 text-lg  my-4">
+<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start">
                 <span className="text-green-600 mx-3">
                   <i className="fa-solid fa-circle-dot"></i>
                 </span>
 تحري الدقة والاحترافية
                </h3>
-<h3 className="text-gray-800 text-lg  my-4">
+<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start">
                 <span className="text-green-600 mx-3">
                   <i className="fa-solid fa-circle-dot"></i>
                 </span>
@@ -83,21 +83,21 @@ export default function Goal() {
 <h2 className='text-green-600 text-2xl my-4 font-semibold text-start'>Our Goal</h2>
 <p className='text-gray-800 text-lg my-2 font-semibold text-center lg:text-start'>
 As a result of the remarkable prosperity witnessed by the business sector thanks to Vision 2030  </p>
-<p className='text-gray-800 text-lg font-semibold text-start'>
+<p className='text-gray-800 text-lg font-semibold text-center lg:text-start'>
 We strive and aspire to be the first choice for the customer by:   </p>
-<h3 className="text-gray-800 text-lg  my-4">
+<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start text-center lg:text-start">
                 <span className="text-green-600 mx-3">
                   <i className="fa-solid fa-circle-dot"></i>
                 </span>
                 Providing the customer with all his needs
                </h3>
-<h3 className="text-gray-800 text-lg  my-4">
+<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start text-center lg:text-start">
                 <span className="text-green-600 mx-3">
                   <i className="fa-solid fa-circle-dot"></i>
                 </span>
                 With precision and professionalism
                </h3>
-<h3 className="text-gray-800 text-lg  my-4">
+<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start text-center lg:text-start">
                 <span className="text-green-600 mx-3">
                   <i className="fa-solid fa-circle-dot"></i>
                 </span>

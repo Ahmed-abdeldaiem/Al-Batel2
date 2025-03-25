@@ -59,7 +59,7 @@ export default function Services() {
               <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50  border border-blue-900  rounded-full items-center justify-center z-20">
                 <h3 className="text-green-950 text-sm  font-semibold mx-1">
                   ALBatel & Co
-                </h3>
+                </h3> 
                 <img
                   src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true"
                   className="w-[50px] mt-1"

@@ -29,16 +29,7 @@ export default function Footer() {
                     الباتل
                   </span>
                 </Link>
-                {/* <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0  z-20">
-                  <li>
-                    <Link
-                      to="contact"
-                      className="transition-all duration-500 text-blue-600 hover:text-green-600 hover:underline me-4 md:me-6"
-                    >
-                      تواصل معنا
-                    </Link>
-                  </li>
-                </ul> */}
+            
               </div>
 
               <div className="w-full flex flex-col justify-center items-center md:justify-around md:flex-row ">
@@ -163,7 +154,8 @@ export default function Footer() {
               </div>
 
               <hr className="my-6 border-green-500 sm:mx-auto  lg:my-8" />
-              <span className="block text-sm text-gray-400 sm:text-center z-20 ">
+            <div className="text-center">
+            <span className="block text-sm text-gray-400 sm:text-center z-20 ">
                 © 2025 All Rights Reserved @ Al-Batel
               </span>
 
@@ -184,6 +176,7 @@ export default function Footer() {
                 </a>
                 by Ahmed Abdeldaiem
               </span>
+            </div>
             </div>
           </footer>
         </>
@@ -329,13 +322,15 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-
+              <div className="text-center">
               <hr className="my-6 border-green-500 sm:mx-auto  lg:my-8" />
               <span className="block text-sm text-gray-400 sm:text-center z-20 ">
                 © 2025 All Rights Reserved @ Al-Batel
               </span>
 
               <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center ">
+               
+                by Ahmed Abdeldaiem
                 <a
                   href="https://www.linkedin.com/in/ahmed-abdeldaiem-a26079227/"
                   className=" px-1"
@@ -350,8 +345,8 @@ export default function Footer() {
                 >
                   <i className="fa-brands fa-google cursor-pointer hover:text-red-500 transition-all duration-500"></i>
                 </a>
-                by Ahmed Abdeldaiem
               </span>
+              </div>
             </div>
           </footer>
         </>

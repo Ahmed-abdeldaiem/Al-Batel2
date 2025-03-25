@@ -35,7 +35,7 @@ export default function Message() {
       <div className=" w-full lg:w-1/2 py-6">
         <div className="inner flex flex-col justify-center items-center lg:justify-start lg:items-start">
 <h2 className='text-green-600 text-2xl mb-4 font-semibold text-start'>رسالتنا</h2>
-<p className='text-gray-800 text-lg  font-semibold text-center my-4 lg:text-start'>
+<p className='text-gray-800 text-lg px-1  font-semibold text-center my-4 lg:text-start'>
 انطلاقا من الشعور الراسخ بالمسؤولية تجاه وطننا ودعما لرواد الأعمال نؤمن بقدرتنا على تقديم استشارات مهنية داعمة ومتخصصة بكل شفافية وموثوقية
   </p>
 <p className='text-green-600 text-2xl font-semibold text-center'>
