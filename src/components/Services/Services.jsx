@@ -19,9 +19,6 @@ export default function Services() {
     }
   };
 
-
-
-
   async function getServicessData() {
     setLoading(true);
     let data = await getServices();
@@ -32,16 +29,12 @@ export default function Services() {
   }
 
   useEffect(() => {
-  
     getServicessData();
   }, []);
 
-
-
-
   return (
     <>
-     {Loading ? <Loader/> : null}
+      {Loading ? <Loader /> : null}
       {dir == "rtl" ? (
         <>
           <div className="bg-blue-100/50">
@@ -49,17 +42,16 @@ export default function Services() {
               className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
             >
               <img
-              
                 src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/service-bg.jpg?raw=true"
                 className="w-full h-full object-fill z-10"
                 alt="Service image "
               />
-            
+
               <div className="absolute inset-0 bg-gradient-to-l from-blue-50/70  to-blue-800/50 opacity-70 z-10"></div>
               <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50  border border-blue-900  rounded-full items-center justify-center z-20">
                 <h3 className="text-green-950 text-sm  font-semibold mx-1">
                   ALBatel & Co
-                </h3> 
+                </h3>
                 <img
                   src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true"
                   className="w-[50px] mt-1"
@@ -145,10 +137,10 @@ export default function Services() {
                 الشفافية والاحترافية بكل جودة وتميز.
               </p>
               <p className="text-center text-blue-900 text-xl p-4 leading-10 font-semibold ">
-                لدينا التزام كامل بالأخلاق المهنية في جميع جوانب عملنا، ونضمن
-                الامتثال للمعايير الدولية الخاصة بالمراجعة والمحاسبة وما يتطلبه
-                عملنا، إنا مواكبون للتغيرات والتطورات التي تحدث في المجال مما
-                يجعلنا على دراية بالتغيرات القانونية والتشريعات الجديدة.
+                نلتزم بأعلى معايير الأخلاقيات المهنية في جميع جوانب عملنا، ونضمن
+                الامتثال للمعايير الدولية للمراجعة والمحاسبة، كما نواكب التغيرات
+                والتطورات في المجال مما يجعلنا على دراية كاملة بالتشريعات
+                القانونية والتطورات الجديدة.
               </p>
             </div>
           </div>
@@ -160,12 +152,11 @@ export default function Services() {
               className={`relative   w-full lg:h-[600px] 3xl:h-[750px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
             >
               <img
-                
                 src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/service-bg.jpg?raw=true"
                 className="w-full h-full object-fill z-10"
                 alt="Service image "
               />
-             
+
               <div className="absolute inset-0 bg-gradient-to-l from-blue-50/70  to-blue-800/50 opacity-70 z-10"></div>
               <div className="absolute top-4 end-4 hidden md:flex bg-white bg-opacity-50  border border-blue-900  rounded-full items-center justify-center z-20">
                 <h3 className="text-green-950 text-sm  font-semibold mx-1">
@@ -177,7 +168,7 @@ export default function Services() {
                   alt="logo image "
                 />
               </div>
- 
+
               <img
                 src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
                 className="w-[150px] mt-1 absolute bottom-4 end-4  hidden md:flex bg-black bg-opacity-50 rounded-3xl p-2 items-center justify-center z-20"
@@ -258,11 +249,11 @@ export default function Services() {
                 every aspect of our consultation and guidance.
               </p>
               <p className="text-center text-blue-900 text-xl p-4 leading-10 font-semibold ">
-                We adhere to professional ethics in all aspects of our work.
-                Additionally, we ensure compliance with international standards
-                in auditing, accounting, and other relevant areas of our work.
-                We stay updated with changes and developments in the field,
-                enabling us to be aware of legal changes and new regulations.
+                We adhere to the highest standards of professional ethics in all
+                aspects of our work, ensuring compliance with international
+                auditing and accounting standards, and keeping abreast of
+                changes and developments in the field, keeping us fully aware of
+                legal legislation and new developments.
               </p>
             </div>
           </div>

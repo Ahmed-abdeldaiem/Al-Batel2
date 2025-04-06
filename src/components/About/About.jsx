@@ -124,14 +124,13 @@ export default function About() {
                 alt="logo image "
               />
             </div>
-         
-              
-              <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
-                className="w-[150px] mt-1 absolute bottom-4 start-4  hidden md:flex bg-black bg-opacity-30 rounded-3xl p-2 items-center justify-center z-20"
-                alt="logo image "
-              />
-         
+
+            <img
+              src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+              className="w-[150px] mt-1 absolute bottom-4 start-4  hidden md:flex bg-black bg-opacity-30 rounded-3xl p-2 items-center justify-center z-20"
+              alt="logo image "
+            />
+
             <div className="absolute top-3/4 hidden end-4 md:flex bg-white bg-opacity-60 border border-green-950  rounded-full items-center cursor-pointer  justify-center z-30">
               <h3 className="text-gray-900 text-sm font-semibold mx-1">
                 info@albatelcpa.com
@@ -167,18 +166,18 @@ export default function About() {
                   تاريخ الشركة
                 </h3>
                 <p className="text-gray-900 text-xl py-2 m-2 flex font-semibold">
-                  <i className="fa-solid fa-calendar-days text-green-600 text-xl m-2"></i>
+                  <i className="fa-solid fa-calendar-days text-green-600 text-xl m-2 text-justify"></i>
                   تأسست شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
-                  بموجب ترخيص الهيئة السعودية للمحاسبين القانونيين لمزاولة أعمال
-                  المحاسبة والمراجعة منذ عام 1427/11/08هـ الموافق 2006/11/29مـ
+                  بموجب ترخيص الهيئة السعودية للمراجعين والمحاسبين بمزاولة مهنة
+                  المحاسبة والمراجعة منذ 1427/11/08هـ الموافق 2006/11/29مـ
                 </p>
                 <p className="text-gray-900 text-xl m-2 py-5 flex font-semibold">
-                  <i className="fa-solid fa-id-card  text-green-600 text-xl m-2"></i>
-                  كما أن الشركة حاصلة على تراخيص لتقديم خدمات مراجعة الحسابات
-                  وتدقيقها، والاستشارات المالية، وتقديم خدمات المحاسبة،
-                  والاستشارات الإدارية، وإعداد كشوف الذمة المالية للضرائب،
-                  والاستشارات المحاسبية ووضع السياسات والإجراءات، والاستشارات في
-                  مجال الزكاة وضريبة الدخل، وخدمات ضريبة القيمة المضافة.
+                  <i className="fa-solid fa-id-card  text-green-600 text-xl m-2 text-justify"></i>
+                  الشركة حاصلة على تراخيص لتقديم خدمات مراجعة الحسابات وتدقيقها،
+                  والاستشارات المالية، وتقديم خدمات المحاسبة، والاستشارات
+                  الإدارية، وإعداد كشوف الذمة المالية للضرائب، والاستشارات
+                  المحاسبية ووضع السياسات والإجراءات، والاستشارات في مجال الزكاة
+                  وضريبة الدخل، وخدمات ضريبة القيمة المضافة.
                 </p>
               </div>
 
@@ -281,9 +280,9 @@ export default function About() {
                   />
                   <div className="w-full flex flex-col justify-start">
                     <p className="text-blue-950 flex  items-center font-semibold text-xl text-center leading-10 p-10 my-4">
-                      أكثر من ثمانين كادر مؤهلين علميا وأصحاب خبرة واسعة في جميع
-                      الجوانب المالية والإدارية والقانونية، واستطاعت الشركة من
-                      خلالهم تقديم خدماتها المهنية لآلاف العملاء داخل المملكة
+                      أكثر من ثمانين كادر مؤهلين علميًا وأصحاب خبرة واسعة في
+                      جميع الجوانب المالية والإدارية والقانونية، واستطاعت الشركة
+                      من خلالهم تقديم خدماتها المهنية لآلاف العملاء داخل المملكة
                       وخارجها، محققة إنجازات تعكس مستوى المهنية والجودة التي
                       تميزها.
                     </p>
@@ -425,8 +424,7 @@ export default function About() {
         </>
       ) : (
         <>
-      
-      <div
+          <div
             //  bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about%20us%20background.jpg?raw=true')] bg-no-repeat bg-cover bg-center
             className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
           >
@@ -447,14 +445,13 @@ export default function About() {
                 alt="logo image "
               />
             </div>
-         
-              
-              <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
-                className="w-[150px] mt-1 absolute bottom-4 end-4  hidden md:flex bg-black bg-opacity-30 rounded-3xl p-2 items-center justify-center z-20"
-                alt="logo image "
-              />
-         
+
+            <img
+              src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+              className="w-[150px] mt-1 absolute bottom-4 end-4  hidden md:flex bg-black bg-opacity-30 rounded-3xl p-2 items-center justify-center z-20"
+              alt="logo image "
+            />
+
             <div className="absolute top-3/4 hidden start-4 md:flex bg-white bg-opacity-60 border border-green-950  rounded-full items-center cursor-pointer  justify-center z-30">
               <h3 className="text-gray-900 text-sm font-semibold mx-1">
                 info@albatelcpa.com
@@ -467,15 +464,14 @@ export default function About() {
             </div>
             <div className="absolute top-0 bottom-0 left-0 right-0 z-20  flex flex-col justify-center ">
               <h1 className="text-white text-center text-xl lg:text-5xl 3xl:text-6xl mb-4 font-semibold">
-               
-              Batel Abdullah Al-Batel & Partners Company
+                Batel Abdullah Al-Batel & Partners Company
               </h1>
               <h2 className="text-white text-center text-lg lg:text-4xl mb-20 font-semibold">
-              For professional consultations
+                For professional consultations
               </h2>
               <button onClick={handleScroll}>
                 <h3 className="animate-pulse inline-block rounded-full md:px-8 cursor-pointer mx-1 bg-blue-100 bg-opacity-40 py-3 border-green-950 border-2 text-center z-20 text-green-950 text-md font-bold">
-                More About Us
+                  More About Us
                   <span className="mx-2">
                     <i className="fa-solid fa-arrow-down"></i>
                   </span>
@@ -483,7 +479,6 @@ export default function About() {
               </button>
             </div>
           </div>
-
 
           <div id="desc1" className="container my-16">
             <div className=" w-full  flex  flex-col justify-start items-center overflow-hidden lg:flex-row bg-white shadow-md rounded-3xl rounded-tl-none">
@@ -495,18 +490,17 @@ export default function About() {
                   <i className="fa-solid fa-calendar-days text-green-600 text-xl m-2"></i>
                   Batel Abdullah Al Batel & Partners Professional Consulting
                   Company was established under the license of the Saudi
-                  Organization for Certified Public Accountants to practice
-                  accounting and auditing since 08/11/1427 AH corresponding to
-                  29/11/2006 AD.
+                  Organization for Certified Public Accountants to practice the
+                  accounting and auditing profession since 11/08/1427 AH
+                  corresponding to 11/29/2006 AD.
                 </p>
                 <p className="text-gray-900 text-xl m-2 py-5 flex font-semibold">
                   <i className="fa-solid fa-id-card  text-green-600 text-xl m-2"></i>
-                  The company also holds licenses to provide audit services
-                  Audit, financial consulting, provision of accounting services،
-                  Management Consulting, preparation of statements Financial
-                  disclosure of taxes, accounting consulting and policy
-                  development Procedures, consultations in the field of Zakat
-                  and Income Tax, Services Value Added Tax.
+                  The company is licensed to provide auditing and accounting
+                  services, financial consulting, accounting services,
+                  management consulting, tax return preparation, accounting
+                  consulting, policy and procedure development, zakat and income
+                  tax consulting, and value-added tax services.
                 </p>
               </div>
 

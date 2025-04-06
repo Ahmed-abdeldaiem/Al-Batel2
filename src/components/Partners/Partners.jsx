@@ -42,7 +42,7 @@ export default function Partners() {
 {dir == "rtl" ? <>
 <div
       
-            className={`relative   w-full lg:h-[430px] 3xl:h-[500px] h-[270px] md:h-[330px]  mt-16 flex justify-center items-center`}
+            className={`relative  w-full lg:h-[430px] 3xl:h-[500px] h-[270px] md:h-[330px]  mt-16 flex justify-center items-center`}
           >
             <img
               src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/home3%20(2)-3.jpg?raw=true"

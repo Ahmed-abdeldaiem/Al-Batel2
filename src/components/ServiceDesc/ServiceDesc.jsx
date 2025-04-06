@@ -28,7 +28,7 @@ const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
             {/* Gradient blue overlay */}
             <div className="absolute inset-0 bg-gradient-to-l from-blue-600  to-blue-600/50 opacity-70 z-10"></div>
             <div className="z-20  flex flex-col md:flex-row  justify-center gap-5 p-10">
-              <span className="rounded-full z-20 md:px-8 mx-1 text-center bg-blue-100 bg-opacity-20 text-white font-semibold text-xl py-3 border-green-600 border-2 ">ادارة</span>
+              <span className="rounded-full z-20 md:px-8 mx-1 text-center bg-blue-100 bg-opacity-20 text-white font-semibold text-xl py-3 border-green-600 border-2 ">إدارة</span>
               <span className="rounded-full z-20 md:px-8 mx-1 text-center bg-blue-100 bg-opacity-20 text-white font-semibold text-xl py-3 border-green-600 border-2 ">تخطيط</span>
               <span className="rounded-full z-20 md:px-8 mx-1 text-center bg-blue-100 bg-opacity-20 text-white font-semibold text-xl py-3 border-green-600 border-2 ">تدقيق</span>
               <span className="rounded-full z-20 md:px-8 mx-1 text-center bg-blue-100 bg-opacity-20 text-white font-semibold text-xl py-3 border-green-600 border-2 ">تطوير</span>
