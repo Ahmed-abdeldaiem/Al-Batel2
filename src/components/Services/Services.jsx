@@ -39,10 +39,11 @@ export default function Services() {
         <>
           <div className="bg-blue-100/50">
             <div
-              className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
+          
+              className={`relative   w-full  lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[350px]   mt-16 flex justify-center items-center`}
             >
               <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/service-bg.jpg?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/service-bg.jpg"
                 className="w-full h-full object-fill z-10"
                 alt="Service image "
               />
@@ -53,14 +54,14 @@ export default function Services() {
                   ALBatel & Co
                 </h3>
                 <img
-                  src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true"
+                  src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home/logo.png"
                   className="w-[50px] mt-1"
                   alt="logo image "
                 />
               </div>
 
               <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/2030.png"
                 className="w-[150px] mt-1 absolute bottom-4 start-4  hidden md:flex bg-black bg-opacity-50 rounded-3xl p-2 items-center justify-center z-20"
                 alt="logo image "
               />
@@ -102,7 +103,7 @@ export default function Services() {
                       className="lg:w-1/3 md:w-1/2 3xl:w-1/4  px-3  overflow-hidden"
                     >
                       <div className="flex  flex-col-reverse border rounded-tr-3xl rounded-tl-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
-                        <div className=" flex h-[250px] p-4 flex-col overflow-hidden items-center justify-center text-center">
+                        <div className=" flex h-auto min-h-[300px] p-4 flex-col overflow-hidden items-center  text-center">
                           <h5 className="mb-1 text-2xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight ">
                             {service?.title?.ar}
                           </h5>
@@ -149,10 +150,11 @@ export default function Services() {
         <>
           <div className="bg-blue-100/50">
             <div
-              className={`relative   w-full lg:h-[600px] 3xl:h-[750px] h-[300px] md:h-[350px]  mt-16 flex justify-center items-center`}
+            
+              className={`relative   w-full lg:h-[600px] 3xl:h-[750px] h-[300px] md:h-[350px]   mt-16 flex justify-center items-center`}
             >
               <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/service-bg.jpg?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/service-bg.jpg"
                 className="w-full h-full object-fill z-10"
                 alt="Service image "
               />
@@ -163,14 +165,14 @@ export default function Services() {
                   ALBatel & Co
                 </h3>
                 <img
-                  src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true"
+                  src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home/logo.png"
                   className="w-[50px] mt-1"
                   alt="logo image "
                 />
               </div>
 
               <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/2030.png"
                 className="w-[150px] mt-1 absolute bottom-4 end-4  hidden md:flex bg-black bg-opacity-50 rounded-3xl p-2 items-center justify-center z-20"
                 alt="logo image "
               />
@@ -212,7 +214,8 @@ export default function Services() {
                       className="lg:w-1/3 md:w-1/2 3xl:w-1/4  px-3  overflow-hidden"
                     >
                       <div className="flex  flex-col-reverse border rounded-tr-3xl rounded-tl-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
-                        <div className=" flex h-[250px] p-4 flex-col overflow-hidden items-center justify-center text-center">
+                      
+                        <div className=" flex   h-auto min-h-[300px]  p-4 flex-col overflow-hidden items-center  text-center">
                           <h5 className="mb-1 text-2xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  ">
                             {service?.title?.en}
                           </h5>

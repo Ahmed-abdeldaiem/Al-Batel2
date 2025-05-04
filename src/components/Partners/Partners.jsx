@@ -45,7 +45,7 @@ export default function Partners() {
             className={`relative  w-full lg:h-[430px] 3xl:h-[500px] h-[270px] md:h-[330px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/home3%20(2)-3.jpg?raw=true"
+              src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/home3%20(2)-3.jpg"
               className="w-full h-full  z-10"
               alt="about us image "
             />
@@ -56,7 +56,7 @@ export default function Partners() {
                 ALBatel & Co
               </h3>
               <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home/logo.png"
                 className="w-[50px] mt-1"
                 alt="logo image "
               />
@@ -64,7 +64,7 @@ export default function Partners() {
          
               
               <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/2030.png"
                 className="w-[150px] mt-1 absolute bottom-4 start-4  flex bg-black bg-opacity-30 rounded-3xl p-2 items-center justify-center z-20"
                 alt="logo image "
               />
@@ -95,7 +95,7 @@ export default function Partners() {
             className={`relative   w-full lg:h-[430px] 3xl:h-[500px] h-[270px] md:h-[330px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/home3%20(2)-3.jpg?raw=true"
+              src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/home3%20(2)-3.jpg"
               className="w-full h-full  z-10"
               alt="about us image "
             />
@@ -106,7 +106,7 @@ export default function Partners() {
                 ALBatel & Co
               </h3>
               <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home/logo.png"
                 className="w-[50px] mt-1"
                 alt="logo image "
               />
@@ -114,7 +114,7 @@ export default function Partners() {
          
               
               <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/2030.png"
                 className="w-[150px] mt-1 absolute bottom-4 start-4  flex bg-black bg-opacity-30 rounded-3xl p-2 items-center justify-center z-20"
                 alt="logo image "
               />

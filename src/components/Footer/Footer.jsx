@@ -10,7 +10,7 @@ export default function Footer() {
     <>
       {dir == "rtl" ? (
         <>
-          <footer className="relative bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/footer1.jpg?raw=true')] bg-no-repeat bg-center bg-cover shadow z-30 ">
+          <footer className="relative bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/footer1.jpg')] bg-no-repeat bg-center bg-cover shadow z-30 ">
             <div className="absolute inset-0 bg-gradient-to-l from-blue-900/50 to-blue-800/40 opacity-80 z-10"></div>
 
             <div className="w-full relative z-20 max-w-screen-xl mx-auto p-4 md:pt-8 md:pb-4  ">
@@ -21,9 +21,9 @@ export default function Footer() {
                   className="flex bg-green-50 p-2 bg-opacity-30 group hover:bg-opacity-40 duration-700 transition-all rounded-full z-20 items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
                 >
                   <img
-                    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/logo-1.png?raw=true"
+                    src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/logo-1.png"
                     className="h-8 cursor-pointer "
-                    alt="elbatel Logo"
+                    alt="Albatel Logo"
                   />
                   <span className="self-center text-2xl group-hover:text-blue-950 duration-700 transition-all  text-green-50  whitespace-nowrap ">
                     الباتل
@@ -144,9 +144,9 @@ export default function Footer() {
                 <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center ">
                 <Link to="/team/42" className="px-1" target="_blank">
                     <img
-                      src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A8%D8%A7%D8%AA%D9%84_%D9%84%D9%88%D8%AC%D9%882-removebg-preview.png?raw=true"
+                      src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%A8%D8%A7%D8%AA%D9%84_%D9%84%D9%88%D8%AC%D9%882-removebg-preview.png"
                       className="w-5 inline-block hover:rotate-[180deg] transition-all duration-700"
-                      alt="Elbatel Logo"
+                      alt="Albatel Logo"
                     />
                   </Link>
                   <a
@@ -172,7 +172,7 @@ export default function Footer() {
         </>
       ) : (
         <>
-          <footer className="relative bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/footer1.jpg?raw=true')] bg-no-repeat bg-center bg-cover shadow z-30 ">
+          <footer className="relative bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/footer1.jpg')] bg-no-repeat bg-center bg-cover shadow z-30 ">
             <div className="absolute inset-0 bg-gradient-to-l from-blue-900/50 to-blue-800/40 opacity-80 z-10"></div>
 
             <div className="w-full relative z-20 max-w-screen-xl mx-auto p-4 md:pt-8 md:pb-4 ">
@@ -183,9 +183,9 @@ export default function Footer() {
                   className="flex bg-green-50 p-2 bg-opacity-30 group hover:bg-opacity-40 duration-700 transition-all rounded-full z-20 items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
                 >
                   <img
-                    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/logo-1.png?raw=true"
+                    src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/logo-1.png"
                     className="h-8 cursor-pointer "
-                    alt="elbatel Logo"
+                    alt="Albatel Logo"
                   />
                   <span className="self-center text-2xl group-hover:text-blue-950 duration-700 transition-all  text-green-50  whitespace-nowrap ">
                     Al-Batel
@@ -322,9 +322,9 @@ export default function Footer() {
                   </a>
                   <Link to="/team/42" className="px-1" target="_blank">
                     <img
-                      src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A8%D8%A7%D8%AA%D9%84_%D9%84%D9%88%D8%AC%D9%882-removebg-preview.png?raw=true"
+                      src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%A8%D8%A7%D8%AA%D9%84_%D9%84%D9%88%D8%AC%D9%882-removebg-preview.png"
                       className="w-5 inline-block hover:rotate-[180deg] transition-all duration-700"
-                      alt="Elbatel Logo"
+                      alt="Albatel Logo"
                     />
                   </Link>
                 </span>

@@ -16,7 +16,7 @@ export default function Branches() {
         ar: "الرياض",
         en: "Riyadh",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b1.jpg?raw=true'
+      img:'https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/branches/b1.jpg'
     },
     {id: 2,
       name: {
@@ -31,14 +31,14 @@ export default function Branches() {
         ar: "المدينة المنورة",
         en: "Madinah",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b3.jpg?raw=true'
+      img:'https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/branches/b3.jpg'
     },
     {id: 4,
       name: {
         ar: "الخبر",
         en: "Khobar",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b4.jpg?raw=truee'
+      img:'https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/branches/b4.jpg'
     },
     ,
     {id: 5,
@@ -46,28 +46,28 @@ export default function Branches() {
         ar: "حفر الباطن",
         en: "Hafar Al-Batin",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b5.jpg?raw=true'
+      img:'https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/branches/b5.jpg'
     },
     {id: 6,
       name: {
         ar: "خميس مشيط",
         en: "Khamis Mushait",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b6.jpg?raw=true'
+      img:'https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/branches/b6.jpg'
     },
     {id: 7,
       name: {
         ar: "جازان",
         en: "jazan",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b7.jpg?raw=true'
+      img:'https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/branches/b7.jpg'
     },
     {id: 8,
       name: {
         ar: "القصيم",
         en: "Al-Qassim",
       },
-      img:'https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/branches/b8.jpg?raw=true'
+      img:'https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/branches/b8.jpg'
     },
   ];
 

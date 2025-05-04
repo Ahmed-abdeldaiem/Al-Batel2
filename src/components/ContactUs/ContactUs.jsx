@@ -119,7 +119,7 @@ export default function ContactUs() {
 
 {dir == "rtl" ? (
         <>
-          <div className="bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/contact%20us2.jpg?raw=true')] flex w-full justify-center lg:justify-end bg-cover bg-center relative">
+          <div className="bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/contact%20us2.jpg')] flex w-full justify-center lg:justify-end bg-cover bg-center relative">
 <div className="absolute inset-0 bg-gradient-to-l from-green-300/40  to-blue-800/30 opacity-70 z-10"></div>
 
 <div className="w-8/12 z-20">
@@ -272,7 +272,7 @@ export default function ContactUs() {
         </>
       ) : (
         <>
-         <div className="bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/contact%20us2.jpg?raw=true')] flex w-full justify-center lg:justify-start bg-cover bg-center relative">
+         <div className="bg-[url('http://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/contact%20us2.jpg')] flex w-full justify-center lg:justify-start bg-cover bg-center relative">
 <div className="absolute inset-0 bg-gradient-to-l from-green-300/40  to-blue-800/30 opacity-70 z-10"></div>
 
 <div className="w-8/12 z-20">

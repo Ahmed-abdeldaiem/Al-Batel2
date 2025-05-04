@@ -24,7 +24,7 @@ export default function Goal() {
       <div className="inner flex justify-center  items-center">
   <img
     className="rounded-full border-2 border-green-600 shadow-lg transition-all duration-700 hover:scale-105 hover:border-blue-500 hover:shadow-green-500 shadow-blue-300 w-[350px] h-[350px] object-fit"
-    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/king-1-1.png?raw=true"
+    src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/king-1-1.png"
     alt="mohamed ben salman image"
   />
 </div>
@@ -72,7 +72,7 @@ export default function Goal() {
       <div className="inner flex justify-center  items-center">
   <img
     className="rounded-full border-2 border-green-600 shadow-lg transition-all duration-700 hover:scale-105 hover:border-blue-500 hover:shadow-green-500 shadow-blue-300 w-[350px] h-[350px] object-fit"
-    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/king-1-1.png?raw=true"
+    src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/king-1-1.png"
     alt="mohamed ben salman image"
   />
 </div>
@@ -85,19 +85,19 @@ export default function Goal() {
 As a result of the remarkable prosperity witnessed by the business sector thanks to Vision 2030  </p>
 <p className='text-gray-800 text-lg font-semibold text-center lg:text-start'>
 We strive and aspire to be the first choice for the customer by:   </p>
-<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start text-center lg:text-start">
+<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start">
                 <span className="text-green-600 mx-3">
                   <i className="fa-solid fa-circle-dot"></i>
                 </span>
                 Providing the customer with all his needs
                </h3>
-<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start text-center lg:text-start">
+<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start">
                 <span className="text-green-600 mx-3">
                   <i className="fa-solid fa-circle-dot"></i>
                 </span>
                 With precision and professionalism
                </h3>
-<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start text-center lg:text-start">
+<h3 className="text-gray-800 text-lg  my-4 text-center lg:text-start">
                 <span className="text-green-600 mx-3">
                   <i className="fa-solid fa-circle-dot"></i>
                 </span>

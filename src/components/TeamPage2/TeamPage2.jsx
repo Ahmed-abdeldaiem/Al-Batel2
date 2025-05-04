@@ -65,7 +65,7 @@ export default function TeamPage2() {
           {/* header section */}
           <div
        
-            className="relative flex flex-col lg:h-[620px] 3xl:h-[790px] h-[300px] md:h-[370px] justify-center items-center mt-16 py-10  bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D9%81%D8%B1%D9%8A%D9%82%D9%86%D8%A7.jpeg?raw=true')]"
+            className="relative flex flex-col lg:h-[620px] 3xl:h-[790px] h-[300px] md:h-[370px] justify-center items-center mt-16 py-10  bg-center bg-no-repeat bg-cover bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D9%81%D8%B1%D9%8A%D9%82%D9%86%D8%A7.jpeg')]"
           >
     
             <div className="absolute inset-0 bg-gradient-to-l from-blue-700/70 to-blue-200/50 opacity-80 z-10"></div>
@@ -73,7 +73,7 @@ export default function TeamPage2() {
             <div className="absolute bottom-2 end-2 w-2/12 ">
               <img
                 className="w-full"
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/Logos%20and%20Certified2/111-removebg-preview.png?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/Logos%20and%20Certified2/111-removebg-preview.png"
                 alt="certified image"
               />
             </div>
@@ -152,7 +152,7 @@ export default function TeamPage2() {
                       >
                         <img
                           className="absolute w-[25px] h-[25px] md:w-[35px] md:h-[35px]"
-                          src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/Logos%20and%20Certified3/certified.png?raw=true"
+                          src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/Logos%20and%20Certified3/certified.png"
                           alt="certfied image"
                         />
                         <div className=" flex h-[230px] items-center overflow-hidden mb-1 border-b  justify-center text-center ">
@@ -180,14 +180,14 @@ export default function TeamPage2() {
         {/* header section */}
         <div
  
-          className="relative flex flex-col lg:h-[620px] 3xl:h-[790px] h-[300px] md:h-[370px] justify-center items-center mt-16 py-10  bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D9%81%D8%B1%D9%8A%D9%82%D9%86%D8%A7.jpeg?raw=true')]"
+          className="relative flex flex-col lg:h-[620px] 3xl:h-[790px] h-[300px] md:h-[370px] justify-center items-center mt-16 py-10  bg-center bg-no-repeat bg-cover bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D9%81%D8%B1%D9%8A%D9%82%D9%86%D8%A7.jpeg')]"
         >
           <div className="absolute inset-0 bg-gradient-to-l from-blue-200/50 to-blue-700/70 opacity-80 z-10"></div>
           {/* certified */}
           <div className="absolute bottom-2 end-2 w-2/12 ">
             <img
               className="w-full"
-              src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/Logos%20and%20Certified2/111-removebg-preview.png?raw=true"
+              src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/Logos%20and%20Certified2/111-removebg-preview.png"
               alt="certified image"
             />
           </div>
@@ -266,7 +266,7 @@ export default function TeamPage2() {
                       >
                         <img
                           className="absolute w-[30px] h-[30px] md:w-[40px] md:h-[40px]"
-                          src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/Logos%20and%20Certified3/certified.png?raw=true"
+                          src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/Logos%20and%20Certified3/certified.png"
                           alt="certfied image"
                         />
                         <div className=" flex h-[230px] items-center overflow-hidden mb-1 border-b  justify-center text-center ">

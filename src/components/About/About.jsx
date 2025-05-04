@@ -104,11 +104,11 @@ export default function About() {
       {dir == "rtl" ? (
         <>
           <div
-            //  bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about%20us%20background.jpg?raw=true')] bg-no-repeat bg-cover bg-center
+         
             className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%85%D9%86%20%D9%86%D8%AD%D9%864.jpeg?raw=true"
+              src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/%D9%85%D9%86%20%D9%86%D8%AD%D9%864.jpeg"
               className="w-full h-full  z-10"
               alt="about us image "
             />
@@ -119,14 +119,14 @@ export default function About() {
                 ALBatel & Co
               </h3>
               <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home/logo.png"
                 className="w-[50px] mt-1"
                 alt="logo image "
               />
             </div>
 
             <img
-              src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+              src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/2030.png"
               className="w-[150px] mt-1 absolute bottom-4 start-4  hidden md:flex bg-black bg-opacity-30 rounded-3xl p-2 items-center justify-center z-20"
               alt="logo image "
             />
@@ -184,7 +184,7 @@ export default function About() {
               <div className="w-full lg:w-1/2 flex justify-center items-center ">
                 <img
                   className=" w-full"
-                  src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A8%D8%A7%D8%AA%D9%84%20%D9%84%D9%88%D8%AC%D9%88.jpg?raw=true"
+                  src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%A8%D8%A7%D8%AA%D9%84%20%D9%84%D9%88%D8%AC%D9%88.jpg"
                   alt="history of company image"
                 />
               </div>
@@ -227,7 +227,7 @@ export default function About() {
           <h2 className="text-3xl text-green-800 text-center font-semibold p-6">
             فروعنا داخل المملكة العربية السعودية
           </h2>
-          <div className=" w-full flex bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about1.jpg?raw=true')] bg-fixed bg-cover bg-center flex-wrap flex-col items-center justify-center md:flex-row bg-white shadow-md rounded-3xl my-8 ">
+          <div className=" w-full flex bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/about1.jpg')] bg-fixed bg-cover bg-center flex-wrap flex-col items-center justify-center md:flex-row bg-white shadow-md rounded-3xl my-8 ">
             {branches.map((branch, index) => {
               return (
                 <Link
@@ -247,7 +247,7 @@ export default function About() {
           <h2 className="text-3xl text-green-800 text-center mt-14 font-semibold p-6">
             فروعنا خارج المملكة العربية السعودية
           </h2>
-          <div className=" w-full flex flex-wrap bg-fixed flex-col items-center justify-evenly md:flex-row bg-white shadow-md bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about1.jpg?raw=true')] bg-cover bg-center rounded-3xl my-8 ">
+          <div className=" w-full flex flex-wrap bg-fixed flex-col items-center justify-evenly md:flex-row bg-white shadow-md bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/about1.jpg')] bg-cover bg-center rounded-3xl my-8 ">
             {branches2.map((branch, index) => {
               return (
                 <div
@@ -292,7 +292,7 @@ export default function About() {
               <div className="w-full  lg:w-1/2   p-3 ">
                 <div className="flex md:h-[650px] h-[750px]  items-center justify-center bg-white rounded-3xl flex-col shadow-md  ">
                   <img
-                    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/team2-about.jpg?raw=true"
+                    src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/team2-about.jpg"
                     className="w-[250px] h-[250px] 3xl:w-[300px] 3xl:h-[300px] my-4 rounded-full shadow-md"
                     alt="team image"
                   />
@@ -425,11 +425,11 @@ export default function About() {
       ) : (
         <>
           <div
-            //  bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about%20us%20background.jpg?raw=true')] bg-no-repeat bg-cover bg-center
+          
             className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%85%D9%86%20%D9%86%D8%AD%D9%864.jpeg?raw=true"
+              src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/%D9%85%D9%86%20%D9%86%D8%AD%D9%864.jpeg"
               className="w-full h-full  z-10"
               alt="about us image "
             />
@@ -440,14 +440,14 @@ export default function About() {
                 ALBatel & Co
               </h3>
               <img
-                src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home/logo.png?raw=true"
+                src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home/logo.png"
                 className="w-[50px] mt-1"
                 alt="logo image "
               />
             </div>
 
             <img
-              src="https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/2030.png?raw=true"
+              src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/2030.png"
               className="w-[150px] mt-1 absolute bottom-4 end-4  hidden md:flex bg-black bg-opacity-30 rounded-3xl p-2 items-center justify-center z-20"
               alt="logo image "
             />
@@ -507,7 +507,7 @@ export default function About() {
               <div className="w-full lg:w-1/2 flex justify-center items-center ">
                 <img
                   className=" w-full"
-                  src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/%D8%A8%D8%A7%D8%AA%D9%84%20%D9%84%D9%88%D8%AC%D9%88.jpg?raw=true"
+                  src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%A8%D8%A7%D8%AA%D9%84%20%D9%84%D9%88%D8%AC%D9%88.jpg"
                   alt="history of company image"
                 />
               </div>
@@ -551,7 +551,7 @@ export default function About() {
           <h2 className="text-3xl text-green-800 text-center font-semibold p-6">
             Our branches inside the Kingdom of Saudi Arabia
           </h2>
-          <div className=" w-full flex bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about1.jpg?raw=true')] bg-fixed bg-cover bg-center flex-wrap flex-col items-center justify-center md:flex-row bg-white shadow-md rounded-3xl my-8 ">
+          <div className=" w-full flex bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/about1.jpg')] bg-fixed bg-cover bg-center flex-wrap flex-col items-center justify-center md:flex-row bg-white shadow-md rounded-3xl my-8 ">
             {branches.map((branch, index) => {
               return (
                 <Link
@@ -571,7 +571,7 @@ export default function About() {
           <h2 className="text-3xl text-green-800 text-center mt-14 font-semibold p-6">
             Our branches outside the Kingdom of Saudi Arabia
           </h2>
-          <div className=" w-full flex flex-wrap bg-fixed flex-col items-center justify-evenly md:flex-row bg-white shadow-md bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/about1.jpg?raw=true')] bg-cover bg-center rounded-3xl my-8 ">
+          <div className=" w-full flex flex-wrap bg-fixed flex-col items-center justify-evenly md:flex-row bg-white shadow-md bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/about1.jpg')] bg-cover bg-center rounded-3xl my-8 ">
             {branches2.map((branch, index) => {
               return (
                 <div
@@ -618,7 +618,7 @@ export default function About() {
               <div className="w-full  lg:w-1/2   p-3 ">
                 <div className="flex md:h-[650px] h-[750px]  items-center justify-center bg-white rounded-3xl flex-col shadow-md  ">
                   <img
-                    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/team2-about.jpg?raw=true"
+                    src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/team2-about.jpg"
                     className="w-[250px] h-[250px] my-4 rounded-full shadow-md"
                     alt="team image"
                   />

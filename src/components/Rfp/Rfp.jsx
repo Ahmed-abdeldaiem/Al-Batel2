@@ -135,7 +135,7 @@ export default function Rfp() {
     <>
       {dir == "rtl" ? (
         <>
-          <div className="bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/rfp2.jpg?raw=true')] flex w-full justify-center items-center lg:justify-end bg-no-repeat bg-cover  relative">
+          <div className="bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/rfp2.jpg')] flex w-full justify-center items-center lg:justify-end bg-no-repeat bg-cover  relative">
             <div className="absolute inset-0 bg-gradient-to-l from-blue-300/30  to-blue-500/50 opacity-70 z-10"></div>
 
             <div className="lg:w-7/12 md:w-10/12 z-20">
@@ -486,7 +486,7 @@ export default function Rfp() {
         </>
       ) : (
         <>
-        <div className="bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/rfp2.jpg?raw=true')] flex w-full justify-center items-center lg:justify-start bg-no-repeat bg-cover  relative">
+        <div className="bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/rfp2.jpg')] flex w-full justify-center items-center lg:justify-start bg-no-repeat bg-cover  relative">
         <div className="absolute inset-0 bg-gradient-to-l from-blue-300/30  to-blue-500/50 opacity-70 z-10"></div>
 
           <div className="lg:w-7/12 md:w-10/12 z-20">

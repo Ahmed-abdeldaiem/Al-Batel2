@@ -19,7 +19,7 @@ export default function Vision() {
             <div className="bg-white rounded-lg w-full lg:flex lg:flex-row flex-col justify-center items-center my-8">
               <div className=" w-full lg:w-1/2 py-8">
                 <div className="inner flex px-1 lg:px-4 flex-col justify-center items-center lg:justify-start lg:items-start">
-                  <h2 className="text-green-600 text-2xl my-4 font-semibold text-center mx-3 text-justify">
+                  <h2 className="text-green-600 text-2xl my-4 font-semibold text-center mx-3 ">
                     رؤيتنا
                   </h2>
 
@@ -61,7 +61,7 @@ export default function Vision() {
                 <div className="inner flex justify-center  items-center">
                   <img
                     className="rounded-full border-2 border-green-600 shadow-lg transition-all duration-700 hover:scale-105 hover:border-blue-500 hover:shadow-green-500 shadow-blue-300 w-[350px] h-[350px] object-fit"
-                    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/logo-1.png?raw=true"
+                    src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/logo-1.png"
                     alt="mohamed ben salman image"
                   />
                 </div>
@@ -115,7 +115,7 @@ export default function Vision() {
                 <div className="inner flex justify-center  items-center">
                   <img
                     className="rounded-full border-2 border-green-600 shadow-lg transition-all duration-700 hover:scale-105 hover:border-blue-500 hover:shadow-green-500 shadow-blue-300 w-[350px] h-[350px] object-fit"
-                    src="https://github.com/Ahmed-abdeldaiem/Albatel-API/blob/main/home%20images/logo-1.png?raw=true"
+                    src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/logo-1.png"
                     alt="mohamed ben salman image"
                   />
                 </div>
