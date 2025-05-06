@@ -25,7 +25,7 @@ Error 404
 Page not found
   </h1>
   <span className='text-red-500 font-semibold px-3 animate-pulse'>back to home </span>  
-  <Link to={"about"}>
+  <Link to={""}>
     
                       <button className="  px-7 py-2 overflow-hidden border-2 border-green-800 transition-all duration-500 hover:border-blue-400 text-xl font-semibold text-blue-800 hover:text-green-800 bg-slate-100 hover:bg-opacity-80 bg-opacity-10 rounded-full">
 الصفحة الرئيسية
