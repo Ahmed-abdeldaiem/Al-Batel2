@@ -10,7 +10,7 @@ export default function Footer() {
     <>
       {dir == "rtl" ? (
         <>
-          <footer className="relative bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/footer1.jpg')] bg-no-repeat bg-center bg-cover shadow z-30 ">
+          <footer className="relative bg-[url('/footer.jpg')] bg-no-repeat bg-center bg-cover shadow z-30 ">
             <div className="absolute inset-0 bg-gradient-to-l from-blue-900/50 to-blue-800/40 opacity-80 z-10"></div>
 
             <div className="w-full relative z-20 max-w-screen-xl mx-auto p-4 md:pt-8 md:pb-4  ">
@@ -144,7 +144,7 @@ export default function Footer() {
                 <span className="block text-sm z-40 cursor-pointer text-gray-400 sm:text-center ">
                 <Link to="/team/42" className="px-1" target="_blank">
                     <img
-                      src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%A8%D8%A7%D8%AA%D9%84_%D9%84%D9%88%D8%AC%D9%882-removebg-preview.png"
+                      src="/BatelLogo1.png"
                       className="w-5 inline-block hover:rotate-[180deg] transition-all duration-700"
                       alt="Albatel Logo"
                     />
@@ -172,7 +172,7 @@ export default function Footer() {
         </>
       ) : (
         <>
-          <footer className="relative bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/footer1.jpg')] bg-no-repeat bg-center bg-cover shadow z-30 ">
+          <footer className="relative bg-[url('/footer.jpg')] bg-no-repeat bg-center bg-cover shadow z-30 ">
             <div className="absolute inset-0 bg-gradient-to-l from-blue-900/50 to-blue-800/40 opacity-80 z-10"></div>
 
             <div className="w-full relative z-20 max-w-screen-xl mx-auto p-4 md:pt-8 md:pb-4 ">
@@ -322,7 +322,7 @@ export default function Footer() {
                   </a>
                   <Link to="/team/42" className="px-1" target="_blank">
                     <img
-                      src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/%D8%A8%D8%A7%D8%AA%D9%84_%D9%84%D9%88%D8%AC%D9%882-removebg-preview.png"
+                      src="/BatelLogo1.png"
                       className="w-5 inline-block hover:rotate-[180deg] transition-all duration-700"
                       alt="Albatel Logo"
                     />

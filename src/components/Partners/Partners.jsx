@@ -45,7 +45,7 @@ export default function Partners() {
             className={`relative  w-full lg:h-[430px] 3xl:h-[500px] h-[270px] md:h-[330px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/home3%20(2)-3.jpg"
+              src="/homeSlide3.jpg"
               className="w-full h-full  z-10"
               alt="about us image "
             />
@@ -95,7 +95,7 @@ export default function Partners() {
             className={`relative   w-full lg:h-[430px] 3xl:h-[500px] h-[270px] md:h-[330px]  mt-16 flex justify-center items-center`}
           >
             <img
-              src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel_API2/refs/heads/main/home3%20(2)-3.jpg"
+              src="/homeSlide3.jpg"
               className="w-full h-full  z-10"
               alt="about us image "
             />

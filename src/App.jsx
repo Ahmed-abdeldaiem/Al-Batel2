@@ -21,8 +21,8 @@ import TeamContextProvider from './Context/TeamContext'
 
 import Rfp from './components/Rfp/Rfp'
 import BranchDetails from './components/BranchDetails/BranchDetails'
-import CvTemplate from './components/CvTemplate/CvTemplate'
-import CvLayout from './components/CvLayout/CvLayout'
+
+
 import TeamPage2 from './components/TeamPage2/TeamPage2'
 import TeamMemberDetails2 from './components/TeamMemberDetails2/TeamMemberDetails2'
 
@@ -31,6 +31,7 @@ import BranchesContextProvider from './Context/branchesContext'
 import ServiceContextProvider from './Context/ServiceContext'
 import AvailableJobs from './components/AvailableJobs/AvailableJobs'
 import JobContextProvider from './Context/JobContex'
+import NotFound from './components/NotFound/NotFound'
 
 
 function App() {
@@ -51,11 +52,8 @@ function App() {
       {path:'jobs' ,element:<AvailableJobs/>},
     
       {path:'RFP' ,element:<Rfp/>},
-    ]},{
-      path:'/CV_Template',element:<CvLayout/>,children:[
-        {index: true ,element:<CvTemplate/>}
-      ]
-    }
+      {path:'*' ,element:<NotFound/>}
+    ]}
   ])
 
   

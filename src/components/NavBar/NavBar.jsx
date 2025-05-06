@@ -91,7 +91,7 @@ export default function NavBar() {
                   to=""
                 >
                   <img
-                    src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/main/باتل_لوجو2-removebg-preview.png"
+                    src="/BatelLogo1.png"
                     className="w-20 inline-block px-3"
                     alt="Albatel Logo"
                   />
@@ -428,7 +428,7 @@ export default function NavBar() {
                 to=""
               >
                 <img
-                    src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/main/باتل_لوجو2-removebg-preview.png"
+                    src="/BatelLogo1.png"
                     className="w-20 inline-block px-3"
                     alt="Albatel Logo"
                   />
