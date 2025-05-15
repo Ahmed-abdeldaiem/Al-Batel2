@@ -134,16 +134,16 @@ export default function TeamPage2() {
           </div>
 
           {/* team member section */}
-          <div className="container bg-[url('https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-blue-light-effect-fragmentation-glass-effect-image_593050.jpg')]  bg-cover bg-center   py-14  ">
+          <div className="w-full bg-[url('https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-blue-light-effect-fragmentation-glass-effect-image_593050.jpg')]  bg-cover bg-center  lg:px-6 xl:px-20 2xl:px-24  py-14  ">
             <Logos />
-            <div id="team" className="py-2  container w-full ">
+            <div id="team" className="py-2 m-auto  container w-full ">
               {/* Team members */}
-              <div className="w-full flex flex-wrap justify-center">
+              <div className="w-full flex flex-wrap items-center justify-center">
                 {employees?.map((teamMember, index) => {
                   return (
                     <div
                       key={index}
-                      className="relative group w-11/12 lg:w-1/4  md:w-1/3 3xl:w-1/5     md:p-3 p-3 overflow-hidden"
+                      className="relative group w-11/12 lg:w-1/4  md:w-1/3  3xl:w-1/6 p-2 xl:p-3 overflow-hidden"
                     >
                      
                       <Link
@@ -248,16 +248,16 @@ export default function TeamPage2() {
         </div>
 
         {/* team member section */}
-        <div className="container bg-[url('https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-blue-light-effect-fragmentation-glass-effect-image_593050.jpg')]  bg-cover bg-center   py-14  ">
+        <div className="w-full bg-[url('https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-blue-light-effect-fragmentation-glass-effect-image_593050.jpg')]  bg-cover bg-center lg:px-2 xl:px-20 2xl:px-24  py-14  ">
           <Logos />
-          <div id="team" className="py-2  container w-full ">
+          <div id="team" className="py-2 m-auto container w-full ">
             {/* Team members */}
             <div className="w-full flex flex-wrap justify-center">
                 {employees?.map((teamMember, index) => {
                   return (
                     <div
                       key={index}
-                      className="relative group w-11/12 lg:w-1/4  md:w-1/3 3xl:w-1/5     md:p-3 p-3 overflow-hidden"
+                      className="relative group w-11/12 lg:w-1/4  md:w-1/3  3xl:w-1/6      p-1 xl:p-2 overflow-hidden"
                     >
                      
                       <Link

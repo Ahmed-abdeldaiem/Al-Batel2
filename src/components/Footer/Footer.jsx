@@ -13,7 +13,7 @@ export default function Footer() {
           <footer className="relative bg-[url('/footer.jpg')] bg-no-repeat bg-center bg-cover shadow z-30 ">
             <div className="absolute inset-0 bg-gradient-to-l from-blue-900/50 to-blue-800/40 opacity-80 z-10"></div>
 
-            <div className="w-full relative z-20 max-w-screen-xl mx-auto p-4 md:pt-8 md:pb-4  ">
+            <div className="w-full relative z-20 max-w-screen-xl 4k:max-w-screen-3xl mx-auto p-4 md:pt-8 md:pb-4  ">
               {/* الباتل وتواصل معنا  */}
               <div className="sm:flex sm:items-center sm:justify-between">
                 <Link
@@ -175,7 +175,7 @@ export default function Footer() {
           <footer className="relative bg-[url('/footer.jpg')] bg-no-repeat bg-center bg-cover shadow z-30 ">
             <div className="absolute inset-0 bg-gradient-to-l from-blue-900/50 to-blue-800/40 opacity-80 z-10"></div>
 
-            <div className="w-full relative z-20 max-w-screen-xl mx-auto p-4 md:pt-8 md:pb-4 ">
+            <div className="w-full relative z-20 max-w-screen-xl 4k:max-w-screen-3xl mx-auto p-4 md:pt-8 md:pb-4 ">
               {/* الباتل وتواصل معنا  */}
               <div className="sm:flex sm:items-center sm:justify-between">
                 <Link

@@ -9,8 +9,8 @@ export default function Vision() {
     <>
       {dir == "rtl" ? (
         <>
-          <div className="container my-10 ">
-            <h2 className="text-green-600 text-3xl text-center  my-3 font-semibold">
+          <div className="container m-auto my-10 ">
+            <h2 className="text-green-600 text-3xl 4k:text-4xl text-center  my-3 font-semibold">
               رؤية الشركة
             </h2>
             <hr className="border-blue-700 border-t-2 w-40 mx-auto" />
@@ -19,11 +19,11 @@ export default function Vision() {
             <div className="bg-white rounded-lg w-full lg:flex lg:flex-row flex-col justify-center items-center my-8">
               <div className=" w-full lg:w-1/2 py-8">
                 <div className="inner flex px-1 lg:px-4 flex-col justify-center items-center lg:justify-start lg:items-start">
-                  <h2 className="text-green-600 text-2xl my-4 font-semibold text-center mx-3 ">
+                  <h2 className="text-green-600 text-2xl 4k:text-4xl my-4 font-semibold text-center mx-3 ">
                     رؤيتنا
                   </h2>
 
-                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify">
+                  <h3 className="text-gray-800 text-lg 4k:text-3xl flex  my-4 text-justify">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
@@ -34,7 +34,7 @@ export default function Vision() {
                       للمهنية
                     </span>
                   </h3>
-                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify ">
+                  <h3 className="text-gray-800 text-lg 4k:text-3xl flex  my-4 text-justify ">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
@@ -45,7 +45,7 @@ export default function Vision() {
                   </h3>
                  
                  
-                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify">
+                  <h3 className="text-gray-800 text-lg 4k:text-3xl flex  my-4 text-justify">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
@@ -60,7 +60,7 @@ export default function Vision() {
               <div className=" w-full lg:w-1/2 py-8">
                 <div className="inner flex justify-center  items-center">
                   <img
-                    className="rounded-full border-2 border-green-600 shadow-lg transition-all duration-700 hover:scale-105 hover:border-blue-500 hover:shadow-green-500 shadow-blue-300 w-[350px] h-[350px] object-fit"
+                    className="rounded-full border-2 border-green-600 shadow-lg transition-all duration-700 hover:scale-105 hover:border-blue-500 hover:shadow-green-500 shadow-blue-300 w-[350px] h-[350px] 4k:w-[450px] 4k:h-[450px] object-fit"
                     src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/logo-1.png"
                     alt="mohamed ben salman image"
                   />
@@ -71,8 +71,8 @@ export default function Vision() {
         </>
       ) : (
         <>
-          <div className="container my-10 ">
-            <h2 className="text-green-600 text-3xl text-center  my-3 font-semibold">
+          <div className="container m-auto my-10 ">
+            <h2 className="text-green-600 text-3xl 4k:text-4xl text-center  my-3 font-semibold">
             Company Vision
             </h2>
             <hr className="border-blue-700 border-t-2 w-40 mx-auto" />
@@ -81,11 +81,11 @@ export default function Vision() {
             <div className="bg-white rounded-lg w-full lg:flex lg:flex-row flex-col justify-center items-center my-8">
               <div className=" w-full lg:w-1/2 py-8">
                 <div className="inner px-1 lg:px-4 flex flex-col justify-center items-center lg:justify-start lg:items-start">
-                  <h2 className="text-green-600 text-2xl my-4 font-semibold text-center mx-3">
+                  <h2 className="text-green-600 text-2xl 4k:text-4xl my-4 font-semibold text-center mx-3">
                     Our Vision
                   </h2>
 
-                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify">
+                  <h3 className="text-gray-800 text-lg 4k:text-3xl flex  my-4 text-justify">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
@@ -93,14 +93,14 @@ export default function Vision() {
                     To continue to be a leading company in providing accounting, auditing, financial and administrative consulting services and a distinguished model of professionalism.
                     </span>
                   </h3>
-                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify">
+                  <h3 className="text-gray-800 text-lg 4k:text-3xl flex  my-4 text-justify">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
                     <span>                    To strive with our deep experience and knowledge in our field to serve the client
 </span>
                   </h3>
-                  <h3 className="text-gray-800 text-lg flex  my-4 text-justify">
+                  <h3 className="text-gray-800 text-lg 4k:text-3xl flex  my-4 text-justify">
                     <span className="text-blue-600 mx-3">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
@@ -114,7 +114,7 @@ export default function Vision() {
               <div className=" w-full lg:w-1/2 py-8">
                 <div className="inner flex justify-center  items-center">
                   <img
-                    className="rounded-full border-2 border-green-600 shadow-lg transition-all duration-700 hover:scale-105 hover:border-blue-500 hover:shadow-green-500 shadow-blue-300 w-[350px] h-[350px] object-fit"
+                    className="rounded-full border-2 border-green-600 shadow-lg transition-all duration-700 hover:scale-105 hover:border-blue-500 hover:shadow-green-500 shadow-blue-300 w-[350px] h-[350px] 4k:w-[450px] 4k:h-[450px] object-fit"
                     src="https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/home%20images/logo-1.png"
                     alt="mohamed ben salman image"
                   />

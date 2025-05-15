@@ -103,6 +103,7 @@ export default function About() {
     <>
       {dir == "rtl" ? (
         <>
+        {/* About Us Header */}
           <div
          
             className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
@@ -159,19 +160,19 @@ export default function About() {
             </div>
           </div>
 
-          <div id="desc1" className="container my-16">
+          <div id="desc1" className="container m-auto my-16">
             <div className=" w-full  flex  flex-col justify-start items-center overflow-hidden lg:flex-row bg-white shadow-md rounded-3xl rounded-tl-none">
               <div className="w-full lg:w-1/2 flex flex-col justify-center  p-5">
-                <h3 className="text-center font-semibold text-green-700 my-3 text-2xl">
+                <h3 className="text-center font-semibold text-green-700 my-3 text-2xl 4k:text-5xl">
                   تاريخ الشركة
                 </h3>
-                <p className="text-gray-900 text-xl py-2 m-2 flex font-semibold">
+                <p className="text-gray-900 text-xl 4k:text-3xl py-2 m-2 flex font-semibold">
                   <i className="fa-solid fa-calendar-days text-green-600 text-xl m-2 text-justify"></i>
                   تأسست شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
                   بموجب ترخيص الهيئة السعودية للمراجعين والمحاسبين بمزاولة مهنة
                   المحاسبة والمراجعة منذ 1427/11/08هـ الموافق 2006/11/29مـ
                 </p>
-                <p className="text-gray-900 text-xl m-2 py-5 flex font-semibold">
+                <p className="text-gray-900 text-xl 4k:text-3xl m-2 py-5 flex font-semibold">
                   <i className="fa-solid fa-id-card  text-green-600 text-xl m-2 text-justify"></i>
                   الشركة حاصلة على تراخيص لتقديم خدمات مراجعة الحسابات وتدقيقها،
                   والاستشارات المالية، وتقديم خدمات المحاسبة، والاستشارات
@@ -192,19 +193,19 @@ export default function About() {
 
             <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-white shadow-md rounded-3xl my-8 rounded-tl-none">
               <div className="w-full lg:w-1/2 flex    flex-col   p-5">
-                <h3 className="text-center font-semibold text-green-700 my-3 text-2xl">
+                <h3 className="text-center font-semibold text-green-700 my-3 text-2xl 4k:text-5xl">
                   مقر الشركة
                 </h3>
-                <p className="text-gray-900 text-xl py-2 m-2 flex font-semibold">
+                <p className="text-gray-900 text-xl 4k:text-3xl py-2 m-2 flex font-semibold">
                   <i className="fa-solid fa-location-dot  text-green-600 text-xl m-2"></i>
                   الرياض هي نقطة البداية والفرع الرئيسي للشركة
                 </p>
-                <p className="text-gray-900 text-xl py-2 m-2 my-4 flex font-semibold">
+                <p className="text-gray-900 text-xl 4k:text-3xl py-2 m-2 my-4 flex font-semibold">
                   <i className="fa-solid fa-map-location text-green-600 text-xl m-2"></i>
                   7162 مبنى السمو، الطريق الدائرى الشرقى، حى الربوة، ص ب 28565
                   الرمز البريدى 11447
                 </p>
-                <p className="text-gray-900 text-xl m-2 py-5 flex font-semibold">
+                <p className="text-gray-900 text-xl 4k:text-3xl m-2 py-5 flex font-semibold">
                   <i className="fa-solid fa-map-location-dot  text-green-600 text-xl m-2"></i>
                   بالإضافة إلى العديد من الفروع داخل وخارج المملكة
                 </p>
@@ -224,7 +225,7 @@ export default function About() {
             </div>
           </div>
 
-          <h2 className="text-3xl text-green-800 text-center font-semibold p-6">
+          <h2 className="text-3xl 4k:text-4xl text-green-800 text-center font-semibold p-6">
             فروعنا داخل المملكة العربية السعودية
           </h2>
           <div className=" w-full flex bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/about1.jpg')] bg-fixed bg-cover bg-center flex-wrap flex-col items-center justify-center md:flex-row bg-white shadow-md rounded-3xl my-8 ">
@@ -244,7 +245,7 @@ export default function About() {
               );
             })}
           </div>
-          <h2 className="text-3xl text-green-800 text-center mt-14 font-semibold p-6">
+          <h2 className="text-3xl 4k:text-4xl text-green-800 text-center mt-14 font-semibold p-6">
             فروعنا خارج المملكة العربية السعودية
           </h2>
           <div className=" w-full flex flex-wrap bg-fixed flex-col items-center justify-evenly md:flex-row bg-white shadow-md bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/about1.jpg')] bg-cover bg-center rounded-3xl my-8 ">
@@ -265,11 +266,11 @@ export default function About() {
             })}
           </div>
 
-          <h2 className="text-3xl text-green-800 text-center font-semibold mt-20 p-6">
+          <h2 className="text-3xl 4k:text-4xl text-green-800 text-center font-semibold mt-20 p-6">
             الهيكل التنظيمي والموظفين
           </h2>
 
-          <div className="container mb-12">
+          <div className="container m-auto mb-12">
             <div className="w-full flex flex-col md:flex-row  flex-wrap justify-center items-stretch">
               <div className="w-full  lg:w-1/2   p-3">
                 <div className="flex md:h-[650px] h-[750px]  items-center justify-center  bg-white rounded-3xl flex-col  shadow-md  ">
@@ -279,7 +280,7 @@ export default function About() {
                     alt="team image"
                   />
                   <div className="w-full flex flex-col justify-start">
-                    <p className="text-blue-950 flex  items-center font-semibold text-xl text-center leading-10 p-10 my-4">
+                    <p className="text-blue-950 flex  items-center font-semibold text-xl 4k:text-3xl text-center leading-10 p-10 my-4">
                       أكثر من ثمانين كادر مؤهلين علميًا وأصحاب خبرة واسعة في
                       جميع الجوانب المالية والإدارية والقانونية، واستطاعت الشركة
                       من خلالهم تقديم خدماتها المهنية لآلاف العملاء داخل المملكة
@@ -297,7 +298,7 @@ export default function About() {
                     alt="team image"
                   />
                   <div className="w-full flex flex-col justify-start">
-                    <p className="text-blue-950 flex items-center text-center font-semibold text-lg leading-10 p-10 my-4">
+                    <p className="text-blue-950 flex items-center text-center font-semibold text-lg 4k:text-3xl leading-10 p-10 my-4">
                       فريق كامل من الموظفات للعمل في الأقسام النسائية أو المواقع
                       التي تتطلب ذلك، وتتنوع مؤهلاتهن في المحاسبة وعمليات
                       المراجعة الخارجية والداخلية ولديهن خبرة واسعة في جميع
@@ -310,7 +311,7 @@ export default function About() {
           </div>
           <div className="bg-white">
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
-              <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
+              <i className="fa-solid fa-circle-dot text-green-600 text-lg 4k:text-3xl mx-2"></i>
               <span>
                 تميزت شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
                 بالخبرة الواسعة في مجالات مراجعة الحسابات وتدقيقها، والاستشارات
@@ -321,7 +322,7 @@ export default function About() {
               </span>
             </p>
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
-              <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
+              <i className="fa-solid fa-circle-dot text-green-600 text-lg 4k:text-3xl mx-2"></i>
               <span>
                 وانطلاقا من رؤية المملكة 2030 ورهانها المستمر على الشباب السعودي
                 الواعد باعتبارهم من أهم وأكبر الفئات الأساسية فيها، لدى الشركة
@@ -336,7 +337,7 @@ export default function About() {
             </p>
 
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
-              <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
+              <i className="fa-solid fa-circle-dot text-green-600 text-lg 4k:text-3xl mx-2"></i>
               <span>
                 ونولي في شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
                 اهتمام بالغ بالتأهيل العلمي و المهني ويعمل معنا فريق مؤهل منهم
@@ -349,7 +350,7 @@ export default function About() {
               </span>
             </p>
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
-              <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
+              <i className="fa-solid fa-circle-dot text-green-600 text-lg 4k:text-3xl mx-2"></i>
               <span>
                 وتتميز الشركة أيضًا بكادر بشرى يتمتع بالخبرات اللازمة لإتمام
                 المهام المكلف بها، والذي يتميز أيضًا بحسن الخلق والمعاملة الجيدة
@@ -409,7 +410,7 @@ export default function About() {
               </span>
             </div>
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
-              <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
+              <i className="fa-solid fa-circle-dot text-green-600 text-lg 4k:text-3xl mx-2"></i>
               <span>
                 للتعرف اكثر على فريقنا يمكنك الضغط هنا
                 <Link
@@ -424,6 +425,7 @@ export default function About() {
         </>
       ) : (
         <>
+        {/* About US Header */}
           <div
           
             className={`relative   w-full lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[370px]  mt-16 flex justify-center items-center`}
@@ -480,13 +482,13 @@ export default function About() {
             </div>
           </div>
 
-          <div id="desc1" className="container my-16">
+          <div id="desc1" className="container m-auto my-16">
             <div className=" w-full  flex  flex-col justify-start items-center overflow-hidden lg:flex-row bg-white shadow-md rounded-3xl rounded-tl-none">
               <div className="w-full lg:w-1/2 flex flex-col justify-center  p-5">
-                <h3 className="text-center font-semibold text-green-700 my-3 text-2xl">
+                <h3 className="text-center font-semibold text-green-700 my-3 text-2xl 4k:text-4xl">
                   Company History
                 </h3>
-                <p className="text-gray-900 text-xl py-2 m-2 flex font-semibold">
+                <p className="text-gray-900 text-xl 4k:text-3xl py-2 m-2 flex font-semibold">
                   <i className="fa-solid fa-calendar-days text-green-600 text-xl m-2"></i>
                   Batel Abdullah Al Batel & Partners Professional Consulting
                   Company was established under the license of the Saudi
@@ -494,7 +496,7 @@ export default function About() {
                   accounting and auditing profession since 11/08/1427 AH
                   corresponding to 11/29/2006 AD.
                 </p>
-                <p className="text-gray-900 text-xl m-2 py-5 flex font-semibold">
+                <p className="text-gray-900 text-xl 4k:text-3xl m-2 py-5 flex font-semibold">
                   <i className="fa-solid fa-id-card  text-green-600 text-xl m-2"></i>
                   The company is licensed to provide auditing and accounting
                   services, financial consulting, accounting services,
@@ -515,20 +517,20 @@ export default function About() {
 
             <div className=" w-full flex flex-col lg:flex-row bg-white shadow-md rounded-3xl my-8 rounded-tl-none">
               <div className="w-full lg:w-1/2 flex    flex-col   p-5">
-                <h3 className="text-center font-semibold text-green-700 my-3 text-2xl">
+                <h3 className="text-center font-semibold text-green-700 my-3 text-2xl 4k:text-4xl">
                   company location
                 </h3>
-                <p className="text-gray-900 text-xl py-2 m-2 flex font-semibold">
+                <p className="text-gray-900 text-xl 4k:text-3xl py-2 m-2 flex font-semibold">
                   <i className="fa-solid fa-location-dot  text-green-600 text-xl m-2"></i>
                   Riyadh is the starting point and the main branch of the
                   company.
                 </p>
-                <p className="text-gray-900 text-xl py-2 m-2 my-4 flex font-semibold">
+                <p className="text-gray-900 text-xl 4k:text-3xl py-2 m-2 my-4 flex font-semibold">
                   <i className="fa-solid fa-map-location text-green-600 text-xl m-2"></i>
                   7162 Al-Samoa Building, Eastern Ring Road, Al-Rabwa District,
                   P.O. Box 28565 Zip Code 11447
                 </p>
-                <p className="text-gray-900 text-xl m-2 py-5 flex font-semibold">
+                <p className="text-gray-900 text-xl 4k:text-3xl m-2 py-5 flex font-semibold">
                   <i className="fa-solid fa-map-location-dot  text-green-600 text-xl m-2"></i>
                   We have many branches inside and outside the kingdom.
                 </p>
@@ -548,7 +550,7 @@ export default function About() {
             </div>
           </div>
 
-          <h2 className="text-3xl text-green-800 text-center font-semibold p-6">
+          <h2 className="text-3xl 4k:text-4xl text-green-800 text-center font-semibold p-6">
             Our branches inside the Kingdom of Saudi Arabia
           </h2>
           <div className=" w-full flex bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/about1.jpg')] bg-fixed bg-cover bg-center flex-wrap flex-col items-center justify-center md:flex-row bg-white shadow-md rounded-3xl my-8 ">
@@ -568,7 +570,7 @@ export default function About() {
               );
             })}
           </div>
-          <h2 className="text-3xl text-green-800 text-center mt-14 font-semibold p-6">
+          <h2 className="text-3xl 4k:text-4xl text-green-800 text-center mt-14 font-semibold p-6">
             Our branches outside the Kingdom of Saudi Arabia
           </h2>
           <div className=" w-full flex flex-wrap bg-fixed flex-col items-center justify-evenly md:flex-row bg-white shadow-md bg-[url('https://raw.githubusercontent.com/Ahmed-abdeldaiem/Albatel-API/refs/heads/main/about1.jpg')] bg-cover bg-center rounded-3xl my-8 ">
@@ -589,11 +591,11 @@ export default function About() {
             })}
           </div>
 
-          <h2 className="text-3xl text-green-800 text-center font-semibold mt-20 p-6">
+          <h2 className="text-3xl 4k:text-4xl text-green-800 text-center font-semibold mt-20 p-6">
             Organizational structure and staff
           </h2>
 
-          <div className="container mb-12">
+          <div className="container m-auto mb-12">
             <div className="w-full flex flex-col md:flex-row  flex-wrap justify-center items-stretch">
               <div className="w-full  lg:w-1/2   p-3">
                 <div className="flex md:h-[650px] h-[750px]  items-center justify-center  bg-white rounded-3xl flex-col  shadow-md  ">
@@ -603,7 +605,7 @@ export default function About() {
                     alt="team image"
                   />
                   <div className="w-full flex flex-col justify-start">
-                    <p className="text-blue-950 flex  items-center font-semibold text-xl text-center leading-10 p-10 my-4">
+                    <p className="text-blue-950 flex  items-center font-semibold text-xl 4k:text-3xl text-center leading-10 p-10 my-4">
                       More than eighty scientifically qualified staff with
                       extensive experience in all Financial, administrative and
                       legal aspects, and the company was able to During them,
@@ -623,7 +625,7 @@ export default function About() {
                     alt="team image"
                   />
                   <div className="w-full flex flex-col justify-start">
-                    <p className="text-blue-950 flex items-center text-center font-semibold text-lg leading-10 p-10 my-4">
+                    <p className="text-blue-950 flex items-center text-center font-semibold text-lg 4k:text-3xl leading-10 p-10 my-4">
                       A whole team of female employees to work in women's
                       departments or sites Which require it, their
                       qualifications in accounting and operations are varied
@@ -637,7 +639,7 @@ export default function About() {
             </div>
           </div>
           <div className="bg-white">
-            <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
+            <p className="p-5 mx-5 font-semibold text-blue-950 text-lg 4k:text-3xl flex items-baseline">
               <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
               <span>
                 Batel Abdullah Al-Batel & partners professional consulting
@@ -649,7 +651,7 @@ export default function About() {
                 Income Tax, Value Added Tax Services
               </span>
             </p>
-            <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
+            <p className="p-5 mx-5 font-semibold text-blue-950 text-lg 4k:text-3xl flex items-baseline">
               <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
               <span>
                 Based on the kingdom's Vision 2030 and its continuous bet on
@@ -667,7 +669,7 @@ export default function About() {
               </span>
             </p>
 
-            <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
+            <p className="p-5 mx-5 font-semibold text-blue-950 text-lg 4k:text-3xl flex items-baseline">
               <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
               <span>
                 And Noli at Batel Abdullah Al Batel & partners for professional
@@ -683,7 +685,7 @@ export default function About() {
                 commitment.
               </span>
             </p>
-            <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
+            <p className="p-5 mx-5 font-semibold text-blue-950 text-lg 4k:text-3xl flex items-baseline">
               <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
               <span>
                 The company is also characterized by a human cadre with the
@@ -745,7 +747,7 @@ export default function About() {
               </span>
             </div>
             <p className="p-5 mx-5 font-semibold text-blue-950 text-lg flex items-baseline">
-              <i className="fa-solid fa-circle-dot text-green-600 text-lg mx-2"></i>
+              <i className="fa-solid fa-circle-dot text-green-600 text-lg 4k:text-3xl mx-2"></i>
               <span>
                 To learn more about our team, you can click here
                 <Link

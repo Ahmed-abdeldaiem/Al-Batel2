@@ -144,14 +144,14 @@ export default function Partners() {
   <div className="bg-blue-100/50">
           
 
-            <div id="desc1" className="py-10 container ">
+            <div id="desc1" className="py-10 container m-auto  ">
               <div className="w-full flex flex-wrap justify-center">
                 {partners.map((sponcer, index) => {
                   return (
-                    <div key={index} className="3xl:w-1/5 lg:w-1/4 md:w-1/3 w-11/12 px-3  overflow-hidden">
-                      <div className="flex  flex-col-reverse border rounded-tr-3xl rounded-tl-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-10  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
+                    <div key={index} className="3xl:w-1/5  lg:w-1/4 md:w-1/3 w-11/12 px-1 lg:px-2  overflow-hidden">
+                      <div className="flex  flex-col-reverse border rounded-tr-3xl rounded-tl-3xl shadow-lg overflow-hidden hover:shadow-green-100 my-9  cursor-pointer group duration-700 transition-all bg-white border-gray-300 w-full">
                         <div className=" flex  p-2 flex-col overflow-hidden items-center justify-center text-center">
-                          <h5 className="mb-1 text-lg lg:text-xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  ">
+                          <h5 className="mb-1 text-lg xl:text-xl border-b border-green-600 pb-3 text-blue-900 font-bold text-center tracking-tight  ">
                             {sponcer.title}
                           </h5>
                          

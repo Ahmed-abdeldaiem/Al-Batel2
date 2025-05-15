@@ -81,8 +81,8 @@ export default function Branches() {
     <>
 
 {dir=='rtl'?<>
-<div className="container my-10">
-        <h2 className="text-green-600 text-3xl text-center  my-3 font-semibold">
+<div className="container m-auto my-10">
+        <h2 className="text-green-600 text-3xl 4k:text-4xl text-center  my-3 font-semibold">
           فروع الشركة
         </h2>
         <hr className="border-blue-700 border-t-2 w-40 mx-auto" />
@@ -95,13 +95,13 @@ export default function Branches() {
 
         {branches.map((branch, index) => {
                   return (
-                    <Link key={index} to={`/branch/${branch.id}`} className="w-full md:w-1/2 p-4  lg:w-1/4">
+                    <Link key={index} to={`/branch/${branch.id}`} className="w-full md:w-1/2 p-2 2xl:p-3   lg:w-1/4 ">
 
 
-                    <div  className="max-w-sm relative overflow-hidden bg-white border border-gray-200 rounded-lg shadow-md transition-all duration-500 group hover:shadow-green-600">
+                    <div  className="max-w-sm 2xl:max-w-xl 4k:max-w-2xl relative overflow-hidden bg-white border border-gray-200 rounded-lg shadow-md transition-all duration-500 group hover:shadow-green-600">
                       <div className="overflow-hidden relative">
                         <img
-                          className="rounded-t-lg h-[280px] w-full duration-700 transition-all group-hover:scale-125"
+                          className="rounded-t-lg h-[280px] 4k:h-[400px] w-full duration-700 transition-all group-hover:scale-125"
                           loading="lazy"
                           src={branch.img}
                           alt="branch image"
@@ -110,7 +110,7 @@ export default function Branches() {
                         <div className="absolute inset-0 bg-gradient-to-l from-green-300/20  to-blue-800/30 opacity-70 z-10"></div>
                       </div>
                       <div className="p-5">
-                        <h5 className="mb-2 text-xl text-nowrap font-bold tracking-tight text-gray-700">
+                        <h5 className="mb-2 text-xl 4k:text-3xl text-nowrap font-bold tracking-tight text-gray-700">
                           <span className="mx-1 text-blue-700">
                             <i className="fa-solid fa-location-dot"></i>
                           </span>
@@ -132,7 +132,7 @@ export default function Branches() {
       </div>
 
 </>:<>
-<div className="container my-10">
+<div className="container m-auto my-10">
         <h2 className="text-green-600 text-3xl text-center  my-3 font-semibold">
              Company Branches
         </h2>

@@ -23,7 +23,7 @@ let baseUrl2='https://al-batel-team-data-default-rtdb.firebaseio.com/'
       })
       .then((data) => {
         
-          // console.log(data);
+          console.log(data);
           
          
 

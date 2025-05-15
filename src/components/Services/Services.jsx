@@ -38,6 +38,7 @@ export default function Services() {
       {dir == "rtl" ? (
         <>
           <div className="bg-blue-100/50">
+            {/* service Header */}
             <div
           
               className={`relative   w-full  lg:h-[620px] 3xl:h-[750px] h-[300px] md:h-[350px]   mt-16 flex justify-center items-center`}
@@ -94,7 +95,7 @@ export default function Services() {
               </div>
             </div>
 
-            <div id="desc1" className="py-10 container ">
+            <div id="desc1" className="py-10 m-auto container ">
               <div className="w-full flex flex-wrap justify-center">
                 {services?.map((service, index) => {
                   return (
@@ -149,6 +150,7 @@ export default function Services() {
       ) : (
         <>
           <div className="bg-blue-100/50">
+            {/* Service header */}
             <div
             
               className={`relative   w-full lg:h-[600px] 3xl:h-[750px] h-[300px] md:h-[350px]   mt-16 flex justify-center items-center`}
@@ -205,7 +207,7 @@ export default function Services() {
               </div>
             </div>
 
-            <div id="desc1" className="py-10 container ">
+            <div id="desc1" className="py-10 m-auto container ">
               <div className="w-full flex flex-wrap justify-center">
                 {services?.map((service, index) => {
                   return (
