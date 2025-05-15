@@ -37,7 +37,7 @@ function getPersonById(id) {
     })
     .then((data) => {
       
-        // console.log(data);
+      
         
        
 
