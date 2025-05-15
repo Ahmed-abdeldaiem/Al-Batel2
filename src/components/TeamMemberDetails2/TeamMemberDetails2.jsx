@@ -91,8 +91,8 @@ export default function TeamMemberDetails2() {
             </p>
             <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold text-justify"> المناصب الرئيسية خلال المسيرة المهنية:</h2>
               {/* employee.experienceJobs.ar / .en */}
-              {employee?.experienceJobs?.map((exp)=>{
-                return <h3 className="text-lg md:text-xl lg:text-2xl text-gray-900 my-4"><i className="fas fa-circle text-sm text-green-700"></i> {exp.ar}</h3>
+              {employee?.experienceJobs?.map((exp,index)=>{
+                return <h3 key={index} className="text-lg md:text-xl lg:text-2xl text-gray-900 my-4"><i className="fas fa-circle text-sm text-green-700"></i> {exp.ar}</h3>
               })}
           </div>
      
@@ -160,8 +160,8 @@ export default function TeamMemberDetails2() {
             </p>
             <h2 className="text-xl lg:text-3xl text-blue-950 my-1 md:my-4 font-semibold text-justify">Main positions during career:</h2>
               {/* employee.experienceJobs.ar / .en */}
-              {employee?.experienceJobs?.map((exp)=>{
-                return <h3 className="text-lg md:text-xl lg:text-2xl text-gray-900 my-4"><i className="fas fa-circle text-sm text-green-700"></i> {exp.en}</h3>
+              {employee?.experienceJobs?.map((exp,index)=>{
+                return <h3 key={index} className="text-lg md:text-xl lg:text-2xl text-gray-900 my-4"><i className="fas fa-circle text-sm text-green-700"></i> {exp.en}</h3>
               })}
           </div>
           

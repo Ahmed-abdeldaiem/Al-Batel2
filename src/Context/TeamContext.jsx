@@ -15,26 +15,21 @@ let baseUrl2='https://al-batel-team-data-default-rtdb.firebaseio.com/'
 
 
 
- 
-    
-    function getPersonById(id) {
-      return axios.get(`${baseUrl}${Number(id)-1}.json`, {
-        
-      })
-      .then((data) => {
-        
-          console.log(data);
-          
-         
+function getPersonById(id) {
+  return axios.get(`${baseUrl}.json`)
+    .then((res) => {
+      const allTeam = res.data;
+      if (!Array.isArray(allTeam)) return 'Invalid data format';
 
-          
-          return data.data ? data.data : 'Person not found';
-      })
-      .catch((error) => {
-          console.log(error);
-          return 'Error fetching Employee Data';
-      });
-  }
+      const person = allTeam.find((p) => p && String(p.id) === String(id));
+      return person || 'Person not found';
+    })
+    .catch((err) => {
+      console.error(err);
+      return 'Error fetching Employee Data';
+    });
+}
+
   
   function getTeamMembers() {
     return axios.get(`${baseUrl2}TeamMember.json`, {
@@ -65,6 +60,7 @@ let baseUrl2='https://al-batel-team-data-default-rtdb.firebaseio.com/'
     </TeamContext.Provider>
   )
 }
+
 
 
 
