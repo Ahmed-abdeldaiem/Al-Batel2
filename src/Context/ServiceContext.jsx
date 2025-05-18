@@ -28,11 +28,11 @@ let baseUrl='https://al-batel-team-data-default-rtdb.firebaseio.com/'
        
 
         
-        return data.data ? data.data : 'Services not found';
+        return data.data ? data.data : null;
     })
     .catch((error) => {
-        console.log(error);
-        return 'Error fetching Employee Data';
+        // console.log(error);
+        return  null;
     });
 }
 

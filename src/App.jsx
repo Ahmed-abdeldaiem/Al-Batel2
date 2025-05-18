@@ -38,7 +38,7 @@ function App() {
 
   
 
-  let route = createBrowserRouter([
+  let route = createHashRouter([
     {path:'',element:<LayOut/>,children:[
       {index:true ,element: <Home/>},
      

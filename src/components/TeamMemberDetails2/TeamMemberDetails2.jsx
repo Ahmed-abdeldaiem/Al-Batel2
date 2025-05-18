@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { LanguageContext } from "../../Context/LanguageContext";
 import { TeamContext } from "../../Context/TeamContext";
 import Loader from "../Loader/Loader";
@@ -11,14 +11,19 @@ export default function TeamMemberDetails2() {
   const [Loading, setLoading] = useState(false);
   const [employee, setEmployee] = useState({});
   let { id } = useParams();
-
+let navigate=useNavigate();
 
   async function getEmployeeData(id) {
     setLoading(true);
     let data = await getPersonById(id);
     // console.log(data);
-    setEmployee(data);
-    setLoading(false);
+    if (!data) {
+      navigate('/notfound'); // redirect to not found component
+    } else {
+      setEmployee(data);
+      setLoading(false);
+    }
+
   }
 
   useEffect(() => {

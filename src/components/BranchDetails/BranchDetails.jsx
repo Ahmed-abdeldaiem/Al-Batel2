@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { LanguageContext } from "../../Context/LanguageContext";
 import { BranchesContext } from '../../Context/branchesContext';
 import style from "./BranchDetails.module.css";
@@ -17,7 +17,7 @@ export default function BranchDetails() {
 
 
   let { id } = useParams();
-
+  let navigate=useNavigate();
 
   // Convert id to a number, as useParams returns a string
   const branchId = Number(id);
@@ -26,17 +26,22 @@ export default function BranchDetails() {
   async function getBranchData(branchId) {
     setLoading(true);
     let data = await getBranches();
-    console.log(data);
-
-    // Find the branch
+    // console.log(data);
+     // Find the branch
     const branch = data?.find((branch) => branch.id === branchId);
+   
+// check if data back falsy value
+    if (!data || !branch) {
+      navigate('/notfound'); // redirect to not found component
+    } else {
+      
 
+      setBranchDetails(branch);
+     
+      setLoading(false);
+    }
 
-    setBranchDetails(branch);
-
-
- 
-    setLoading(false);
+  
   }
 
   useEffect(() => {

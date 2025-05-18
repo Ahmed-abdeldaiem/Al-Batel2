@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { LanguageContext } from "../../Context/LanguageContext";
 import { ServiceContext } from "../../Context/ServiceContext";
 import Loader from "../Loader/Loader";
@@ -11,7 +11,7 @@ export default function Services() {
   const { getServices } = useContext(ServiceContext);
   const [services, setServices] = useState([]);
   const [Loading, setLoading] = useState(false);
-
+  let navigate=useNavigate();
   const handleScroll = () => {
     const section = document.getElementById("desc1");
     if (section) {
@@ -23,9 +23,15 @@ export default function Services() {
     setLoading(true);
     let data = await getServices();
 
-    setServices(data);
+    if (!data) {
+      navigate('/notfound'); // redirect to not found component
+    } else {
+      setServices(data);
 
-    setLoading(false);
+      setLoading(false);
+    }
+
+
   }
 
   useEffect(() => {

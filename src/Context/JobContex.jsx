@@ -31,7 +31,7 @@ let baseUrl='https://al-batel-team-data-default-rtdb.firebaseio.com/'
         return data.data ? data.data : 'No Jobs found';
     })
     .catch((error) => {
-        console.log(error);
+        // console.log(error);
         return 'Error fetching Employee Data';
     });
 }

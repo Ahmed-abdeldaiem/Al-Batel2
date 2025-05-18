@@ -1,6 +1,7 @@
 import React from 'react'
 import { createContext, useState } from "react";
 import axios from 'axios';
+import NotFound from '../components/NotFound/NotFound';
 
 
 
@@ -19,14 +20,15 @@ function getPersonById(id) {
   return axios.get(`${baseUrl}.json`)
     .then((res) => {
       const allTeam = res.data;
-      if (!Array.isArray(allTeam)) return 'Invalid data format';
+      // console.log(id);
+      if (!Array.isArray(allTeam)) return  null;
 
       const person = allTeam.find((p) => p && String(p.id) === String(id));
-      return person || 'Person not found';
+      return person || null ;
     })
     .catch((err) => {
-      console.error(err);
-      return 'Error fetching Employee Data';
+      // console.error(err);
+      return  null ;
     });
 }
 
@@ -45,7 +47,7 @@ function getPersonById(id) {
         return data.data ? data.data : 'TeamMembers not found';
     })
     .catch((error) => {
-        console.log(error);
+        // console.log(error);
         return 'Error fetching Employee Data';
     });
 }

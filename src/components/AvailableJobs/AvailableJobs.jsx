@@ -8,7 +8,7 @@ import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
 import { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 import { JobContext } from "../../Context/JobContex";
@@ -23,7 +23,7 @@ export default function AvailableJobs() {
   const { getJobs } = useContext(JobContext);
   const [jobs, setJobs] = useState([]);
   const [Loading, setLoading] = useState(false);
-
+ 
 
   let formik = useFormik({
     initialValues:{
@@ -39,7 +39,7 @@ export default function AvailableJobs() {
 
   function handleSearch(formValues){
 
-     console.log(formValues);
+    //  console.log(formValues);
      
       return formValues.search
       }
@@ -53,9 +53,8 @@ export default function AvailableJobs() {
           setLoading(true)
 
           let searchData= await getJobs();
-         console.log(searchData);
-        
-          setJobs(searchData?.filter((job)=>job.name.ar.toLowerCase().includes(search.toLowerCase())))
+        //  console.log(searchData); 
+        searchData=='No Jobs found'?null:setJobs(searchData?.filter((job)=>job.name.ar.toLowerCase().includes(search.toLowerCase())));
           setLoading(false)
       
       }
@@ -80,10 +79,15 @@ export default function AvailableJobs() {
     setLoading(true);
     let data = await getJobs();
 
-    // console.log(data);
-    setJobs(data);
+   
+        // console.log(data);
+        setJobs(data);
 
-    setLoading(false);
+        setLoading(false);
+    
+
+
+
   }
 
   useEffect(() => {

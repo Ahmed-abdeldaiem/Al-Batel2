@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { PartnersContext } from '../../Context/PartnersContext';
 import Loader from '../Loader/Loader';
 import { LanguageContext } from '../../Context/LanguageContext';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -16,15 +17,20 @@ export default function Partners() {
   const { getPartners } = useContext(PartnersContext);
   const [partners, setPartners] = useState([]);
   const [Loading, setLoading] = useState(false);
-
+  let navigate=useNavigate();
 
   async function getPartnersData() {
     setLoading(true);
     let data = await getPartners();
 
-    setPartners(data);
+    if (!data) {
+      navigate('/notfound'); // redirect to not found component
+    } else {
+      setPartners(data);
 
-    setLoading(false);
+      setLoading(false);
+    }
+
   }
 
   useEffect(() => {

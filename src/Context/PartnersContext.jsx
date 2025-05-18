@@ -24,15 +24,11 @@ let baseUrl='https://al-batel-team-data-default-rtdb.firebaseio.com/'
     .then((data) => {
       
         // console.log(data);
-        
-       
-
-        
-        return data.data ? data.data : 'Branches not found';
+        return data.data ? data.data : null ;
     })
     .catch((error) => {
-        console.log(error);
-        return 'Error fetching Employee Data';
+        // console.log(error);
+        return null;
     });
 }
 
