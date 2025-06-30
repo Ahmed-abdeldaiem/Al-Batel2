@@ -9,7 +9,8 @@ import Manager from "../Manager/Manager";
 import Message from "../Message/Message";
 import Partners from "../Partners/Partners";
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import ServiceDesc from "../ServiceDesc/ServiceDesc";
 import Vision from "../Vision/Vision";
@@ -35,6 +36,14 @@ export default function Home() {
   useEffect(() => {
     autoPlayRef.current = goToNextSlide;
   });
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1100,
+      once: true,
+      easing: 'ease-in-out'
+    });
+  }, []);
 
   useEffect(() => {
     const play = () => {
@@ -82,10 +91,10 @@ export default function Home() {
                     />
 
                     <div className={`flex flex-col text-center  `}>
-                      <h1 className="text-white text-xl lg:text-3xl 4k:text-5xl font-semibold text-shadow-xl">
+                      <h1 data-aos="zoom-in"  className="text-white text-xl lg:text-3xl 4k:text-5xl font-semibold text-shadow-xl">
                         شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
                       </h1>
-                      <h1 className="text-white text-xl lg:text-2xl 4k:text-4xl py-2 font-semibold text-shadow-xl">
+                      <h1  data-aos="zoom-in"  className="text-white text-xl lg:text-2xl 4k:text-4xl py-2 font-semibold text-shadow-xl">
                         Batel Abdullah Al-Batel & Partners for Professional
                         Consultations
                       </h1>
@@ -342,10 +351,10 @@ export default function Home() {
                     />
 
                     <div className={`flex flex-col text-center  `}>
-                      <h1 className="text-white text-xl lg:text-3xl 4k:text-5xl font-semibold">
+                      <h1 data-aos="zoom-in"  className="text-white text-xl lg:text-3xl 4k:text-5xl font-semibold">
                         شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
                       </h1>
-                      <h1 className="text-white text-xl lg:text-2xl 4k:text-4xl font-semibold">
+                      <h1 data-aos="zoom-in"  className="text-white text-xl lg:text-2xl 4k:text-4xl font-semibold">
                         Batel Abdullah Al-Batel & Partners for Professional
                         Consultations
                       </h1>

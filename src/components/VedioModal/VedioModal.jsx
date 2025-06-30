@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { useContext } from 'react';
+import { LanguageContext } from '../../Context/LanguageContext';
 import style from './VedioModal.module.css'
 
 
@@ -8,6 +10,7 @@ import style from './VedioModal.module.css'
 export default function VedioModal() {
 
 const [isModalOpen, setIsModalOpen] = useState(false)
+const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
 
 useEffect(() => {
   const handleEsc = (event) => {
@@ -100,7 +103,7 @@ useEffect(() => {
         {/* Modal footer */}
         <div className="flex items-center justify-evenly p-4 md:p-2 border-t border-gray-200 rounded-b dark:border-gray-600">
        
-                      <h3 className='text-blue-800 text-shadow-blue text-lg font-semibold'>تابعونا على :</h3>
+                      <h3 className='text-blue-800 text-shadow-blue text-lg font-semibold'>{dir=='rtl'? "تابعونا على :" : "Follow Us on:"}</h3>
                       {/* linked in */}
                       <a data-aos="fade-up"
                         href="https://www.linkedin.com/company/albatel-cpa/"

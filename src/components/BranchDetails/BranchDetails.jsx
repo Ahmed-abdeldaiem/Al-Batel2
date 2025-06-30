@@ -4,7 +4,8 @@ import { LanguageContext } from "../../Context/LanguageContext";
 import { BranchesContext } from '../../Context/branchesContext';
 import style from "./BranchDetails.module.css";
 import Loader from "../Loader/Loader";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function BranchDetails() {
 
   const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
@@ -14,7 +15,13 @@ export default function BranchDetails() {
   const [Loading, setLoading] = useState(false);
 
   const [branchDetails, setBranchDetails] = useState({});
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false,
+      easing: 'ease-in-out'
+    });
+  }, []);
 
   let { id } = useParams();
   let navigate=useNavigate();
@@ -24,6 +31,8 @@ export default function BranchDetails() {
 
 
   async function getBranchData(branchId) {
+
+    
     setLoading(true);
     let data = await getBranches();
     // console.log(data);
@@ -56,7 +65,6 @@ export default function BranchDetails() {
 
 
 
-
  
   const Jaddah2 = {
     id: 2_1,
@@ -79,6 +87,8 @@ export default function BranchDetails() {
   return (
 
    
+// data-aos="zoom-in"  data-aos-delay="300"
+// data-aos="fade-up"
 
 
 
@@ -91,27 +101,27 @@ export default function BranchDetails() {
  <div className=" bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
  <div className="bg-white/85 py-20">
 
-        <h3 className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
+        <h3 data-aos="zoom-in" className="text-center text-shadow-blue font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
           {branchDetails?.name?.ar}
         </h3>
-        <hr className="border-green-700 border-t-2 w-40 mx-auto" />
-        <hr className="border-green-700 border-t-2 w-20 mt-2 mb-10 mx-auto" />
+        <hr  data-aos="fade-up" data-aos-delay="100" className="border-green-700 border-t-2 w-40 mx-auto" />
+        <hr  data-aos="fade-up" data-aos-delay="200" className="border-green-700 border-t-2 w-20 mt-2 mb-10 mx-auto" />
      
-      <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/85  ">
+      <div data-aos="fade-up" data-aos-delay="300" className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/85  ">
         <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
-          <p className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
+          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-shadow-md text-lg  m-2 flex font-semibold items-center ">
             <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
             {branchDetails?.location_map?.ar}
           </p>
-          <p className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center ">
+          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-shadow-md text-lg  m-2 my-4 flex font-semibold items-center ">
             <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
             البريد الإلكتروني : {branchDetails?.email}
           </p>
-          <p className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
+          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-shadow-md text-lg m-2  flex font-semibold items-center ">
             <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
             رقم الهاتف : {branchDetails?.phone}
           </p>
-          <p className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
+          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-shadow-md text-lg m-2  flex font-semibold items-center ">
             <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
             الرقم البريدي : {branchDetails?.postal}
           </p>
@@ -133,27 +143,27 @@ export default function BranchDetails() {
 
       {branchDetails?.id == 2 ? (
         <>
-           <h3 className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
+           <h3 data-aos="fade-up" data-aos-delay="500" className="text-center font-bold text-blue-900 text-shadow-blue my-3 text-2xl lg:text-4xl">
           فرع جدة الثاني
         </h3>
-        <hr className="border-green-700 border-t-2 w-40 mx-auto" />
-        <hr className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
-          <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 ">
+        <hr data-aos="fade-up" data-aos-delay="500" className="border-green-700 border-t-2 w-40 mx-auto" />
+        <hr data-aos="fade-up" data-aos-delay="500" className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
+          <div data-aos="fade-up" data-aos-delay="500" className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 ">
        
-            <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
-              <p className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
+            <div  className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
+              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
                 <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
                 {Jaddah2.location_map?.ar}
               </p>
-              <p className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center ">
+              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center ">
                 <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
                 البريد الإلكتروني : {Jaddah2.email}
               </p>
-              <p className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
+              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
                 <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
                 رقم الهاتف : {Jaddah2.phone}
               </p>
-              <p className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
+              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
                 <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
                 الرقم البريدي : {Jaddah2.postal}
               </p>
@@ -184,28 +194,28 @@ export default function BranchDetails() {
  <div className="bg-white/85 py-20">
 
  
-        <h3 className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
+        <h3 data-aos="zoom-in" className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
           {branchDetails?.name?.en}
 
         </h3>
-        <hr className="border-green-700 border-t-2 w-40 mx-auto" />
-        <hr className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
+        <hr data-aos="fade-up" data-aos-delay="100" className="border-green-700 border-t-2 w-40 mx-auto" />
+        <hr data-aos="fade-up" data-aos-delay="200" className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
    
-      <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/85 ">
+      <div data-aos="fade-up" data-aos-delay="300" className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/85 ">
         <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
-          <p className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
+          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
             <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
             {branchDetails?.location_map?.en}
           </p>
-          <p className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center ">
+          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center ">
             <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
                Email : {branchDetails?.email}
           </p>
-          <p className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
+          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
             <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
               Phone : {branchDetails?.phone}
           </p>
-          <p className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
+          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
             <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
               Postal : {branchDetails?.postal}
           </p>
@@ -228,26 +238,26 @@ export default function BranchDetails() {
       {branchDetails?.id == 2 ? (
         <>
         
-        <h3 className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
-         Jeddah Second branchDetails?
+        <h3 data-aos="fade-up" data-aos-delay="500" className="text-center text-shadow-blue font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
+         Jeddah Second branchDetails
         </h3>
-        <hr className="border-green-700 border-t-2 w-40 mx-auto" />
-        <hr className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
-          <div className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 ">
+        <hr data-aos="fade-up" data-aos-delay="500" className="border-green-700 border-t-2 w-40 mx-auto" />
+        <hr data-aos="fade-up" data-aos-delay="500" className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
+          <div data-aos="fade-up" data-aos-delay="500" className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 ">
             <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
-              <p className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
+              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
                 <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
                 {Jaddah2.location_map.en}
               </p>
-              <p className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center ">
+              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center ">
                 <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
                    Email : {Jaddah2.email}
               </p>
-              <p className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
+              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
                 <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
                    Phone : {Jaddah2.phone}
               </p>
-              <p className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
+              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
                 <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
                   Postal : {Jaddah2.postal}
               </p>
