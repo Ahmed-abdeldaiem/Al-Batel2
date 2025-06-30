@@ -83,7 +83,7 @@ export default function NavBar() {
     <>
       {dir == "rtl" ? (
         <>
-          <header className="bg-gray-100 lg:bg-gray-300 lg:bg-opacity-60 bg-opacity-80 backdrop-blur-lg shadow-sm shadow-gray-500 fixed top-0 z-50 w-full">
+          <header className="bg-gray-100 lg:bg-gray-300 lg:bg-opacity-60 bg-opacity-80 backdrop-blur-lg shadow-lg shadow-gray-500 fixed top-0 z-50 w-full">
             <div className="mx-auto flex justify-center md:justify-evenly h-16 w-full items-center gap-4 lg:gap-8 px-4 sm:px-6 lg:px-8">
               <div className="flex w-full items-center justify-start gap-2 lg:gap-16 mx-8 lg:text-xl">
                 <Link
@@ -95,7 +95,7 @@ export default function NavBar() {
                     className="w-20 inline-block px-3"
                     alt="Albatel Logo"
                   />
-                  <span className="text-green-600 mx-3">الباتل</span>
+                  <span className="text-green-600 mx-3 text-shadow-blue ">الباتل</span>
                 </Link>
 
                 <div>
@@ -212,7 +212,7 @@ export default function NavBar() {
                 <button
                   type="button"
                   onClick={() => toggleDropdown("language")}
-                  className="border border-blue-800 inline-flex text-nowrap relative px-5 items-center bg-blue-100 bg-opacity-50 backdrop-blur-lg font-medium justify-center py-2 text-sm text-gray-900 transition-all duration-700 rounded-lg cursor-pointer hover:bg-gray-100"
+                  className="border border-blue-800 shadow-blue-600 shadow-sm inline-flex text-nowrap relative px-5 items-center bg-blue-100 bg-opacity-50 backdrop-blur-lg font-medium justify-center py-2 text-sm text-gray-900 transition-all duration-700 rounded-lg cursor-pointer hover:bg-gray-100"
                   id="languageDropdownButton"
                 >
                   <img
@@ -420,7 +420,7 @@ export default function NavBar() {
           </header>
         </>
       ) : (
-        <header className="bg-gray-100 lg:bg-gray-300 lg:bg-opacity-60 bg-opacity-80 backdrop-blur-lg shadow-sm shadow-gray-500 fixed top-0 z-50 w-full">
+        <header className="bg-gray-100 lg:bg-gray-300 lg:bg-opacity-60 bg-opacity-80 backdrop-blur-lg shadow-lg shadow-gray-500 fixed top-0 z-50 w-full">
           <div className="mx-auto flex justify-center md:justify-evenly h-16 w-full items-center gap-4 lg:gap-8 px-4 sm:px-6 lg:px-8">
             <div className="flex w-full items-center justify-start gap-2 lg:gap-16 mx-8 lg:text-xl">
               <Link
@@ -432,7 +432,7 @@ export default function NavBar() {
                     className="w-20 inline-block px-3"
                     alt="Albatel Logo"
                   />
-                <span className="text-green-600 mx-3">Al-Batel</span>
+                <span className="text-green-600 mx-3 text-shadow-blue">Al-Batel</span>
               </Link>
 
               <div>
@@ -545,11 +545,11 @@ export default function NavBar() {
             </div>
 
             {/* Toggle Button between Arabic and English */}
-            <div className="flex items-center lg:me-8 md:order-2">
+            <div className="flex items-center lg:me-8 md:order-2 ">
               <button
                 type="button"
                 onClick={() => toggleDropdown("language")}
-                className="border border-blue-800 inline-flex text-nowrap relative px-5 items-center bg-blue-100 bg-opacity-50 backdrop-blur-lg font-medium justify-center py-2 text-sm text-gray-900 transition-all duration-700 rounded-lg cursor-pointer hover:bg-gray-100"
+                className="border border-blue-800 shadow-blue-600 shadow-sm  inline-flex text-nowrap relative px-5 items-center bg-blue-100 bg-opacity-50 backdrop-blur-lg font-medium justify-center py-2 text-sm text-gray-900 transition-all duration-700 rounded-lg cursor-pointer hover:bg-gray-100"
                 id="languageDropdownButton"
               >
                 <img

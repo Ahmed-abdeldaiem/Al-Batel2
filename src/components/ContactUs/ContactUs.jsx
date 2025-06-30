@@ -6,7 +6,9 @@ import * as Yup from "yup";
 import { LanguageContext } from "../../Context/LanguageContext";
 import * as emailjs from "emailjs-com"; 
 import { toast } from 'react-hot-toast';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export default function ContactUs() {
   const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
@@ -14,7 +16,13 @@ export default function ContactUs() {
   const [isLoading, setIsLoading] = useState(false);
   let navigate = useNavigate();
 
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: true,
+      easing: 'ease-in-out'
+    });
+  }, []);
 
 
 
@@ -124,7 +132,7 @@ export default function ContactUs() {
 
 <div className="w-8/12 z-20">
 <div className=" py-20 2xl:py-30 4k:py-60">
-            <h2 className="text-green-900 font-bold text-4xl 4k:text-5xl text-center my-6">
+            <h2  data-aos="fade-up" className="text-green-900 text-shadow-green font-bold text-4xl 4k:text-5xl text-center my-6">
            تواصل معنا
             </h2>
 
@@ -137,7 +145,7 @@ export default function ContactUs() {
               </div>
             ) : null}
 
-            <form className="w-full md:w-9/12 lg:w-7/12 bg-white/60 flex flex-col justify-center items-center   mx-auto text-right  rounded-3xl p-4" onSubmit={formik.handleSubmit}>
+            <form  data-aos="fade-up" data-aos-delay="200" className="w-full md:w-9/12 lg:w-7/12 bg-white/60 flex flex-col justify-center items-center   mx-auto text-right  rounded-3xl p-4" onSubmit={formik.handleSubmit}>
               <div className="relative z-0 w-full mb-5 group">
                 <input
                   onBlur={formik.handleBlur}
@@ -151,14 +159,14 @@ export default function ContactUs() {
                 />
                 <label
                   htmlFor="name"
-                  className="peer-focus:font-medium absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium text-shadow-blue absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    الاسم
                 </label>
 
                 {formik.errors.name && formik.touched.name ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
+                    className="p-4 mt-3 text-shadow-md mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.name}
@@ -178,13 +186,14 @@ export default function ContactUs() {
                   placeholder=" "
                 />
                 <label
+                
                   htmlFor="phone"
-                  className="peer-focus:font-medium absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium text-shadow-blue absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    رقم الجوال                </label>
                 {formik.errors.phone && formik.touched.phone ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
+                    className="p-4 mt-3 text-shadow-md mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.phone}
@@ -205,13 +214,13 @@ export default function ContactUs() {
                 />
                 <label
                   htmlFor="email"
-                  className="peer-focus:font-medium absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium text-shadow-blue absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 > 
                  البريد الإلكتروني
                  </label>
                 {formik.errors.email && formik.touched.email ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
+                    className="p-4 mt-3 text-shadow-md mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.email}
@@ -233,13 +242,13 @@ export default function ContactUs() {
                 ></textarea>
                 <label
                   htmlFor="message"
-                  className="peer-focus:font-medium absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium text-shadow-blue absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    الرسالة
                 </label>
                 {formik.errors.message && formik.touched.message ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
+                    className="p-4 mt-3 text-shadow-md mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.message}
@@ -249,7 +258,7 @@ export default function ContactUs() {
 
               <button
                 type="submit"
-                className={`text-white font-medium rounded-lg text-sm 4k:text-xl w-full sm:w-auto px-5 py-2.5 text-center focus:outline-none focus:ring-4 focus:ring-green-500 ${
+                className={`text-white text-shadow- font-medium rounded-lg text-sm 4k:text-xl w-full sm:w-auto px-5 py-2.5 text-center focus:outline-none focus:ring-4 focus:ring-green-500 ${
                   formik.isValid && !isAnyInputEmpty
                     ? "bg-green-500 hover:bg-green-600"
                     : "bg-gray-500 cursor-not-allowed"
@@ -277,7 +286,7 @@ export default function ContactUs() {
 
 <div className="w-8/12 z-20">
 <div className=" py-20 2xl:py-30 4k:py-60">
-            <h2 className="text-green-900 font-bold text-4xl text-center my-6">
+            <h2 data-aos="fade-up" className="text-green-900 text-shadow-green font-bold text-4xl text-center my-6">
             Contact Us
             </h2>
 
@@ -290,7 +299,7 @@ export default function ContactUs() {
               </div>
             ) : null}
 
-            <form className="w-full md:w-10/12 lg:w-8/12 bg-white/70 flex flex-col justify-center items-center   mx-auto text-right  rounded-3xl p-4" onSubmit={formik.handleSubmit}>
+            <form data-aos="fade-up" data-aos-delay="200" className="w-full md:w-10/12 lg:w-8/12 bg-white/70 flex flex-col justify-center items-center   mx-auto text-right  rounded-3xl p-4" onSubmit={formik.handleSubmit}>
               <div className="relative z-0 w-full mb-5 group">
                 <input
                   onBlur={formik.handleBlur}
@@ -304,14 +313,14 @@ export default function ContactUs() {
                 />
                 <label
                   htmlFor="name"
-                  className="peer-focus:font-medium absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform translate-y-6 scale-75  top-1 start-1 -z-10  peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium text-shadow-blue absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform translate-y-6 scale-75  top-1 start-1 -z-10  peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    Name
                 </label>
 
                 {formik.errors.name && formik.touched.name ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
+                    className="p-4 mt-3 text-shadow-md mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.name}
@@ -332,12 +341,12 @@ export default function ContactUs() {
                 />
                 <label
                   htmlFor="phone"
-                  className="peer-focus:font-medium absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium text-shadow-blue absolute text-lg 4k:text-2xl text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    Mobile Number                </label>
                 {formik.errors.phone && formik.touched.phone ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
+                    className="p-4 mt-3 text-shadow-md mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.phone}
@@ -358,13 +367,13 @@ export default function ContactUs() {
                 />
                 <label
                   htmlFor="email"
-                  className="peer-focus:font-medium absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium text-shadow-blue absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 > 
                  Email
                  </label>
                 {formik.errors.email && formik.touched.email ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
+                    className="p-4 mt-3 text-shadow-md mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.email}
@@ -386,13 +395,13 @@ export default function ContactUs() {
                 ></textarea>
                 <label
                   htmlFor="message"
-                  className="peer-focus:font-medium absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  className="peer-focus:font-medium text-shadow-blue absolute text-lg text-blue-950 font-semibold duration-300 transform -translate-y-6 scale-75 top-1 start-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                    Message
                 </label>
                 {formik.errors.message && formik.touched.message ? (
                   <div
-                    className="p-4 mt-3 mb-4 text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
+                    className="p-4 mt-3 mb-4 text-shadow-md text-sm 4k:text-xl text-red-800 rounded-lg bg-red-100/60 "
                     role="alert"
                   >
                     {formik.errors.message}
@@ -402,7 +411,7 @@ export default function ContactUs() {
 
               <button
                 type="submit"
-                className={`text-white font-medium rounded-lg text-sm 4k:text-xl w-full sm:w-auto px-5 py-2.5 text-center focus:outline-none focus:ring-4 focus:ring-green-500 ${
+                className={`text-white text-shadow-md font-medium rounded-lg text-sm 4k:text-xl w-full sm:w-auto px-5 py-2.5 text-center focus:outline-none focus:ring-4 focus:ring-green-500 ${
                   formik.isValid && !isAnyInputEmpty
                     ? "bg-green-500 hover:bg-green-600"
                     : "bg-gray-500 cursor-not-allowed"

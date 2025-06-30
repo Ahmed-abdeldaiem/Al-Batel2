@@ -4,12 +4,20 @@ import { LanguageContext } from "../../Context/LanguageContext";
 import { PartnersContext } from "../../Context/PartnersContext";
 import Loader from "../Loader/Loader";
 import style from "./MainPagePartners.module.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function MainPagePartners() {
   const { getPartners } = useContext(PartnersContext);
   const [partners, setPartners] = useState([]);
   const [Loading, setLoading] = useState(false);
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false,
+      easing: 'ease-in-out'
+    });
+  }, []);
   async function getPartnersData() {
     setLoading(true);
     let data = await getPartners();
@@ -41,7 +49,8 @@ export default function MainPagePartners() {
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
-    pauseOnHover: true,
+    pauseOnHover: false,
+    
     responsive: [
       {
         breakpoint: 2560,
@@ -90,12 +99,12 @@ export default function MainPagePartners() {
   return (
     <>
       {Loading ? <Loader /> : null}
-      <h2 className="text-green-600 text-3xl 4k:text-4xl text-center  my-3 font-semibold">
+      <h2 className="text-green-600 text-3xl 4k:text-4xl text-center  my-5 font-semibold text-shadow-green" data-aos="fade-up">
         {dir == "rtl" ? <>شركاء النجاح</> : <>Partners of success</>}
       </h2>
-      <hr className="border-blue-700 border-t-2 w-40 mx-auto" />
-      <hr className="border-blue-700 border-t-2 w-20 my-2 mx-auto" />
-      <div className="relative w-full bg-gray-300">
+      <hr className="border-blue-700 border-t-2 w-40 mx-auto" data-aos="fade-up"/>
+      <hr className="border-blue-700 border-t-2 w-20 my-2 mx-auto" data-aos="fade-up"/>
+      <div className="relative w-full bg-gray-300" data-aos="fade-up">
         {/* <div className="absolute inset-0 bg-gradient-to-l from-green-300/20  to-green-800/30 opacity-70 z-10"></div> */}
         {partners.length > 0 ? (
           <>

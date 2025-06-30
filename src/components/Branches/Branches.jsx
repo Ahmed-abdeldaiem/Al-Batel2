@@ -1,14 +1,22 @@
 import React, { useContext, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "../../Context/LanguageContext";
 import style from "./Branches.module.css";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Branches() {
   const [counter, setcounter] = useState(0);
   const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
 
 
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      once: false,
+      easing: 'ease-in-out'
+    });
+  }, []);
 
   const branches = [
     { id: 1,
@@ -81,14 +89,14 @@ export default function Branches() {
     <>
 
 {dir=='rtl'?<>
-<div className="container m-auto my-10">
-        <h2 className="text-green-600 text-3xl 4k:text-4xl text-center  my-3 font-semibold">
+<div className="container m-auto my-10" data-aos="fade-up">
+        <h2 className="text-green-600 text-3xl 4k:text-4xl text-center  my-3 font-semibold text-shadow-green" data-aos="fade-up">
           فروع الشركة
         </h2>
-        <hr className="border-blue-700 border-t-2 w-40 mx-auto" />
-        <hr className="border-blue-700 border-t-2 w-20 my-2 mx-auto" />
+        <hr className="border-blue-700 border-t-2 w-40 mx-auto" data-aos="fade-up"/>
+        <hr className="border-blue-700 border-t-2 w-20 my-2 mx-auto" data-aos="fade-up" />
 
-        <div className="flex flex-wrap justify-center items-stretch w-full my-9">
+        <div className="flex flex-wrap justify-center items-stretch w-full my-9" data-aos="fade-up">
 
 
 
@@ -98,7 +106,7 @@ export default function Branches() {
                     <Link key={index} to={`/branch/${branch.id}`} className="w-full md:w-1/2 p-2 2xl:p-3   lg:w-1/4 ">
 
 
-                    <div  className="max-w-sm 2xl:max-w-xl 4k:max-w-2xl relative overflow-hidden bg-white border border-gray-200 rounded-lg shadow-md transition-all duration-500 group hover:shadow-green-600">
+                    <div data-aos="fade-up" className="max-w-sm 2xl:max-w-xl 4k:max-w-2xl relative overflow-hidden bg-white border border-gray-200 rounded-lg shadow-md transition-all duration-500 group hover:shadow-green-600">
                       <div className="overflow-hidden relative">
                         <img
                           className="rounded-t-lg h-[280px] 4k:h-[400px] w-full duration-700 transition-all group-hover:scale-125"
@@ -110,7 +118,7 @@ export default function Branches() {
                         <div className="absolute inset-0 bg-gradient-to-l from-green-300/20  to-blue-800/30 opacity-70 z-10"></div>
                       </div>
                       <div className="p-5">
-                        <h5 className="mb-2 text-xl 4k:text-3xl text-nowrap font-bold tracking-tight text-gray-700">
+                        <h5 className="mb-2 text-xl 4k:text-3xl text-nowrap font-bold tracking-tight text-gray-700 text-shadow-sm">
                           <span className="mx-1 text-blue-700">
                             <i className="fa-solid fa-location-dot"></i>
                           </span>
@@ -132,14 +140,14 @@ export default function Branches() {
       </div>
 
 </>:<>
-<div className="container m-auto my-10">
-        <h2 className="text-green-600 text-3xl text-center  my-3 font-semibold">
+<div className="container m-auto my-10" data-aos="fade-up">
+        <h2 className="text-green-600 text-3xl text-center  my-3 font-semibold text-shadow-green">
              Company Branches
         </h2>
-        <hr className="border-blue-700 border-t-2 w-40 mx-auto" />
-        <hr className="border-blue-700 border-t-2 w-20 my-2 mx-auto" />
+        <hr className="border-blue-700 border-t-2 w-40 mx-auto"data-aos="fade-up" />
+        <hr className="border-blue-700 border-t-2 w-20 my-2 mx-auto"data-aos="fade-up" />
 
-        <div className="flex flex-wrap items-stretch w-full my-9">
+        <div className="flex flex-wrap items-stretch w-full my-9" data-aos="fade-up">
 
 
 
@@ -161,7 +169,7 @@ export default function Branches() {
                         <div className="absolute inset-0 bg-gradient-to-l from-green-300/20  to-blue-800/30 opacity-70 z-10"></div>
                       </div>
                       <div className="p-5">
-                        <h5 className="mb-2 text-xl font-bold text-nowrap tracking-tight text-gray-700">
+                        <h5 className="mb-2 text-xl font-bold text-nowrap tracking-tight text-gray-700 text-shadow-sm">
                           <span className="mx-1 text-blue-700">
                             <i className="fa-solid fa-location-dot"></i>
                           </span>

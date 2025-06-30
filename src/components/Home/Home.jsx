@@ -82,10 +82,10 @@ export default function Home() {
                     />
 
                     <div className={`flex flex-col text-center  `}>
-                      <h1 className="text-white text-xl lg:text-3xl 4k:text-5xl font-semibold">
+                      <h1 className="text-white text-xl lg:text-3xl 4k:text-5xl font-semibold text-shadow-xl">
                         شركة باتل عبدالله الباتل وشركاؤه للاستشارات المهنية
                       </h1>
-                      <h1 className="text-white text-xl lg:text-2xl 4k:text-4xl py-2 font-semibold">
+                      <h1 className="text-white text-xl lg:text-2xl 4k:text-4xl py-2 font-semibold text-shadow-xl">
                         Batel Abdullah Al-Batel & Partners for Professional
                         Consultations
                       </h1>
@@ -98,7 +98,7 @@ export default function Home() {
                     }`}
                   >
                     <Link to={"about"}>
-                      <button className="  px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-300 transition-all duration-500 hover:border-blue-400 text-xl 4k:text-3xl font-semibold text-white hover:text-green-800 bg-slate-100 hover:bg-opacity-80 bg-opacity-10 rounded-full">
+                      <button className=" text-shadow-xl   hover:text-shadow-green px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-500 transition-all duration-700 hover:border-blue-700 text-xl 4k:text-3xl font-semibold text-white hover:text-green-700 bg-slate-100 hover:bg-opacity-70 bg-opacity-10 rounded-full">
                         من نحن
                       </button>
                     </Link>
@@ -119,38 +119,38 @@ export default function Home() {
 
                 <div className="relative z-20 w-full md:w-8/12  flex  flex-col items-center justify-center text-center md:items-start md:ps-32 md:ms-24 md:text-start   h-full">
                   <h2
-                    className={`text-white  text-2xl lg:text-3xl 4k:text-5xl font-semibold md:text-start  my-10 ${
+                    className={`text-white  text-2xl lg:text-3xl 4k:text-5xl font-semibold md:text-start text-shadow-xl  my-10 ${
                       currentIndex === 1 ? "animate-moveIn2" : ""
                     }`}
                   >
                     خدماتنا                
                   </h2>
-                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
+                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl text-shadow-xl my-4">
                     <span className="mx-1">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
                     مراجعة القوائم المالية
                   </h3>
-                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
+                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl text-shadow-xl my-4">
                     <span className="mx-1">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
                     خدمات مالية ومحاسبية وضريبية    
                   </h3>
 
-                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
+                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl text-shadow-xl my-4">
                     <span className="mx-1">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
                     خدمات استشارية متخصصة
                   </h3>
-                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
+                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl text-shadow-xl my-4">
                     <span className="mx-1">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
                     حلول شاملة لاحتياجات الشركات
                   </h3>
-                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
+                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl text-shadow-xl my-4">
                     <span className="mx-1">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>
@@ -161,8 +161,8 @@ export default function Home() {
                     className={`${currentIndex === 1 ? "animate-moveIn2" : ""}`}
                     to={"services"}
                   >
-                    <button className=" my-2 px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-300 transition-all duration-500 hover:border-blue-400 text-xl 4k:text-3xl font-semibold text-white hover:text-green-800 bg-slate-100 hover:bg-opacity-80 bg-opacity-10 rounded-full">
-                      خدماتنا
+                    <button className=" text-shadow-xl hover:text-shadow-green  px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-500 transition-all duration-700 hover:border-blue-700 text-xl 4k:text-3xl font-semibold text-white hover:text-green-700 bg-slate-100 hover:bg-opacity-70 bg-opacity-10 rounded-full">
+                        خدماتنا
                     </button>
                   </Link>
                 </div>
@@ -180,32 +180,32 @@ export default function Home() {
                 {/* Content for Slide 3 */}
                 <div className="relative z-20 w-full md:w-8/12  flex  flex-col items-center justify-center text-center md:items-start md:ps-32 md:ms-24 md:text-start   h-full">
                   <h2
-                    className={`text-white  text-2xl lg:text-3xl 4k:text-5xl font-semibold md:text-start  my-10 ${
+                    className={`text-white  text-2xl lg:text-3xl 4k:text-5xl font-semibold md:text-start text-shadow-xl my-10 ${
                       currentIndex === 2 ? "animate-moveIn2" : ""
                     }`}
                   >
                     فريق العمل
                   </h2>
-                  <h3 className="text-white text-xl  lg:text-2xl 4k:text-3xl my-4">
+                  <h3 className="text-white text-xl  lg:text-2xl 4k:text-3xl text-shadow-xl my-4">
                     <span className="">
                       <i className="fa-solid fa-circle-dot"></i>
-                    </span>
+                    </span>{" "}
                     مراجعون ومحاسبون قانونيون
                   </h3>
-                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
+                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl text-shadow-xl my-4">
                     <span className="">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>{" "}
                     خبراء استشارات ضريبية وزكوية
                   </h3>
-                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
+                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl text-shadow-xl my-4">
                     <span className="">
                       <i className="fa-solid fa-circle-dot"></i>
-                    </span>
+                    </span>{" "}
                     خبراء استشارات إدارية واقتصادية وترجمة
                   </h3>
                   
-                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
+                  <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl text-shadow-xl my-4">
                     <span className="">
                       <i className="fa-solid fa-circle-dot"></i>
                     </span>{" "}
@@ -216,8 +216,8 @@ export default function Home() {
                     className={`${currentIndex === 2 ? "animate-moveIn2" : ""}`}
                     to={"team"}
                   >
-                    <button className=" my-2 px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-300 transition-all duration-500 hover:border-blue-400 text-xl 4k:text-3xl font-semibold text-white hover:text-green-800 bg-slate-100 hover:bg-opacity-80 bg-opacity-10 rounded-full">
-                      فريقنا
+                <button className=" text-shadow-xl hover:text-shadow-green px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-500 transition-all duration-700 hover:border-blue-700 text-xl 4k:text-3xl font-semibold text-white hover:text-green-700 bg-slate-100 hover:bg-opacity-70 bg-opacity-10 rounded-full">
+                            فريقنا
                     </button>
                   </Link>
                 </div>
@@ -358,8 +358,8 @@ export default function Home() {
                     }`}
                   >
                     <Link to={"about"}>
-                      <button className="  px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-300 transition-all duration-500 hover:border-blue-400 text-xl 4k:text-3xl font-semibold text-white hover:text-green-800 bg-slate-100 hover:bg-opacity-80 bg-opacity-10 rounded-full">
-                        About US
+                    <button className=" text-shadow-xl hover:text-shadow-green px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-500 transition-all duration-700 hover:border-blue-700 text-xl 4k:text-3xl font-semibold text-white hover:text-green-700 bg-slate-100 hover:bg-opacity-70 bg-opacity-10 rounded-full">
+                         About US
                       </button>
                     </Link>
                   </div>
@@ -420,8 +420,8 @@ export default function Home() {
                     className={`${currentIndex === 1 ? "animate-moveIn2" : ""}`}
                     to={"services"}
                   >
-                    <button className=" my-2 px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-300 transition-all duration-500 hover:border-blue-400 text-xl 4k:text-3xl font-semibold text-white hover:text-green-800 bg-slate-100 hover:bg-opacity-80 bg-opacity-10 rounded-full">
-                      Our Services
+              <button className=" text-shadow-xl hover:text-shadow-green px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-500 transition-all duration-700 hover:border-blue-700 text-xl 4k:text-3xl font-semibold text-white hover:text-green-700 bg-slate-100 hover:bg-opacity-70 bg-opacity-10 rounded-full">
+                              Our Services
                     </button>
                   </Link>
                 </div>
@@ -448,7 +448,7 @@ export default function Home() {
                   <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
                     <span className="">
                       <i className="fa-solid fa-circle-dot"></i>
-                    </span>
+                    </span>{" "}
                     Certified Public Accountants
                   </h3>
                   <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
@@ -460,7 +460,7 @@ export default function Home() {
                   <h3 className="text-white text-xl lg:text-2xl 4k:text-3xl my-4">
                     <span className="">
                       <i className="fa-solid fa-circle-dot"></i>
-                    </span>
+                    </span>{" "}
                     Management and economic consultants
                   </h3>
                   
@@ -475,8 +475,8 @@ export default function Home() {
                     className={`${currentIndex === 2 ? "animate-moveIn2" : ""}`}
                     to={"team"}
                   >
-                    <button className=" my-2 px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-300 transition-all duration-500 hover:border-blue-400 text-xl 4k:text-3xl font-semibold text-white hover:text-green-800 bg-slate-100 hover:bg-opacity-80 bg-opacity-10 rounded-full">
-                      Our Team
+                 <button className=" text-shadow-xl hover:text-shadow-green px-7 py-2 4k:py-4 4k:px-9 overflow-hidden border-2 border-green-500 transition-all duration-700 hover:border-blue-700 text-xl 4k:text-3xl font-semibold text-white hover:text-green-700 bg-slate-100 hover:bg-opacity-70 bg-opacity-10 rounded-full">
+                           Our Team
                     </button>
                   </Link>
                 </div>

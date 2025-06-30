@@ -68,10 +68,15 @@ export default {
         wider: '0.04em',
         widest: '0.1em',
         widest2: '0.4em', // Example custom value
-      }
+      },
+      textShadow: {
+        'blue': '1px 1px 1px rgba(30, 64, 175, 0.8)', //blue shadow
+        'green': '1px 1px 1px rgba(22, 163, 74, 0.9)' // green shadow
+      },
+     
     },
   },
-  plugins: [],
+  plugins: [   require('tailwindcss-textshadow'),],
 };
 
 
