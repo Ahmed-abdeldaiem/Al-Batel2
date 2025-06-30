@@ -1,17 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { LanguageContext } from "../../Context/LanguageContext";
-import { BranchesContext } from '../../Context/branchesContext';
+import { BranchesContext } from "../../Context/branchesContext";
 import style from "./BranchDetails.module.css";
 import Loader from "../Loader/Loader";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function BranchDetails() {
-
   const { rightToLeft, leftToRight, dir } = useContext(LanguageContext);
-  
+
   const { getBranches } = useContext(BranchesContext);
- 
+
   const [Loading, setLoading] = useState(false);
 
   const [branchDetails, setBranchDetails] = useState({});
@@ -19,53 +18,37 @@ export default function BranchDetails() {
     AOS.init({
       duration: 1200,
       once: false,
-      easing: 'ease-in-out'
+      easing: "ease-in-out",
     });
   }, []);
 
   let { id } = useParams();
-  let navigate=useNavigate();
+  let navigate = useNavigate();
 
   // Convert id to a number, as useParams returns a string
   const branchId = Number(id);
 
-
   async function getBranchData(branchId) {
-
-    
     setLoading(true);
     let data = await getBranches();
     // console.log(data);
-     // Find the branch
+    // Find the branch
     const branch = data?.find((branch) => branch.id === branchId);
-   
-// check if data back falsy value
-    if (!data || !branch) {
-      navigate('/notfound'); // redirect to not found component
-    } else {
-      
 
+    // check if data back falsy value
+    if (!data || !branch) {
+      navigate("/notfound"); // redirect to not found component
+    } else {
       setBranchDetails(branch);
-     
+
       setLoading(false);
     }
-
-  
   }
 
   useEffect(() => {
-  
     getBranchData(branchId);
-
-
   }, []);
 
-
- 
-
-
-
- 
   const Jaddah2 = {
     id: 2_1,
     name: {
@@ -83,209 +66,315 @@ export default function BranchDetails() {
     postal: "23337 ",
     membership_num: "359412 ",
   };
- 
+
   return (
-
-   
-// data-aos="zoom-in"  data-aos-delay="300"
-// data-aos="fade-up"
-
-
-
     <>
-      
-  {Loading ? <Loader/> : null}
- {dir=='rtl'?
- <>
-   
- <div className=" bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
- <div className="bg-white/85 py-20">
-
-        <h3 data-aos="zoom-in" className="text-center text-shadow-blue font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
-          {branchDetails?.name?.ar}
-        </h3>
-        <hr  data-aos="fade-up" data-aos-delay="100" className="border-green-700 border-t-2 w-40 mx-auto" />
-        <hr  data-aos="fade-up" data-aos-delay="200" className="border-green-700 border-t-2 w-20 mt-2 mb-10 mx-auto" />
-     
-      <div data-aos="fade-up" data-aos-delay="300" className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/85  ">
-        <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
-          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-shadow-md text-lg  m-2 flex font-semibold items-center ">
-            <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
-            {branchDetails?.location_map?.ar}
-          </p>
-          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-shadow-md text-lg  m-2 my-4 flex font-semibold items-center ">
-            <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
-            البريد الإلكتروني : {branchDetails?.email}
-          </p>
-          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-shadow-md text-lg m-2  flex font-semibold items-center ">
-            <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
-            رقم الهاتف : {branchDetails?.phone}
-          </p>
-          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-shadow-md text-lg m-2  flex font-semibold items-center ">
-            <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
-            الرقم البريدي : {branchDetails?.postal}
-          </p>
-        </div>
-
-        <div className="w-full overflow-hidden lg:w-1/2 flex justify-center items-center ">
-          <iframe
-            src={branchDetails?.google_map}
-            width={`100%`}
-            height={450}
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
-        <div></div>
-      </div>
-
-      {branchDetails?.id == 2 ? (
+      {Loading ? <Loader /> : null}
+      {dir == "rtl" ? (
         <>
-           <h3 data-aos="fade-up" data-aos-delay="500" className="text-center font-bold text-blue-900 text-shadow-blue my-3 text-2xl lg:text-4xl">
-          فرع جدة الثاني
-        </h3>
-        <hr data-aos="fade-up" data-aos-delay="500" className="border-green-700 border-t-2 w-40 mx-auto" />
-        <hr data-aos="fade-up" data-aos-delay="500" className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
-          <div data-aos="fade-up" data-aos-delay="500" className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 ">
-       
-            <div  className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
-              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
-                <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
-                {Jaddah2.location_map?.ar}
-              </p>
-              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center ">
-                <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
-                البريد الإلكتروني : {Jaddah2.email}
-              </p>
-              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
-                <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
-                رقم الهاتف : {Jaddah2.phone}
-              </p>
-              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
-                <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
-                الرقم البريدي : {Jaddah2.postal}
-              </p>
-            </div>
-
-            <div className="w-full overflow-hidden lg:w-1/2 flex justify-center items-center ">
-              <iframe
-                src={Jaddah2.google_map}
-                width={`100%`}
-                height={450}
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+          <div className=" bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
+            <div className="bg-white/85 py-20">
+              <h3
+                data-aos="zoom-in"
+                className="text-center text-shadow-blue font-bold text-blue-900 my-3 text-2xl lg:text-4xl"
+              >
+                {branchDetails?.name?.ar}
+              </h3>
+              <hr
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="border-green-700 border-t-2 w-40 mx-auto"
               />
+              <hr
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="border-green-700 border-t-2 w-20 mt-2 mb-10 mx-auto"
+              />
+
+              <div
+                data-aos="fade-up"
+                data-aos-delay="300"
+                className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/85  "
+              >
+                <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    className="text-gray-800 text-shadow-md text-lg  m-2 flex font-semibold items-center "
+                  >
+                    <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
+                    {branchDetails?.location_map?.ar}
+                  </p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    className="text-gray-800 text-shadow-md text-lg  m-2 my-4 flex font-semibold items-center "
+                  >
+                    <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
+                    البريد الإلكتروني : {branchDetails?.email}
+                  </p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    className="text-gray-800 text-shadow-md text-lg m-2  flex font-semibold items-center "
+                  >
+                    <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
+                    رقم الهاتف : {branchDetails?.phone}
+                  </p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    className="text-gray-800 text-shadow-md text-lg m-2  flex font-semibold items-center "
+                  >
+                    <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
+                    الرقم البريدي : {branchDetails?.postal}
+                  </p>
+                </div>
+
+                <div className="w-full overflow-hidden lg:w-1/2 flex justify-center items-center ">
+                  <iframe
+                    src={branchDetails?.google_map}
+                    width={`100%`}
+                    height={450}
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+                <div></div>
+              </div>
+
+              {branchDetails?.id == 2 ? (
+                <>
+                  <h3
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className="text-center font-bold text-blue-900 text-shadow-blue my-3 text-2xl lg:text-4xl"
+                  >
+                    فرع جدة الثاني
+                  </h3>
+                  <hr
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className="border-green-700 border-t-2 w-40 mx-auto"
+                  />
+                  <hr
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className="border-green-700 border-t-2 w-20 my-2 mx-auto"
+                  />
+                  <div
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 "
+                  >
+                    <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
+                      <p
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        className="text-gray-800 text-lg  m-2 flex font-semibold items-center "
+                      >
+                        <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
+                        {Jaddah2.location_map?.ar}
+                      </p>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center "
+                      >
+                        <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
+                        البريد الإلكتروني : {Jaddah2.email}
+                      </p>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        className="text-gray-800 text-lg m-2  flex font-semibold items-center "
+                      >
+                        <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
+                        رقم الهاتف : {Jaddah2.phone}
+                      </p>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        className="text-gray-800 text-lg m-2  flex font-semibold items-center "
+                      >
+                        <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
+                        الرقم البريدي : {Jaddah2.postal}
+                      </p>
+                    </div>
+
+                    <div className="w-full overflow-hidden lg:w-1/2 flex justify-center items-center ">
+                      <iframe
+                        src={Jaddah2.google_map}
+                        width={`100%`}
+                        height={450}
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                      />
+                    </div>
+                    <div></div>
+                  </div>
+                </>
+              ) : null}
             </div>
-            <div></div>
           </div>
         </>
-      ) : null}
-
-</div>
-</div>
- </>:
- <>
- 
- <div className=" bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
- <div className="bg-white/85 py-20">
-
- 
-        <h3 data-aos="zoom-in" className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
-          {branchDetails?.name?.en}
-
-        </h3>
-        <hr data-aos="fade-up" data-aos-delay="100" className="border-green-700 border-t-2 w-40 mx-auto" />
-        <hr data-aos="fade-up" data-aos-delay="200" className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
-   
-      <div data-aos="fade-up" data-aos-delay="300" className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/85 ">
-        <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
-          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
-            <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
-            {branchDetails?.location_map?.en}
-          </p>
-          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center ">
-            <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
-               Email : {branchDetails?.email}
-          </p>
-          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
-            <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
-              Phone : {branchDetails?.phone}
-          </p>
-          <p data-aos="fade-up" data-aos-delay="400" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
-            <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
-              Postal : {branchDetails?.postal}
-          </p>
-        </div>
-
-        <div className="w-full overflow-hidden lg:w-1/2 flex justify-center items-center ">
-          <iframe
-            src={branchDetails?.google_map}
-            width={`100%`}
-            height={450}
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
-        <div></div>
-      </div>
-
-      {branchDetails?.id == 2 ? (
+      ) : (
         <>
-        
-        <h3 data-aos="fade-up" data-aos-delay="500" className="text-center text-shadow-blue font-bold text-blue-900 my-3 text-2xl lg:text-4xl">
-         Jeddah Second branchDetails
-        </h3>
-        <hr data-aos="fade-up" data-aos-delay="500" className="border-green-700 border-t-2 w-40 mx-auto" />
-        <hr data-aos="fade-up" data-aos-delay="500" className="border-green-700 border-t-2 w-20 my-2 mx-auto" />
-          <div data-aos="fade-up" data-aos-delay="500" className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 ">
-            <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
-              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg  m-2 flex font-semibold items-center ">
-                <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
-                {Jaddah2.location_map.en}
-              </p>
-              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center ">
-                <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
-                   Email : {Jaddah2.email}
-              </p>
-              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
-                <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
-                   Phone : {Jaddah2.phone}
-              </p>
-              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-800 text-lg m-2  flex font-semibold items-center ">
-                <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
-                  Postal : {Jaddah2.postal}
-              </p>
-            </div>
-
-            <div className="w-full overflow-hidden lg:w-1/2 flex justify-center items-center ">
-              <iframe
-                src={Jaddah2.google_map}
-                width={`100%`}
-                height={450}
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+          <div className=" bg-center bg-no-repeat bg-cover bg-[url('https://github.com/Ahmed-abdeldaiem/Albatel_API2/blob/main/%D9%84%D9%88%D8%AC%D9%88%20%D8%A7%D9%84%D8%A8%D8%A7%D8%AA%D9%84%20%D9%83%D8%A7%D9%85%D9%84.jpeg?raw=true')]">
+            <div className="bg-white/85 py-20">
+              <h3
+                data-aos="zoom-in"
+                className="text-center font-bold text-blue-900 my-3 text-2xl lg:text-4xl"
+              >
+                {branchDetails?.name?.en}
+              </h3>
+              <hr
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="border-green-700 border-t-2 w-40 mx-auto"
               />
+              <hr
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="border-green-700 border-t-2 w-20 my-2 mx-auto"
+              />
+
+              <div
+                data-aos="fade-up"
+                data-aos-delay="300"
+                className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/85 "
+              >
+                <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    className="text-gray-800 text-lg  m-2 flex font-semibold items-center "
+                  >
+                    <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
+                    {branchDetails?.location_map?.en}
+                  </p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center "
+                  >
+                    <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
+                    Email : {branchDetails?.email}
+                  </p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    className="text-gray-800 text-lg m-2  flex font-semibold items-center "
+                  >
+                    <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
+                    Phone : {branchDetails?.phone}
+                  </p>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    className="text-gray-800 text-lg m-2  flex font-semibold items-center "
+                  >
+                    <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
+                    Postal : {branchDetails?.postal}
+                  </p>
+                </div>
+
+                <div className="w-full overflow-hidden lg:w-1/2 flex justify-center items-center ">
+                  <iframe
+                    src={branchDetails?.google_map}
+                    width={`100%`}
+                    height={450}
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+                <div></div>
+              </div>
+
+              {branchDetails?.id == 2 ? (
+                <>
+                  <h3
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className="text-center text-shadow-blue font-bold text-blue-900 my-3 text-2xl lg:text-4xl"
+                  >
+                    Jeddah Second branchDetails
+                  </h3>
+                  <hr
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className="border-green-700 border-t-2 w-40 mx-auto"
+                  />
+                  <hr
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className="border-green-700 border-t-2 w-20 my-2 mx-auto"
+                  />
+                  <div
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className=" w-full flex flex-col overflow-hidden lg:flex-row bg-blue-50/50  my-8 "
+                  >
+                    <div className="w-full lg:w-1/2 flex  justify-center   flex-col   p-5">
+                      <p
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        className="text-gray-800 text-lg  m-2 flex font-semibold items-center "
+                      >
+                        <i className="fa-solid fa-location-dot  text-blue-600 text-2xl m-2"></i>
+                        {Jaddah2.location_map.en}
+                      </p>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        className="text-gray-800 text-lg  m-2 my-4 flex font-semibold items-center "
+                      >
+                        <i className="fas fa-envelope text-blue-600 text-xl m-2"></i>
+                        Email : {Jaddah2.email}
+                      </p>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        className="text-gray-800 text-lg m-2  flex font-semibold items-center "
+                      >
+                        <i className=" fas fa-phone-flip text-blue-600 text-2xl m-2"></i>
+                        Phone : {Jaddah2.phone}
+                      </p>
+                      <p
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        className="text-gray-800 text-lg m-2  flex font-semibold items-center "
+                      >
+                        <i className=" fas fa-envelopes-bulk text-blue-600 text-2xl m-2"></i>
+                        Postal : {Jaddah2.postal}
+                      </p>
+                    </div>
+
+                    <div className="w-full overflow-hidden lg:w-1/2 flex justify-center items-center ">
+                      <iframe
+                        src={Jaddah2.google_map}
+                        width={`100%`}
+                        height={450}
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                      />
+                    </div>
+                    <div></div>
+                  </div>
+                </>
+              ) : null}
             </div>
-            <div></div>
           </div>
         </>
-      ) : null}
- 
- </div>
- </div>
-
- </>}
- 
+      )}
     </>
   );
 }
-
-
