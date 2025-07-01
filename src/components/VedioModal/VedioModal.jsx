@@ -25,7 +25,7 @@ export default function VedioModal() {
       <div className="fixed bottom-3 left-4 z-50 cursor-pointer">
         <button
           onClick={() => setIsModalOpen(true)}
-          className="relative flex h-14 w-14"
+          className="relative flex h-11 w-11"
         >
           {/* Green ping circle behind */}
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-90"></span>
@@ -35,7 +35,7 @@ export default function VedioModal() {
             <img
               src="/vedio2.jpg"
               alt="Vedio Icon"
-              className="w-14 h-14 rounded-full"
+              className="w-11 h-11 rounded-full"
             />
           </span>
         </button>
